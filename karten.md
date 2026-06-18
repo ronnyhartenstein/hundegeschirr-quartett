@@ -1,5 +1,5 @@
 
-Ja — für das beschriebene Spiel ist das eher ein **Trumpfquartett / Supertrumpf** als ein klassisches Sammel-Quartett. Ich würde für das 32er-Basisset **Gewöhnlich bis Episch** nehmen und die **Legendären Karten erstmal weglassen**, weil sie als Sonderkarten/Erweiterung sonst sehr schnell das Balancing sprengen.
+Das Spiel ist ein **Trumpfquartett / Supertrumpf** mit **40 Karten** in fünf Qualitätsstufen. Die **Legendären Karten** sind Supertrümpfe – insgesamt stärker als Episch, aber jede mit einer echten Schwäche, die Gegenspiel erlaubt.
 
 ## Vorschlag für die 4 Kartenwerte
 
@@ -16,19 +16,20 @@ Alle Werte gehen von **1–100**, **höher ist besser**.
 
 Damit Qualitätsstufen spürbar sind, aber nicht automatisch gewinnen:
 
-| Qualität | Gesamtwert pro Karte |
-|---|---:|
-| Gewöhnlich | 170 |
-| Magisch | 200 |
-| Selten | 230 |
-| Episch | 260 |
+| Qualität | Gesamtwert pro Karte | Sockel |
+|---|---:|---:|
+| Gewöhnlich | 170 | 0 |
+| Magisch | 200 | 1 |
+| Selten | 230 | 1 |
+| Episch | 260 | 2 |
+| Legendär | 300 | 2 |
 
 Der **Gesamtwert wird nicht auf die Karte gedruckt**, sondern dient nur fürs Balancing.  
-Wichtig: Auch epische Karten haben Schwächen. Dadurch kann z. B. ein gewöhnliches Läufer-Geschirr bei **Beweglichkeit** einen schweren epischen Panzer schlagen.
+Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Episch auf Legendär beträgt bewusst +40 statt +30 – Legendäre sollen sich als Supertrümpfe anfühlen, aber nicht unbesiegbar sein.
 
 ---
 
-# 32 Karten für das Trumpfquartett
+# 40 Karten für das Trumpfquartett
 
 ## Gewöhnlich – 8 Karten
 
@@ -82,6 +83,19 @@ Wichtig: Auch epische Karten haben Schwächen. Dadurch kann z. B. ein gewöhnlic
 | 31 | Episch | Sturmgeschirr des Windjägers | Windhund | 2 | 50 | 34 | 100 | 76 |
 | 32 | Episch | Erzgeschirr des Bergwächters | Berner Sennenhund | 2 | 90 | 76 | 40 | 54 |
 
+## Legendär – 8 Karten
+
+| # | Qualität | Name | Hunderasse | Sockel | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|---:|
+| 33 | Legendär | Schicksalsgeschirr des Sehers | Tschechoslowakischer Wolfhund | 2 | 48 | 70 | 82 | 100 |
+| 34 | Legendär | Titanengeschirr des Urvaters | Tibetischer Mastiff | 2 | 100 | 80 | 52 | 68 |
+| 35 | Legendär | Heilsgeschirr des Götterboten | Leonberger | 2 | 54 | 100 | 70 | 76 |
+| 36 | Legendär | Geistergeschirr des Phantomläufers | Azawakh | 2 | 44 | 56 | 100 | 100 |
+| 37 | Legendär | Kronengeschirr des Hochkönigs | Neapolitanischer Mastiff | 2 | 80 | 78 | 72 | 70 |
+| 38 | Legendär | Kriegsgeschirr des Schlachtkaisers | Kaukasischer Owtscharka | 2 | 94 | 92 | 54 | 60 |
+| 39 | Legendär | Sterngeschirr des Sternenwanderers | Saarloos-Wolfhund | 2 | 56 | 62 | 88 | 94 |
+| 40 | Legendär | Weltgeschirr des Weltenwanderers | Kangal | 2 | 76 | 74 | 76 | 74 |
+
 ---
 
 ## Warum das gut funktioniert
@@ -93,6 +107,24 @@ Wichtig: Auch epische Karten haben Schwächen. Dadurch kann z. B. ein gewöhnlic
   - Einfaches Leder des Fährtenhundes: Instinkt 84 schlägt viele epische Karten außer Runengeschirr.
 - Jede Qualitätsstufe hat ungefähr gleichmäßig verteilte Stärken.
 - Kein einzelner Wert ist dauerhaft der beste Pick.
+
+### Legendäre Karten – Supertrümpfe mit Schwächen
+
+Jede Legendäre Karte ist in mindestens einem Wert unter 60 – das schafft Gegenspiel:
+
+| Karte | Stärke | Schwäche (Wert) |
+|---|---|---|
+| Schicksalsgeschirr des Sehers | Instinkt 100 | Zugkraft 48 |
+| Titanengeschirr des Urvaters | Zugkraft 100 | Beweglichkeit 52 |
+| Heilsgeschirr des Götterboten | Schutz 100 | Zugkraft 54 |
+| Geistergeschirr des Phantomläufers | Beweglichkeit 100 + Instinkt 100 | Zugkraft 44 + Schutz 56 |
+| Kronengeschirr des Hochkönigs | kein Wert unter 70 | keine – schwer zu kontern |
+| Kriegsgeschirr des Schlachtkaisers | Zugkraft 94 + Schutz 92 | Beweglichkeit 54 + Instinkt 60 |
+| Sterngeschirr des Sternenwanderers | Beweglichkeit 88 + Instinkt 94 | Zugkraft 56 + Schutz 62 |
+| Weltgeschirr des Weltenwanderers | kein Wert unter 74 | keine Spitze – berechenbar |
+
+Der **Phantomläufer** ist der einzige echte Doppel-100er, hat aber Zugkraft 44 – jeder gewöhnliche Zugkraft-Spezialist schlägt ihn dort.  
+Der **Hochkönig** hat keine Schwäche unter 70, was ihn zum schwierigsten Gegner macht – aber auch kein 100er, sodass Spezialisten ihn in ihrem Topwert trotzdem schlagen können.
 
 ## Empfohlene Gleichstandsregel
 

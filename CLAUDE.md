@@ -56,6 +56,7 @@ Szenenspezifische Bildbeschreibung für gpt-image-2 (ergänzt das master_prompt.
 | Magisch    | 200        | 1      |
 | Selten     | 230        | 1      |
 | Episch     | 260        | 2      |
+| Legendär   | 300        | 2      |
 
 Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schwächen – auch gewöhnliche Karten können epische in einzelnen Werten schlagen.
 
@@ -78,6 +79,14 @@ Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schw
 
 ## Hunderassen-Zuordnung (thematisch)
 
+- **Tschechoslowakischer Wolfhund** – Seher (Legendär)
+- **Tibetischer Mastiff** – Urvater (Legendär)
+- **Leonberger** – Götterbote (Legendär)
+- **Azawakh** – Phantomläufer (Legendär)
+- **Neapolitanischer Mastiff** – Hochkönig (Legendär)
+- **Kaukasischer Owtscharka** – Schlachtkaiser (Legendär)
+- **Saarloos-Wolfhund** – Sternenwanderer (Legendär)
+- **Kangal** – Weltenwanderer (Legendär)
 - **Berner Sennenhund** – Bauer, Reisender, Paladin, Lichtbringer, Bergwächter
 - **Mastiff** – Knecht, Packtier, Kriegshund, Söldner, Krieger, Flammenläufer
 - **Windhund** – Bote, Läufer, Späher, Berittener, Kundschafter, Windjäger
