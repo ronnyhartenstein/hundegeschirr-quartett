@@ -43,7 +43,7 @@ RECOMPRESS_THRESHOLD = 3 * 1024 * 1024  # bytes; images larger than this get rec
 # Each value is a callable (meta: dict) -> str.
 PLACEHOLDER_MAP: dict[str, object] = {
     "[QUALITÄT]":             lambda m: str(m.get("qualitaet", "")),
-    "[NAME]":                 lambda m: str(m.get("name", "")).rsplit(None, 1)[-1],
+    "[NAME]":                 lambda m: str(m.get("name", "")),
     "[HUNDERASSE]":           lambda m: str(m.get("hunderasse", "")),
     "[POSE]":                 lambda m: str(m.get("pose", "")),
     "[GESCHIRR_BESCHREIBUNG]": lambda m: str(m.get("geschirr_beschreibung", "")),
