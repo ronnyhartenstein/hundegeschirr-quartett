@@ -79,8 +79,8 @@ python generate_cards.py --recompress
 
 ```
 cards/           # 40 Karten-Dateien als Markdown mit YAML-Frontmatter
-output/          # generierte WebP-Bilder (nicht im Repo)
-print/           # druckfertige JPGs (nicht im Repo)
+output/          # generierte WebP-Bilder (1344×2304 px, 70×120 mm)
+print/           # druckfertige JPGs
 master_prompt.md # Image-Prompt-Template mit Platzhaltern
 karten.md        # Spieldesign, Balancing, vollständige Kartenliste
 generate_cards.py

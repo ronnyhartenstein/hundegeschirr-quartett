@@ -64,7 +64,7 @@ Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schw
 | Placeholder          | Frontmatter-Feld       | Transformation              |
 |----------------------|------------------------|-----------------------------|
 | `[QUALITÄT]`         | `qualitaet`            | as-is (z. B. „Gewöhnlich")  |
-| `[NAME]`             | `name`                 | letztes Wort (z. B. „Bauern") |
+| `[NAME]`             | `name`                 | as-is (vollständiger Name)  |
 | `[HUNDERASSE]`       | `hunderasse`           | —                           |
 | `[POSE]`             | `pose`                 | —                           |
 | `[GESCHIRR_BESCHREIBUNG]` | `geschirr_beschreibung` | —                      |
@@ -103,4 +103,4 @@ Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schw
 - Neue Karten: Dateiname `NN-slug-des-namens.md`, Nummer zweistellig
 - Gesamtwert der Spielwerte muss der Qualitätsstufe entsprechen (siehe Tabelle)
 - `karten.md` ist die kanonische Referenz für alle Karten – Änderungen dort auch in der Card-Datei nachführen
-- Bilder niemals ins Repo committen (`output/`, `print/` sind in .gitignore)
+- Generierte Bilder (`output/`, `print/`) werden ins Repo eingecheckt
