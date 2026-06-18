@@ -16,6 +16,9 @@ Kartentitel oben:
 Untertitel:
 „[QUALITÄT]es Hundegeschirr”
 
+Flavourtext unter dem Untertitel:
+„[FLAVOURTEXT]”
+
 Hund:
 - Rasse: [HUNDERASSE]
 - Pose: [POSE]
@@ -30,16 +33,16 @@ Hintergrund:
 Unterer Wertebereich:
 Dunkles Pergament- oder Lederfeld mit exakt diesen vier Zeilen, gut lesbar, sauber gesetzt, keine zusätzlichen Texte:
 
-Rüstung: [RÜSTUNG]
-Tempo: [TEMPO]
-Ausdauer: [AUSDAUER]
-Spürsinn: [SPÜRSINN]
+Zugkraft: [ZUGKRAFT]
+Schutz: [SCHUTZ]
+Beweglichkeit: [BEWEGLICHKEIT]
+Instinkt: [INSTINKT]
 
 Links neben jeder Zeile ein kleines passendes Icon:
-- Schild für Rüstung
-- Pfote oder Blitz für Tempo
-- Herz oder Atemsymbol für Ausdauer
-- Stern, Auge oder Nase für Spürsinn
+- Muskel für Zugkraft
+- Schild für Schutz
+- Blitz für Beweglichkeit
+- Stern für Instinkt
 
 Designregeln:
 - nur die genannten Texte verwenden

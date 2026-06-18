@@ -47,10 +47,10 @@ PLACEHOLDER_MAP: dict[str, object] = {
     "[GESCHIRR_BESCHREIBUNG]": lambda m: str(m.get("geschirr_beschreibung", "")),
     "[QUALITÄTSFARBE]":       lambda m: str(m.get("qualitaetsfarbe", "")),
     "[HINTERGRUND]":          lambda m: str(m.get("hintergrund", "")),
-    "[RÜSTUNG]":              lambda m: str(m.get("schutz", "")),
-    "[TEMPO]":                lambda m: str(m.get("beweglichkeit", "")),
-    "[AUSDAUER]":             lambda m: str(m.get("zugkraft", "")),
-    "[SPÜRSINN]":             lambda m: str(m.get("instinkt", "")),
+    "[ZUGKRAFT]":             lambda m: str(m.get("zugkraft", "")),
+    "[SCHUTZ]":               lambda m: str(m.get("schutz", "")),
+    "[BEWEGLICHKEIT]":        lambda m: str(m.get("beweglichkeit", "")),
+    "[INSTINKT]":             lambda m: str(m.get("instinkt", "")),
 }
 
 
@@ -73,9 +73,9 @@ def fill_template(template: str, meta: dict) -> str:
     return result
 
 
-def extract_bildprompt(content: str) -> str | None:
-    """Return the text under '## Bildprompt' in a card's body, or None."""
-    match = re.search(r"## Bildprompt\n(.+?)(?=\n##|\Z)", content, re.DOTALL)
+def extract_section(content: str, heading: str) -> str | None:
+    """Return the text under a '## heading' in a card's body, or None."""
+    match = re.search(rf"## {re.escape(heading)}\n(.+?)(?=\n##|\Z)", content, re.DOTALL)
     return match.group(1).strip() if match else None
 
 
@@ -84,18 +84,25 @@ def build_prompt(template: str, card_path: Path) -> str | None:
     Build the full image generation prompt for one card.
 
     1. Fill master_prompt.md template with frontmatter values.
-    2. Append the card's ## Bildprompt section as additional scene detail.
+    2. Replace [FLAVOURTEXT] with the card's ## Flavourtext section.
+    3. Append the card's ## Bildprompt section as additional scene detail.
     """
     post = frontmatter.load(str(card_path))
+    content = post.content
 
-    unfilled = re.findall(r"\[[A-ZÄÖÜ_]+\]", template)
     filled = fill_template(template, post.metadata)
+
+    flavourtext = extract_section(content, "Flavourtext")
+    if flavourtext:
+        filled = filled.replace("[FLAVOURTEXT]", flavourtext)
+    else:
+        print(f"  [{_ts()}] [WARN] No '## Flavourtext' section found: {card_path.name}")
 
     remaining = re.findall(r"\[[A-ZÄÖÜ_]+\]", filled)
     if remaining:
         print(f"  [{_ts()}] [WARN] Unfilled placeholders in {card_path.name}: {remaining}")
 
-    bildprompt = extract_bildprompt(post.content)
+    bildprompt = extract_section(content, "Bildprompt")
     if bildprompt:
         filled += f"\n\nZusätzliche Szenendetails: {bildprompt}"
     else:
