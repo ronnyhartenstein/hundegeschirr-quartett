@@ -31,7 +31,7 @@ Hintergrund:
 [HINTERGRUND], mittelalterliche Fantasy-Atmosphäre, natürliches Licht, leichter Nebel, epische Landschaft.
 
 Unterer Wertebereich:
-Dunkles Pergament- oder Lederfeld mit exakt diesen vier Zeilen, gut lesbar, sauber gesetzt, keine zusätzlichen Texte:
+Dunkles Lederfeld mit exakt diesen vier Zeilen, gut lesbar, sauber gesetzt, keine zusätzlichen Texte:
 
 Zugkraft: [ZUGKRAFT]
 Schutz: [SCHUTZ]

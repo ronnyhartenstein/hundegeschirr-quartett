@@ -8,6 +8,7 @@ Usage:
     python generate_cards.py cards/01-*.md            # Single card
     python generate_cards.py --quality high           # Image quality: low/medium/high
     python generate_cards.py --recompress             # Re-encode oversized output WebPs
+    python generate_cards.py --print                  # Convert output/ WebPs to print/ JPGs
 
 Requires:
     OPENAI_API_KEY environment variable
@@ -30,6 +31,7 @@ from PIL import Image
 
 CARDS_DIR = Path(__file__).parent / "cards"
 OUTPUT_DIR = Path(__file__).parent / "output"
+PRINT_DIR = Path(__file__).parent / "print"
 MASTER_PROMPT_FILE = Path(__file__).parent / "master_prompt.md"
 IMAGE_SIZE = "1536x2304"
 MODEL = "gpt-image-2"
@@ -131,6 +133,29 @@ def backup_existing(out: Path) -> None:
     backup = out.with_stem(f"{out.stem}_{ts}")
     out.rename(backup)
     print(f"  [{_ts()}] [BAK]  Backed up → {backup.name}")
+
+
+def convert_to_print(jpg_quality: int = 95) -> None:
+    """Convert all WebP files in output/ to high-quality JPG in print/."""
+    images = sorted(OUTPUT_DIR.rglob("*.webp"))
+    if not images:
+        print("No WebP files found in output/.")
+        return
+
+    converted = 0
+    for webp_path in images:
+        relative = webp_path.relative_to(OUTPUT_DIR)
+        jpg_path = PRINT_DIR / relative.parent / (webp_path.stem + ".jpg")
+        jpg_path.parent.mkdir(parents=True, exist_ok=True)
+
+        img = Image.open(webp_path).convert("RGB")
+        img.save(jpg_path, format="JPEG", quality=jpg_quality, subsampling=0)
+
+        size_kb = jpg_path.stat().st_size / 1024
+        print(f"  [{_ts()}] [PRINT] {relative} → {jpg_path.relative_to(PRINT_DIR.parent)} ({size_kb:.0f} KB)")
+        converted += 1
+
+    print(f"\n[{_ts()}] Converted {converted} image(s) to {PRINT_DIR}/")
 
 
 def recompress_large_images() -> None:
@@ -254,6 +279,19 @@ def main() -> None:
         help=f"Re-encode existing output WebP files larger than {RECOMPRESS_THRESHOLD // 1024 // 1024} MB via Pillow.",
     )
     parser.add_argument(
+        "--print",
+        dest="to_print",
+        action="store_true",
+        help="Convert all WebP files in output/ to high-quality JPG in print/.",
+    )
+    parser.add_argument(
+        "--print-quality",
+        type=int,
+        default=95,
+        metavar="Q",
+        help="JPEG quality for --print (1–95, default: 95).",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Print the prompt for each card without calling the API.",
@@ -262,6 +300,10 @@ def main() -> None:
 
     if args.recompress:
         recompress_large_images()
+        return
+
+    if args.to_print:
+        convert_to_print(jpg_quality=args.print_quality)
         return
 
     api_key = os.environ.get("OPENAI_API_KEY")
