@@ -14,4 +14,10 @@ hintergrund: verlassene Ruine im Morgenlicht
 geschirr_beschreibung: ölgegerbtes dunkles Leder mit grünen Metallnieten und einem Grenzstein-Anhänger am Brustgurt
 ---
 
+## Flavourtext
+
 Hier endet das Reich des Königs – und hier beginnt seines.
+
+## Bildprompt
+
+Ein Deutscher Schäferhund steht mit erhobenem Kopf neben einem alten Grenzstein im Morgennebel, verfallene Ruinen im Hintergrund. Er trägt ölgegerbtes dunkles Ledergeschirr mit smaragdgrünen Metallnieten und einem Grenzstein-Anhänger am Brustgurt. Smaragdgrüne Akzente. Kühles Morgenlicht, entschlossene Haltung.

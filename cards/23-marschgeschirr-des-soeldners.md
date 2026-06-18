@@ -14,4 +14,10 @@ hintergrund: verlassene Ruine im Morgenlicht
 geschirr_beschreibung: blau schimmerndes Leder mit massiven Metallplatten, Münzanhängern und Kampfspuren
 ---
 
+## Flavourtext
+
 Bezahlt – und trotzdem loyal, jedenfalls solange der Sold stimmt.
+
+## Bildprompt
+
+Ein massiver Mastiff steht kampfbereit auf einem schlammigen Boden, verfallene Ruinen im Morgenlicht hinter ihm. Er trägt blau schimmerndes Leder mit massiven Metallplatten, klimpernden Münzanhängern und sichtbaren Kampfspuren. Blauer magischer Akzent. Hartes Morgenlicht, Schlachtfeldatmosphäre, stoische Entschlossenheit.

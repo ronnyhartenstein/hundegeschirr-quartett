@@ -14,4 +14,10 @@ hintergrund: Gebirgspfad mit Nebel
 geschirr_beschreibung: breites Gurtgeschirr aus grün-gerubbeltem Leder mit vielen Taschen und Trageriemen
 ---
 
+## Flavourtext
+
 Was er trägt, trägt er bis ans Ende der Welt – und klagt kein einziges Mal.
+
+## Bildprompt
+
+Ein schwerer Mastiff steht beladen mit prallen Packtaschen auf einem nebeligen Gebirgspfad und blickt stoisch nach vorn. Er trägt ein breites Gurtgeschirr aus dunkelgrünem Leder mit smaragdgrün schimmernden Runen, vielen Taschen und robusten Trageriemen. Smaragdgrüne Akzente. Dramatisches Bergpanorama, leichter Nebel.

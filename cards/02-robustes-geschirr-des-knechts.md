@@ -14,4 +14,10 @@ hintergrund: mittelalterliches Dorf am Waldrand
 geschirr_beschreibung: breites braunes Leder mit schweren Eisenschnallen und verstärktem Brustgurt
 ---
 
+## Flavourtext
+
 Kein Gewicht ist zu schwer für die geduldigen Schultern des Knechts.
+
+## Bildprompt
+
+Ein massiver Mastiff steht breitbeinig und kraftvoll auf einem mittelalterlichen Hofplatz, Dorf und Waldrand im Hintergrund. Er trägt ein breites braunes Ledergeschirr mit schweren Eisenschnallen und einem verstärkten Brustgurt. Weiß-silberne Akzente. Schweres Arbeitslicht, ruhige Würde.

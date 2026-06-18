@@ -14,4 +14,10 @@ hintergrund: Burginnenhof bei Sonnenuntergang
 geschirr_beschreibung: blau schimmerndes Leder mit Heilssymbolen, Lichtrunen und feinen Silberketten am Brustgurt
 ---
 
+## Flavourtext
+
 Gesegnet vom Licht und gepanzert durch unerschütterlichen Glauben.
+
+## Bildprompt
+
+Ein Berner Sennenhund steht majestätisch im goldenen Lichtkegel eines Sonnenuntergangs vor einer mittelalterlichen Kathedrale. Er trägt blau schimmerndes Leder mit strahlenden Heilssymbolen, Lichtrunen und feinen Silberketten am Brustgurt. Blauer magischer Akzent. Strahlendes Gegenlicht, göttliche Aura, ehrfurchtgebietende Stille.

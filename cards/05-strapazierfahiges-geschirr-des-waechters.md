@@ -14,4 +14,10 @@ hintergrund: Burginnenhof bei Sonnenuntergang
 geschirr_beschreibung: abgenutztes aber robustes braunes Leder mit verstärkten Schulterpolstern und eisernen Brustplatten
 ---
 
+## Flavourtext
+
 Wer an ihm vorbei will, muss erst an ihm vorbei kommen.
+
+## Bildprompt
+
+Ein Deutscher Schäferhund sitzt wachsam vor einem massiven Burgtor und blickt direkt in die Kamera, goldenes Sonnenuntergangslicht auf dem Burginnenhof. Er trägt abgenutztes aber robustes braunes Leder mit verstärkten Schulterpolstern und eisernen Brustplatten. Weiß-silberne Akzente. Entschlossener, unerschütterlicher Ausdruck.

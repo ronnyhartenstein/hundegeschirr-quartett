@@ -14,4 +14,10 @@ hintergrund: verlassene Ruine im Morgenlicht
 geschirr_beschreibung: violett verziertes Prunkgeschirr mit leuchtenden Beschwörungs-Runen, Geister-Anhängern und Bronzeornamenten
 ---
 
+## Flavourtext
+
 Zwischen den Welten wandelt er – und ruft, was zwischen ihnen antwortet.
+
+## Bildprompt
+
+Ein Irischer Wolfshund steht inmitten schwebender violetter Runen-Symbole vor einer verfallenen Ruine im Morgenlicht, Geisterwesen deuten sich im Nebel an. Er trägt ein violett verziertes Prunkgeschirr mit leuchtenden Beschwörungs-Runen, Geister-Anhängern und Bronzeornamenten. Violetter magischer Akzent. Mystische Aura, übernatürliches Leuchten.

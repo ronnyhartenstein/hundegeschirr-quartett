@@ -14,4 +14,10 @@ hintergrund: alter Waldweg mit Wegweisern
 geschirr_beschreibung: dunkelbraunes Kunstleder mit einem kleinen Köcherhalter und Jagdmesserriemen an der Seite
 ---
 
+## Flavourtext
+
 Aus dem Wald kommt er – und die Beute selten allein.
+
+## Bildprompt
+
+Ein Irischer Wolfshund steht stolz auf einem alten Waldweg und blickt konzentriert ins dunkle Dickicht, verwitterte Wegweiser im Hintergrund. Er trägt dunkelbraunes Kunstledergeschirr mit einem kleinen Köcherhalter und Jagdmesserriemen an der Seite. Weiß-silberne Akzente. Stimmungsvolles Waldlicht, Anspannung vor der Jagd.
