@@ -11,10 +11,10 @@ Die Karte soll wie eine hochwertige Fantasy-Quartettkarte aussehen:
 - halb realistischer digitaler Malstil, cineastische Beleuchtung, detailreich
 
 Kartentitel oben:
-„[QUALITÄT]ES GESCHIRR DES [NAME]“
+„[QUALITÄT]es Geschirr des [NAME]”
 
 Untertitel:
-„[QUALITÄT]ES HUNDEGESCHIRR“
+„[QUALITÄT]es Hundegeschirr”
 
 Hund:
 - Rasse: [HUNDERASSE]
@@ -35,7 +35,7 @@ Tempo: [TEMPO]
 Ausdauer: [AUSDAUER]
 Spürsinn: [SPÜRSINN]
 
-Neben jeder Zeile ein kleines passendes Icon:
+Links neben jeder Zeile ein kleines passendes Icon:
 - Schild für Rüstung
 - Pfote oder Blitz für Tempo
 - Herz oder Atemsymbol für Ausdauer

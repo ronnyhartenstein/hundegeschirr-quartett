@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Generates card images for PFOTEN & PORTAL using the OpenAI gpt-image-2 model.
+Generates card images for Hundegeschirr-Quartett using the OpenAI gpt-image-2 model.
 
 Usage:
     python generate_cards.py                          # Generate all missing images
     python generate_cards.py --force                  # Regenerate all images
-    python generate_cards.py --type hunde             # Only a card type subdirectory
-    python generate_cards.py cards/hunde/herdenhund.md  # Single card
+    python generate_cards.py cards/01-*.md            # Single card
     python generate_cards.py --quality high           # Image quality: low/medium/high
+    python generate_cards.py --recompress             # Re-encode oversized output WebPs
 
 Requires:
     OPENAI_API_KEY environment variable
@@ -37,31 +37,71 @@ RATE_LIMIT_DELAY = 1.0  # seconds between API calls
 WEBP_QUALITY = 25       # lossy WebP quality (0–100); 25 is plenty for low/medium API output
 RECOMPRESS_THRESHOLD = 3 * 1024 * 1024  # bytes; images larger than this get recompressed
 
+# Maps master_prompt.md placeholders to frontmatter fields / transformations.
+# Each value is a callable (meta: dict) -> str.
+PLACEHOLDER_MAP: dict[str, object] = {
+    "[QUALITÄT]":             lambda m: str(m.get("qualitaet", "")),
+    "[NAME]":                 lambda m: str(m.get("name", "")).rsplit(None, 1)[-1],
+    "[HUNDERASSE]":           lambda m: str(m.get("hunderasse", "")),
+    "[POSE]":                 lambda m: str(m.get("pose", "")),
+    "[GESCHIRR_BESCHREIBUNG]": lambda m: str(m.get("geschirr_beschreibung", "")),
+    "[QUALITÄTSFARBE]":       lambda m: str(m.get("qualitaetsfarbe", "")),
+    "[HINTERGRUND]":          lambda m: str(m.get("hintergrund", "")),
+    "[RÜSTUNG]":              lambda m: str(m.get("schutz", "")),
+    "[TEMPO]":                lambda m: str(m.get("beweglichkeit", "")),
+    "[AUSDAUER]":             lambda m: str(m.get("zugkraft", "")),
+    "[SPÜRSINN]":             lambda m: str(m.get("instinkt", "")),
+}
+
 
 def _ts() -> str:
     return datetime.datetime.now().strftime("%H:%M:%S")
 
 
-def load_master_style() -> str:
-    """Extract the visual style directive from master_prompt.md."""
-    text = MASTER_PROMPT_FILE.read_text(encoding="utf-8")
-    match = re.search(r"## Visueller Stil[^\n]*\n\n(.+?)(?=\n##|\Z)", text, re.DOTALL)
-    if not match:
-        sys.exit(f"Could not find '## Visueller Stil' section in {MASTER_PROMPT_FILE}")
-    style = match.group(1).strip()
-    print(f"[{_ts()}] Master style loaded ({len(style)} chars)")
-    return style
+def load_master_template() -> str:
+    """Load master_prompt.md as a raw template string."""
+    text = MASTER_PROMPT_FILE.read_text(encoding="utf-8").strip()
+    print(f"[{_ts()}] Master template loaded ({len(text)} chars)")
+    return text
 
 
-def extract_image_prompt(card_path: Path) -> str | None:
-    """Parse a card .md file and return the Bildprompt section content."""
-    post = frontmatter.load(str(card_path))
-    content = post.content
+def fill_template(template: str, meta: dict) -> str:
+    """Replace all [PLACEHOLDER] tokens in *template* with values from *meta*."""
+    result = template
+    for placeholder, getter in PLACEHOLDER_MAP.items():
+        result = result.replace(placeholder, getter(meta))
+    return result
+
+
+def extract_bildprompt(content: str) -> str | None:
+    """Return the text under '## Bildprompt' in a card's body, or None."""
     match = re.search(r"## Bildprompt\n(.+?)(?=\n##|\Z)", content, re.DOTALL)
-    if not match:
-        print(f"  [{_ts()}] [SKIP] No '## Bildprompt' section found: {card_path}")
-        return None
-    return match.group(1).strip()
+    return match.group(1).strip() if match else None
+
+
+def build_prompt(template: str, card_path: Path) -> str | None:
+    """
+    Build the full image generation prompt for one card.
+
+    1. Fill master_prompt.md template with frontmatter values.
+    2. Append the card's ## Bildprompt section as additional scene detail.
+    """
+    post = frontmatter.load(str(card_path))
+
+    unfilled = re.findall(r"\[[A-ZÄÖÜ_]+\]", template)
+    filled = fill_template(template, post.metadata)
+
+    remaining = re.findall(r"\[[A-ZÄÖÜ_]+\]", filled)
+    if remaining:
+        print(f"  [{_ts()}] [WARN] Unfilled placeholders in {card_path.name}: {remaining}")
+
+    bildprompt = extract_bildprompt(post.content)
+    if bildprompt:
+        filled += f"\n\nZusätzliche Szenendetails: {bildprompt}"
+    else:
+        print(f"  [{_ts()}] [WARN] No '## Bildprompt' section found: {card_path.name}")
+
+    return filled
 
 
 def output_path_for(card_path: Path) -> Path:
@@ -115,7 +155,7 @@ def recompress_large_images() -> None:
 
 
 def generate_image(client: OpenAI, prompt: str, quality: str) -> bytes:
-    """Call the API and return raw PNG bytes."""
+    """Call the API and return WebP bytes."""
     response = client.images.generate(
         model=MODEL,
         prompt=prompt,
@@ -130,7 +170,7 @@ def generate_image(client: OpenAI, prompt: str, quality: str) -> bytes:
 def process_card(
     client: OpenAI,
     card_path: Path,
-    master_style: str,
+    master_template: str,
     force: bool,
     quality: str,
 ) -> bool:
@@ -141,11 +181,10 @@ def process_card(
         print(f"  [{_ts()}] [SKIP] Already exists: {out.relative_to(Path(__file__).parent)}")
         return False
 
-    card_prompt = extract_image_prompt(card_path)
-    if card_prompt is None:
+    prompt = build_prompt(master_template, card_path)
+    if prompt is None:
         return False
 
-    full_prompt = f"{master_style}. {card_prompt}"
     print(f"  [{_ts()}] [GEN]  {card_path.relative_to(CARDS_DIR)} → {out.name}")
 
     if out.exists():
@@ -153,12 +192,12 @@ def process_card(
 
     t0 = time.monotonic()
     try:
-        png_bytes = generate_image(client, full_prompt, quality)
+        image_bytes = generate_image(client, prompt, quality)
     except Exception as exc:
         print(f"  [{_ts()}] [ERR]  API error for {card_path.name}: {exc}")
         return False
 
-    webp_bytes = ensure_webp(png_bytes)
+    webp_bytes = ensure_webp(image_bytes)
     elapsed = time.monotonic() - t0
 
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -185,11 +224,11 @@ def collect_cards(target: str | None) -> list[Path]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate card images for PFOTEN & PORTAL")
+    parser = argparse.ArgumentParser(description="Generate card images for Hundegeschirr-Quartett")
     parser.add_argument(
         "target",
         nargs="?",
-        help="Single .md file or card type subdirectory (e.g. 'hunde'). Defaults to all cards.",
+        help="Single .md file or subdirectory. Defaults to all cards.",
     )
     parser.add_argument(
         "--force",
@@ -207,6 +246,11 @@ def main() -> None:
         action="store_true",
         help=f"Re-encode existing output WebP files larger than {RECOMPRESS_THRESHOLD // 1024 // 1024} MB via Pillow.",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the prompt for each card without calling the API.",
+    )
     args = parser.parse_args()
 
     if args.recompress:
@@ -214,14 +258,13 @@ def main() -> None:
         return
 
     api_key = os.environ.get("OPENAI_API_KEY")
-    if not api_key:
+    if not api_key and not args.dry_run:
         sys.exit("Error: OPENAI_API_KEY environment variable not set.")
 
     t_start = time.monotonic()
     print(f"[{_ts()}] Started — quality={args.quality}, force={args.force}, format=WebP (quality={WEBP_QUALITY})")
 
-    client = OpenAI(api_key=api_key)
-    master_style = load_master_style()
+    master_template = load_master_template()
     cards = collect_cards(args.target)
 
     if not cards:
@@ -234,10 +277,21 @@ def main() -> None:
 
     print(f"[{_ts()}] Found {total} card(s) to process")
 
+    if args.dry_run:
+        for card_path in cards:
+            print(f"\n{'─' * 60}")
+            print(f"Card: {card_path.name}")
+            print(f"{'─' * 60}")
+            prompt = build_prompt(master_template, card_path)
+            print(prompt)
+        return
+
+    client = OpenAI(api_key=api_key)
+
     for i, card_path in enumerate(cards, start=1):
         print(f"\n[{_ts()}] [{i:3}/{total}] {card_path.stem}")
         was_generated = process_card(
-            client, card_path, master_style, force=args.force, quality=args.quality
+            client, card_path, master_template, force=args.force, quality=args.quality
         )
         if was_generated:
             generated += 1
