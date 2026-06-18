@@ -16,13 +16,13 @@ Alle Werte gehen von **1–100**, **höher ist besser**.
 
 Damit Qualitätsstufen spürbar sind, aber nicht automatisch gewinnen:
 
-| Qualität | Gesamtwert pro Karte | Sockel |
-|---|---:|---:|
-| Gewöhnlich | 170 | 0 |
-| Magisch | 200 | 1 |
-| Selten | 230 | 1 |
-| Episch | 260 | 2 |
-| Legendär | 300 | 2 |
+| Qualität | Gesamtwert pro Karte |
+|---|---:|
+| Gewöhnlich | 170 |
+| Magisch | 200 |
+| Selten | 230 |
+| Episch | 260 |
+| Legendär | 300 |
 
 Der **Gesamtwert wird nicht auf die Karte gedruckt**, sondern dient nur fürs Balancing.  
 Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Episch auf Legendär beträgt bewusst +40 statt +30 – Legendäre sollen sich als Supertrümpfe anfühlen, aber nicht unbesiegbar sein.
@@ -33,68 +33,68 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Episch auf Lege
 
 ## Gewöhnlich – 8 Karten
 
-| # | Qualität | Name | Hunderasse | Sockel | Zugkraft | Schutz | Beweglichkeit | Instinkt |
-|---:|---|---|---|---:|---:|---:|---:|---:|
-| 01 | Gewöhnlich | Schlichtes Geschirr des Bauern | Berner Sennenhund | 0 | 44 | 44 | 40 | 42 |
-| 02 | Gewöhnlich | Robustes Geschirr des Knechts | Mastiff | 0 | 76 | 42 | 30 | 22 |
-| 03 | Gewöhnlich | Einfaches Leder des Fährtenhundes | Dackel | 0 | 24 | 28 | 34 | 84 |
-| 04 | Gewöhnlich | Baumwollgeschirr des Boten | Windhund | 0 | 32 | 26 | 80 | 32 |
-| 05 | Gewöhnlich | Strapazierfähiges Geschirr des Wächters | Deutscher Schäferhund | 0 | 28 | 82 | 30 | 30 |
-| 06 | Gewöhnlich | Leichtes Geschirr des Läufers | Windhund | 0 | 22 | 28 | 84 | 36 |
-| 07 | Gewöhnlich | Kunstledergeschirr des Jägers | Irischer Wolfshund | 0 | 68 | 24 | 24 | 54 |
-| 08 | Gewöhnlich | Geflochtenes Geschirr des Hirten | Border Collie | 0 | 34 | 56 | 34 | 46 |
+| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|
+| 01 | Gewöhnlich | Schlichtes Geschirr des Bauern | Berner Sennenhund | 44 | 44 | 40 | 42 |
+| 02 | Gewöhnlich | Robustes Geschirr des Knechts | Mastiff | 76 | 42 | 30 | 22 |
+| 03 | Gewöhnlich | Einfaches Leder des Fährtenhundes | Dackel | 24 | 28 | 34 | 84 |
+| 04 | Gewöhnlich | Baumwollgeschirr des Boten | Windhund | 32 | 26 | 80 | 32 |
+| 05 | Gewöhnlich | Strapazierfähiges Geschirr des Wächters | Deutscher Schäferhund | 28 | 82 | 30 | 30 |
+| 06 | Gewöhnlich | Leichtes Geschirr des Läufers | Windhund | 22 | 28 | 84 | 36 |
+| 07 | Gewöhnlich | Kunstledergeschirr des Jägers | Irischer Wolfshund | 68 | 24 | 24 | 54 |
+| 08 | Gewöhnlich | Geflochtenes Geschirr des Hirten | Border Collie | 34 | 56 | 34 | 46 |
 
 ## Magisch – 8 Karten
 
-| # | Qualität | Name | Hunderasse | Sockel | Zugkraft | Schutz | Beweglichkeit | Instinkt |
-|---:|---|---|---|---:|---:|---:|---:|---:|
-| 09 | Magisch | Verstärktes Geschirr des Reisenden | Berner Sennenhund | 1 | 74 | 54 | 38 | 34 |
-| 10 | Magisch | Gepolstertes Geschirr des Spähers | Windhund | 1 | 28 | 34 | 82 | 56 |
-| 11 | Magisch | Genähtes Geschirr des Fährtenlesers | Bluthund | 1 | 28 | 32 | 50 | 90 |
-| 12 | Magisch | Ölgegerbtes Geschirr des Grenzers | Deutscher Schäferhund | 1 | 46 | 78 | 38 | 38 |
-| 13 | Magisch | Gurtgeschirr des Packtiers | Mastiff | 1 | 82 | 42 | 30 | 46 |
-| 14 | Magisch | Schnallengeschirr des Boten | Windhund | 1 | 30 | 32 | 94 | 44 |
-| 15 | Magisch | Ringgeschirr des Kriegshundes | Mastiff | 1 | 86 | 54 | 28 | 32 |
-| 16 | Magisch | Doppellagiges Geschirr des Leibwächters | Deutscher Schäferhund | 1 | 42 | 86 | 28 | 44 |
+| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|
+| 09 | Magisch | Verstärktes Geschirr des Reisenden | Berner Sennenhund | 74 | 54 | 38 | 34 |
+| 10 | Magisch | Gepolstertes Geschirr des Spähers | Windhund | 28 | 34 | 82 | 56 |
+| 11 | Magisch | Genähtes Geschirr des Fährtenlesers | Bluthund | 28 | 32 | 50 | 90 |
+| 12 | Magisch | Ölgegerbtes Geschirr des Grenzers | Deutscher Schäferhund | 46 | 78 | 38 | 38 |
+| 13 | Magisch | Gurtgeschirr des Packtiers | Mastiff | 82 | 42 | 30 | 46 |
+| 14 | Magisch | Schnallengeschirr des Boten | Windhund | 30 | 32 | 94 | 44 |
+| 15 | Magisch | Ringgeschirr des Kriegshundes | Mastiff | 86 | 54 | 28 | 32 |
+| 16 | Magisch | Doppellagiges Geschirr des Leibwächters | Deutscher Schäferhund | 42 | 86 | 28 | 44 |
 
 ## Selten – 8 Karten
 
-| # | Qualität | Name | Hunderasse | Sockel | Zugkraft | Schutz | Beweglichkeit | Instinkt |
-|---:|---|---|---|---:|---:|---:|---:|---:|
-| 17 | Selten | Stahlbeschlagenes Geschirr des Ritters | Irischer Wolfshund | 1 | 78 | 88 | 32 | 32 |
-| 18 | Selten | Gepanzertes Geschirr des Paladins | Berner Sennenhund | 1 | 42 | 94 | 30 | 64 |
-| 19 | Selten | Beschlagenes Geschirr des Berittenen | Windhund | 1 | 62 | 40 | 94 | 34 |
-| 20 | Selten | Verziertes Geschirr des Adligen | Irischer Wolfshund | 1 | 36 | 48 | 64 | 82 |
-| 21 | Selten | Jagdgeschirr des Fallenstellers | Dackel | 1 | 44 | 34 | 64 | 88 |
-| 22 | Selten | Feldgeschirr des Kundschafters | Windhund | 1 | 34 | 36 | 96 | 64 |
-| 23 | Selten | Marschgeschirr des Söldners | Mastiff | 1 | 94 | 58 | 42 | 36 |
-| 24 | Selten | Kettengeflecht des Wachhundes | Deutscher Schäferhund | 1 | 54 | 84 | 30 | 62 |
+| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|
+| 17 | Selten | Stahlbeschlagenes Geschirr des Ritters | Irischer Wolfshund | 78 | 88 | 32 | 32 |
+| 18 | Selten | Gepanzertes Geschirr des Paladins | Berner Sennenhund | 42 | 94 | 30 | 64 |
+| 19 | Selten | Beschlagenes Geschirr des Berittenen | Windhund | 62 | 40 | 94 | 34 |
+| 20 | Selten | Verziertes Geschirr des Adligen | Irischer Wolfshund | 36 | 48 | 64 | 82 |
+| 21 | Selten | Jagdgeschirr des Fallenstellers | Dackel | 44 | 34 | 64 | 88 |
+| 22 | Selten | Feldgeschirr des Kundschafters | Windhund | 34 | 36 | 96 | 64 |
+| 23 | Selten | Marschgeschirr des Söldners | Mastiff | 94 | 58 | 42 | 36 |
+| 24 | Selten | Kettengeflecht des Wachhundes | Deutscher Schäferhund | 54 | 84 | 30 | 62 |
 
 ## Episch – 8 Karten
 
-| # | Qualität | Name | Hunderasse | Sockel | Zugkraft | Schutz | Beweglichkeit | Instinkt |
-|---:|---|---|---|---:|---:|---:|---:|---:|
-| 25 | Episch | Runengeschirr des Beschwörers | Irischer Wolfshund | 2 | 42 | 62 | 56 | 100 |
-| 26 | Episch | Plattenpanzer des Kriegers | Mastiff | 2 | 96 | 82 | 40 | 42 |
-| 27 | Episch | Schattengeschirr des Schattenschnüfflers | Schwarzer Windhund | 2 | 44 | 32 | 100 | 84 |
-| 28 | Episch | Glanzgeschirr des Lichtbringers | Berner Sennenhund | 2 | 38 | 88 | 60 | 74 |
-| 29 | Episch | Drachengeschirr des Flammenläufers | Deutsche Dogge | 2 | 100 | 70 | 48 | 42 |
-| 30 | Episch | Frostgeschirr des Eiszahnläufers | Husky | 2 | 70 | 80 | 46 | 64 |
-| 31 | Episch | Sturmgeschirr des Windjägers | Windhund | 2 | 50 | 34 | 100 | 76 |
-| 32 | Episch | Erzgeschirr des Bergwächters | Berner Sennenhund | 2 | 90 | 76 | 40 | 54 |
+| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|
+| 25 | Episch | Runengeschirr des Beschwörers | Irischer Wolfshund | 42 | 62 | 56 | 100 |
+| 26 | Episch | Plattenpanzer des Kriegers | Mastiff | 96 | 82 | 40 | 42 |
+| 27 | Episch | Schattengeschirr des Schattenschnüfflers | Schwarzer Windhund | 44 | 32 | 100 | 84 |
+| 28 | Episch | Glanzgeschirr des Lichtbringers | Berner Sennenhund | 38 | 88 | 60 | 74 |
+| 29 | Episch | Drachengeschirr des Flammenläufers | Deutsche Dogge | 100 | 70 | 48 | 42 |
+| 30 | Episch | Frostgeschirr des Eiszahnläufers | Husky | 70 | 80 | 46 | 64 |
+| 31 | Episch | Sturmgeschirr des Windjägers | Windhund | 50 | 34 | 100 | 76 |
+| 32 | Episch | Erzgeschirr des Bergwächters | Berner Sennenhund | 90 | 76 | 40 | 54 |
 
 ## Legendär – 8 Karten
 
-| # | Qualität | Name | Hunderasse | Sockel | Zugkraft | Schutz | Beweglichkeit | Instinkt |
-|---:|---|---|---|---:|---:|---:|---:|---:|
-| 33 | Legendär | Schicksalsgeschirr des Sehers | Tschechoslowakischer Wolfhund | 2 | 48 | 70 | 82 | 100 |
-| 34 | Legendär | Titanengeschirr des Urvaters | Tibetischer Mastiff | 2 | 100 | 80 | 52 | 68 |
-| 35 | Legendär | Heilsgeschirr des Götterboten | Leonberger | 2 | 54 | 100 | 70 | 76 |
-| 36 | Legendär | Geistergeschirr des Phantomläufers | Azawakh | 2 | 44 | 56 | 100 | 100 |
-| 37 | Legendär | Kronengeschirr des Hochkönigs | Neapolitanischer Mastiff | 2 | 80 | 78 | 72 | 70 |
-| 38 | Legendär | Kriegsgeschirr des Schlachtkaisers | Kaukasischer Owtscharka | 2 | 94 | 92 | 54 | 60 |
-| 39 | Legendär | Sterngeschirr des Sternenwanderers | Saarloos-Wolfhund | 2 | 56 | 62 | 88 | 94 |
-| 40 | Legendär | Weltgeschirr des Weltenwanderers | Kangal | 2 | 76 | 74 | 76 | 74 |
+| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|
+| 33 | Legendär | Schicksalsgeschirr des Sehers | Tschechoslowakischer Wolfhund | 48 | 70 | 82 | 100 |
+| 34 | Legendär | Titanengeschirr des Urvaters | Tibetischer Mastiff | 100 | 80 | 52 | 68 |
+| 35 | Legendär | Heilsgeschirr des Götterboten | Leonberger | 54 | 100 | 70 | 76 |
+| 36 | Legendär | Geistergeschirr des Phantomläufers | Azawakh | 44 | 56 | 100 | 100 |
+| 37 | Legendär | Kronengeschirr des Hochkönigs | Neapolitanischer Mastiff | 80 | 78 | 72 | 70 |
+| 38 | Legendär | Kriegsgeschirr des Schlachtkaisers | Kaukasischer Owtscharka | 94 | 92 | 54 | 60 |
+| 39 | Legendär | Sterngeschirr des Sternenwanderers | Saarloos-Wolfhund | 56 | 62 | 88 | 94 |
+| 40 | Legendär | Weltgeschirr des Weltenwanderers | Kangal | 76 | 74 | 76 | 74 |
 
 ---
 
