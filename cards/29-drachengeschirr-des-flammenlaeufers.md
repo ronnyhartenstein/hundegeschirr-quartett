@@ -1,9 +1,8 @@
 ---
 nummer: 29
 name: Drachengeschirr des Flammenläufers
-qualitaet: Episch
+qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-sockel: 2
 zugkraft: 100
 schutz: 70
 beweglichkeit: 48

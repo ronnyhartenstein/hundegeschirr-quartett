@@ -3,7 +3,6 @@ nummer: 08
 name: Geflochtenes Geschirr des Hirten
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-sockel: 0
 zugkraft: 34
 schutz: 56
 beweglichkeit: 34

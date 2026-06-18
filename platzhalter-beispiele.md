@@ -2,13 +2,13 @@
 
 [POSE] = steht stolz auf einem Waldweg / sitzt wachsam vor einer Burg / läuft über eine Steinbrücke / späht in die Ferne / steht auf einem Gebirgspfad
 
-[QUALITÄT] = Gewöhnlich / Ungewöhnlich / Selten / Episch / Legendär
+[QUALITÄT] = Gewöhnlich / Selten / Episch / Magisch / Legendär
 
 [QUALITÄTSFARBE] =
 Gewöhnlich: weiß-silberner Akzent
-Ungewöhnlich: smaragdgrüner Akzent
-Selten: blauer magischer Akzent
-Episch: violetter magischer Akzent
+Selten: smaragdgrüner Akzent
+Episch: blauer magischer Akzent
+Magisch: violetter magischer Akzent
 Legendär: gold-orangefarbener magischer Akzent
 
 [GESCHIRRNAME] = Wanderers / Spähers / Schildträgers / Fährtensuchers / Herumtreibers / Burghüters / Nebelläufers / Drachenboten

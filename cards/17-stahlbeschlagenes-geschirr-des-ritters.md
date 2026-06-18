@@ -1,9 +1,8 @@
 ---
 nummer: 17
 name: Stahlbeschlagenes Geschirr des Ritters
-qualitaet: Selten
+qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-sockel: 1
 zugkraft: 78
 schutz: 88
 beweglichkeit: 32

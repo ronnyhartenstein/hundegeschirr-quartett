@@ -1,9 +1,8 @@
 ---
 nummer: 11
 name: Genähtes Geschirr des Fährtenlesers
-qualitaet: Magisch
+qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-sockel: 1
 zugkraft: 28
 schutz: 32
 beweglichkeit: 50

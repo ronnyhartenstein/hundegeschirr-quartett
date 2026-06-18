@@ -1,9 +1,8 @@
 ---
 nummer: 23
 name: Marschgeschirr des Söldners
-qualitaet: Selten
+qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-sockel: 1
 zugkraft: 94
 schutz: 58
 beweglichkeit: 42

@@ -3,7 +3,6 @@ nummer: 38
 name: Kriegsgeschirr des Schlachtkaisers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-sockel: 2
 zugkraft: 94
 schutz: 92
 beweglichkeit: 54

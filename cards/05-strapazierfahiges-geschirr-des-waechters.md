@@ -3,7 +3,6 @@ nummer: 05
 name: Strapazierfähiges Geschirr des Wächters
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-sockel: 0
 zugkraft: 28
 schutz: 82
 beweglichkeit: 30

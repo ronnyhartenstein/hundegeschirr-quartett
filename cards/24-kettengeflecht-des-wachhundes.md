@@ -1,9 +1,8 @@
 ---
 nummer: 24
 name: Kettengeflecht des Wachhundes
-qualitaet: Selten
+qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-sockel: 1
 zugkraft: 54
 schutz: 84
 beweglichkeit: 30

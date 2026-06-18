@@ -3,7 +3,6 @@ nummer: 06
 name: Leichtes Geschirr des Läufers
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-sockel: 0
 zugkraft: 22
 schutz: 28
 beweglichkeit: 84

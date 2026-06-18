@@ -3,7 +3,6 @@ nummer: 02
 name: Robustes Geschirr des Knechts
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-sockel: 0
 zugkraft: 76
 schutz: 42
 beweglichkeit: 30

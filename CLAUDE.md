@@ -2,12 +2,12 @@
 
 ## Was ist das?
 
-Ein mittelalterliches Fantasy-Trumpfquartett (Supertrumpf) mit Hundegeschirren als Karten. 32 Karten in 4 Qualitätsstufen, jede Karte hat 4 Spielwerte. Bilder werden per `gpt-image-2` generiert.
+Ein mittelalterliches Fantasy-Trumpfquartett (Supertrumpf) mit Hundegeschirren als Karten. 40 Karten in 5 Qualitätsstufen, jede Karte hat 4 Spielwerte. Bilder werden per `gpt-image-2` generiert.
 
 ## Dateistruktur
 
 ```
-cards/           # 32 Karten-Dateien (01–32), je eine .md pro Karte
+cards/           # 40 Karten-Dateien (01–40), je eine .md pro Karte
 output/          # generierte WebP-Bilder (von generate_cards.py)
 print/           # druckfertige JPGs (via --print Flag)
 master_prompt.md # Image-Prompt-Template mit [PLACEHOLDER]-Tokens
@@ -26,9 +26,8 @@ Jede Karte in `cards/` hat YAML-Frontmatter + zwei Markdown-Abschnitte:
 ---
 nummer: 01
 name: Schlichtes Geschirr des Bauern
-qualitaet: Gewöhnlich          # Gewöhnlich | Magisch | Selten | Episch
+qualitaet: Gewöhnlich          # Gewöhnlich | Selten | Episch | Magisch | Legendär
 qualitaetsfarbe: weiß-silberner Akzent
-sockel: 0                      # 0 | 1 | 2
 zugkraft: 44
 schutz: 44
 beweglichkeit: 40
@@ -50,15 +49,15 @@ Szenenspezifische Bildbeschreibung für gpt-image-2 (ergänzt das master_prompt.
 
 ## Spielwerte und Balancing
 
-| Qualität   | Gesamtwert | Sockel |
-|------------|------------|--------|
-| Gewöhnlich | 170        | 0      |
-| Magisch    | 200        | 1      |
-| Selten     | 230        | 1      |
-| Episch     | 260        | 2      |
-| Legendär   | 300        | 2      |
+| Qualität   | Gesamtwert |
+|------------|------------|
+| Gewöhnlich | 170        |
+| Selten     | 200        |
+| Episch     | 230        |
+| Magisch    | 260        |
+| Legendär   | 300        |
 
-Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schwächen – auch gewöhnliche Karten können epische in einzelnen Werten schlagen.
+Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schwächen – auch gewöhnliche Karten können magische in einzelnen Werten schlagen.
 
 ## Placeholder-Mapping (master_prompt.md → Frontmatter)
 

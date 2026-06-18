@@ -1,9 +1,8 @@
 ---
 nummer: 10
 name: Gepolstertes Geschirr des Spähers
-qualitaet: Magisch
+qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-sockel: 1
 zugkraft: 28
 schutz: 34
 beweglichkeit: 82

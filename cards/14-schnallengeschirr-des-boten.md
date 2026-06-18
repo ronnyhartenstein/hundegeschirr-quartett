@@ -1,9 +1,8 @@
 ---
 nummer: 14
 name: Schnallengeschirr des Boten
-qualitaet: Magisch
+qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-sockel: 1
 zugkraft: 30
 schutz: 32
 beweglichkeit: 94

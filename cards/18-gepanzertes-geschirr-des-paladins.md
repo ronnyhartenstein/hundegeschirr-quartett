@@ -1,9 +1,8 @@
 ---
 nummer: 18
 name: Gepanzertes Geschirr des Paladins
-qualitaet: Selten
+qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-sockel: 1
 zugkraft: 42
 schutz: 94
 beweglichkeit: 30

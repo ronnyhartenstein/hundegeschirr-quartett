@@ -1,9 +1,8 @@
 ---
 nummer: 20
 name: Verziertes Geschirr des Adligen
-qualitaet: Selten
+qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-sockel: 1
 zugkraft: 36
 schutz: 48
 beweglichkeit: 64

@@ -1,6 +1,6 @@
 # Hundegeschirr-Quartett
 
-Ein mittelalterliches Fantasy-Trumpfquartett mit Hundegeschirren. 32 Karten in vier Qualitätsstufen – von gewöhnlichem Bauerngeschirr bis zum epischen Drachengeschirr. Bilder werden per KI generiert.
+Ein mittelalterliches Fantasy-Trumpfquartett mit Hundegeschirren. 40 Karten in fünf Qualitätsstufen – von gewöhnlichem Bauerngeschirr bis zum legendären Weltgeschirr. Bilder werden per KI generiert.
 
 ## Spielprinzip
 
@@ -13,16 +13,17 @@ Jede Karte hat vier Werte (1–100, höher ist besser):
 | **Beweglichkeit** | Geschwindigkeit, Ausweichen, Wendigkeit |
 | **Instinkt** | Spurfinden, Wachsamkeit, Magie, Treue |
 
-Spieler wählen abwechselnd einen Wert – wer den höheren Wert hat, gewinnt beide Karten. Epische Karten sind im Schnitt stärker, haben aber Schwächen: ein gewöhnliches Läufergeschirr (Beweglichkeit 84) schlägt den epischen Plattenpanzer (Beweglichkeit 40).
+Spieler wählen abwechselnd einen Wert – wer den höheren Wert hat, gewinnt beide Karten. Magische Karten sind im Schnitt stärker, haben aber Schwächen: ein gewöhnliches Läufergeschirr (Beweglichkeit 84) schlägt den magischen Plattenpanzer (Beweglichkeit 40).
 
 ### Qualitätsstufen
 
 | Stufe | Gesamtwert | Farbe |
 |---|---|---|
 | Gewöhnlich | 170 | Weiß/Silber |
-| Magisch | 200 | Smaragdgrün |
-| Selten | 230 | Blau |
-| Episch | 260 | Violett |
+| Selten | 200 | Smaragdgrün |
+| Episch | 230 | Blau |
+| Magisch | 260 | Violett |
+| Legendär | 300 | Orange/Gold |
 
 ## Voraussetzungen
 
@@ -77,7 +78,7 @@ python generate_cards.py --recompress
 ## Dateistruktur
 
 ```
-cards/           # 32 Karten-Dateien als Markdown mit YAML-Frontmatter
+cards/           # 40 Karten-Dateien als Markdown mit YAML-Frontmatter
 output/          # generierte WebP-Bilder (nicht im Repo)
 print/           # druckfertige JPGs (nicht im Repo)
 master_prompt.md # Image-Prompt-Template mit Platzhaltern

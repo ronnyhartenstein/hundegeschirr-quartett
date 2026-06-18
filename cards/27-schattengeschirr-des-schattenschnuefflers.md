@@ -1,9 +1,8 @@
 ---
 nummer: 27
 name: Schattengeschirr des Schattenschnüfflers
-qualitaet: Episch
+qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-sockel: 2
 zugkraft: 44
 schutz: 32
 beweglichkeit: 100

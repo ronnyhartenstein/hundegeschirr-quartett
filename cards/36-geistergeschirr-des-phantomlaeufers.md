@@ -3,7 +3,6 @@ nummer: 36
 name: Geistergeschirr des Phantomläufers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-sockel: 2
 zugkraft: 44
 schutz: 56
 beweglichkeit: 100

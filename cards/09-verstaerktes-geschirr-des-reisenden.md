@@ -1,9 +1,8 @@
 ---
 nummer: 09
 name: Verstärktes Geschirr des Reisenden
-qualitaet: Magisch
+qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-sockel: 1
 zugkraft: 74
 schutz: 54
 beweglichkeit: 38

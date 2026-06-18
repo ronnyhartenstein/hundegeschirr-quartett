@@ -1,9 +1,8 @@
 ---
 nummer: 25
 name: Runengeschirr des Beschwörers
-qualitaet: Episch
+qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-sockel: 2
 zugkraft: 42
 schutz: 62
 beweglichkeit: 56

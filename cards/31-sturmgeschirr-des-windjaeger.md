@@ -1,9 +1,8 @@
 ---
 nummer: 31
 name: Sturmgeschirr des Windjägers
-qualitaet: Episch
+qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-sockel: 2
 zugkraft: 50
 schutz: 34
 beweglichkeit: 100

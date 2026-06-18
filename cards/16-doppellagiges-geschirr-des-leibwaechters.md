@@ -1,9 +1,8 @@
 ---
 nummer: 16
 name: Doppellagiges Geschirr des Leibwächters
-qualitaet: Magisch
+qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-sockel: 1
 zugkraft: 42
 schutz: 86
 beweglichkeit: 28

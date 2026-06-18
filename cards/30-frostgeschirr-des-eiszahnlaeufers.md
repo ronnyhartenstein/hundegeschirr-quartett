@@ -1,9 +1,8 @@
 ---
 nummer: 30
 name: Frostgeschirr des Eiszahnläufers
-qualitaet: Episch
+qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-sockel: 2
 zugkraft: 70
 schutz: 80
 beweglichkeit: 46

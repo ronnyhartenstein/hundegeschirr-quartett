@@ -1,5 +1,5 @@
 
-Das Spiel ist ein **Trumpfquartett / Supertrumpf** mit **40 Karten** in fünf Qualitätsstufen. Die **Legendären Karten** sind Supertrümpfe – insgesamt stärker als Episch, aber jede mit einer echten Schwäche, die Gegenspiel erlaubt.
+Das Spiel ist ein **Trumpfquartett / Supertrumpf** mit **40 Karten** in fünf Qualitätsstufen. Die **Legendären Karten** sind Supertrümpfe – insgesamt stärker als Magisch, aber jede mit einer echten Schwäche, die Gegenspiel erlaubt.
 
 ## Vorschlag für die 4 Kartenwerte
 
@@ -19,13 +19,13 @@ Damit Qualitätsstufen spürbar sind, aber nicht automatisch gewinnen:
 | Qualität | Gesamtwert pro Karte |
 |---|---:|
 | Gewöhnlich | 170 |
-| Magisch | 200 |
-| Selten | 230 |
-| Episch | 260 |
+| Selten | 200 |
+| Episch | 230 |
+| Magisch | 260 |
 | Legendär | 300 |
 
 Der **Gesamtwert wird nicht auf die Karte gedruckt**, sondern dient nur fürs Balancing.  
-Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Episch auf Legendär beträgt bewusst +40 statt +30 – Legendäre sollen sich als Supertrümpfe anfühlen, aber nicht unbesiegbar sein.
+Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Magisch auf Legendär beträgt bewusst +40 statt +30 – Legendäre sollen sich als Supertrümpfe anfühlen, aber nicht unbesiegbar sein.
 
 ---
 
@@ -44,44 +44,44 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Episch auf Lege
 | 07 | Gewöhnlich | Kunstledergeschirr des Jägers | Irischer Wolfshund | 68 | 24 | 24 | 54 |
 | 08 | Gewöhnlich | Geflochtenes Geschirr des Hirten | Border Collie | 34 | 56 | 34 | 46 |
 
-## Magisch – 8 Karten
-
-| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
-|---:|---|---|---|---:|---:|---:|---:|
-| 09 | Magisch | Verstärktes Geschirr des Reisenden | Berner Sennenhund | 74 | 54 | 38 | 34 |
-| 10 | Magisch | Gepolstertes Geschirr des Spähers | Windhund | 28 | 34 | 82 | 56 |
-| 11 | Magisch | Genähtes Geschirr des Fährtenlesers | Bluthund | 28 | 32 | 50 | 90 |
-| 12 | Magisch | Ölgegerbtes Geschirr des Grenzers | Deutscher Schäferhund | 46 | 78 | 38 | 38 |
-| 13 | Magisch | Gurtgeschirr des Packtiers | Mastiff | 82 | 42 | 30 | 46 |
-| 14 | Magisch | Schnallengeschirr des Boten | Windhund | 30 | 32 | 94 | 44 |
-| 15 | Magisch | Ringgeschirr des Kriegshundes | Mastiff | 86 | 54 | 28 | 32 |
-| 16 | Magisch | Doppellagiges Geschirr des Leibwächters | Deutscher Schäferhund | 42 | 86 | 28 | 44 |
-
 ## Selten – 8 Karten
 
 | # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
 |---:|---|---|---|---:|---:|---:|---:|
-| 17 | Selten | Stahlbeschlagenes Geschirr des Ritters | Irischer Wolfshund | 78 | 88 | 32 | 32 |
-| 18 | Selten | Gepanzertes Geschirr des Paladins | Berner Sennenhund | 42 | 94 | 30 | 64 |
-| 19 | Selten | Beschlagenes Geschirr des Berittenen | Windhund | 62 | 40 | 94 | 34 |
-| 20 | Selten | Verziertes Geschirr des Adligen | Irischer Wolfshund | 36 | 48 | 64 | 82 |
-| 21 | Selten | Jagdgeschirr des Fallenstellers | Dackel | 44 | 34 | 64 | 88 |
-| 22 | Selten | Feldgeschirr des Kundschafters | Windhund | 34 | 36 | 96 | 64 |
-| 23 | Selten | Marschgeschirr des Söldners | Mastiff | 94 | 58 | 42 | 36 |
-| 24 | Selten | Kettengeflecht des Wachhundes | Deutscher Schäferhund | 54 | 84 | 30 | 62 |
+| 09 | Selten | Verstärktes Geschirr des Reisenden | Berner Sennenhund | 74 | 54 | 38 | 34 |
+| 10 | Selten | Gepolstertes Geschirr des Spähers | Windhund | 28 | 34 | 82 | 56 |
+| 11 | Selten | Genähtes Geschirr des Fährtenlesers | Bluthund | 28 | 32 | 50 | 90 |
+| 12 | Selten | Ölgegerbtes Geschirr des Grenzers | Deutscher Schäferhund | 46 | 78 | 38 | 38 |
+| 13 | Selten | Gurtgeschirr des Packtiers | Mastiff | 82 | 42 | 30 | 46 |
+| 14 | Selten | Schnallengeschirr des Boten | Windhund | 30 | 32 | 94 | 44 |
+| 15 | Selten | Ringgeschirr des Kriegshundes | Mastiff | 86 | 54 | 28 | 32 |
+| 16 | Selten | Doppellagiges Geschirr des Leibwächters | Deutscher Schäferhund | 42 | 86 | 28 | 44 |
 
 ## Episch – 8 Karten
 
 | # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
 |---:|---|---|---|---:|---:|---:|---:|
-| 25 | Episch | Runengeschirr des Beschwörers | Irischer Wolfshund | 42 | 62 | 56 | 100 |
-| 26 | Episch | Plattenpanzer des Kriegers | Mastiff | 96 | 82 | 40 | 42 |
-| 27 | Episch | Schattengeschirr des Schattenschnüfflers | Schwarzer Windhund | 44 | 32 | 100 | 84 |
-| 28 | Episch | Glanzgeschirr des Lichtbringers | Berner Sennenhund | 38 | 88 | 60 | 74 |
-| 29 | Episch | Drachengeschirr des Flammenläufers | Deutsche Dogge | 100 | 70 | 48 | 42 |
-| 30 | Episch | Frostgeschirr des Eiszahnläufers | Husky | 70 | 80 | 46 | 64 |
-| 31 | Episch | Sturmgeschirr des Windjägers | Windhund | 50 | 34 | 100 | 76 |
-| 32 | Episch | Erzgeschirr des Bergwächters | Berner Sennenhund | 90 | 76 | 40 | 54 |
+| 17 | Episch | Stahlbeschlagenes Geschirr des Ritters | Irischer Wolfshund | 78 | 88 | 32 | 32 |
+| 18 | Episch | Gepanzertes Geschirr des Paladins | Berner Sennenhund | 42 | 94 | 30 | 64 |
+| 19 | Episch | Beschlagenes Geschirr des Berittenen | Windhund | 62 | 40 | 94 | 34 |
+| 20 | Episch | Verziertes Geschirr des Adligen | Irischer Wolfshund | 36 | 48 | 64 | 82 |
+| 21 | Episch | Jagdgeschirr des Fallenstellers | Dackel | 44 | 34 | 64 | 88 |
+| 22 | Episch | Feldgeschirr des Kundschafters | Windhund | 34 | 36 | 96 | 64 |
+| 23 | Episch | Marschgeschirr des Söldners | Mastiff | 94 | 58 | 42 | 36 |
+| 24 | Episch | Kettengeflecht des Wachhundes | Deutscher Schäferhund | 54 | 84 | 30 | 62 |
+
+## Magisch – 8 Karten
+
+| # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt |
+|---:|---|---|---|---:|---:|---:|---:|
+| 25 | Magisch | Runengeschirr des Beschwörers | Irischer Wolfshund | 42 | 62 | 56 | 100 |
+| 26 | Magisch | Plattenpanzer des Kriegers | Mastiff | 96 | 82 | 40 | 42 |
+| 27 | Magisch | Schattengeschirr des Schattenschnüfflers | Schwarzer Windhund | 44 | 32 | 100 | 84 |
+| 28 | Magisch | Glanzgeschirr des Lichtbringers | Berner Sennenhund | 38 | 88 | 60 | 74 |
+| 29 | Magisch | Drachengeschirr des Flammenläufers | Deutsche Dogge | 100 | 70 | 48 | 42 |
+| 30 | Magisch | Frostgeschirr des Eiszahnläufers | Husky | 70 | 80 | 46 | 64 |
+| 31 | Magisch | Sturmgeschirr des Windjägers | Windhund | 50 | 34 | 100 | 76 |
+| 32 | Magisch | Erzgeschirr des Bergwächters | Berner Sennenhund | 90 | 76 | 40 | 54 |
 
 ## Legendär – 8 Karten
 
@@ -100,11 +100,11 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Episch auf Lege
 
 ## Warum das gut funktioniert
 
-- **Epische Karten sind insgesamt stärker**, aber nicht überall.
-- **Gewöhnliche Spezialisten können epische Karten schlagen**, z. B.:
+- **Magische Karten sind insgesamt stärker**, aber nicht überall.
+- **Gewöhnliche Spezialisten können magische Karten schlagen**, z. B.:
   - Leichtes Geschirr des Läufers: Beweglichkeit 84 schlägt Plattenpanzer des Kriegers mit Beweglichkeit 40.
   - Strapazierfähiges Geschirr des Wächters: Schutz 82 schlägt Schattengeschirr mit Schutz 32.
-  - Einfaches Leder des Fährtenhundes: Instinkt 84 schlägt viele epische Karten außer Runengeschirr.
+  - Einfaches Leder des Fährtenhundes: Instinkt 84 schlägt viele magische Karten außer Runengeschirr.
 - Jede Qualitätsstufe hat ungefähr gleichmäßig verteilte Stärken.
 - Kein einzelner Wert ist dauerhaft der beste Pick.
 

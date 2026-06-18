@@ -1,9 +1,8 @@
 ---
 nummer: 28
 name: Glanzgeschirr des Lichtbringers
-qualitaet: Episch
+qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-sockel: 2
 zugkraft: 38
 schutz: 88
 beweglichkeit: 60
