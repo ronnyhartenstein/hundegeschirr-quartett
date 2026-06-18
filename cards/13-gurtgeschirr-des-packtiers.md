@@ -1,0 +1,17 @@
+---
+nummer: 13
+name: Gurtgeschirr des Packtiers
+qualitaet: Magisch
+qualitaetsfarbe: smaragdgrüner Akzent
+sockel: 1
+zugkraft: 82
+schutz: 42
+beweglichkeit: 30
+instinkt: 46
+hunderasse: Mastiff
+pose: steht beladen mit Packtaschen auf einem Gebirgspfad und blickt stoisch nach vorn
+hintergrund: Gebirgspfad mit Nebel
+geschirr_beschreibung: breites Gurtgeschirr aus grün-gerubbeltem Leder mit vielen Taschen und Trageriemen
+---
+
+Was er trägt, trägt er bis ans Ende der Welt – und klagt kein einziges Mal.

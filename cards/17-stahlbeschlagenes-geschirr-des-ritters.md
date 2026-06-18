@@ -1,0 +1,17 @@
+---
+nummer: 17
+name: Stahlbeschlagenes Geschirr des Ritters
+qualitaet: Selten
+qualitaetsfarbe: blauer magischer Akzent
+sockel: 1
+zugkraft: 78
+schutz: 88
+beweglichkeit: 32
+instinkt: 32
+hunderasse: Irischer Wolfshund
+pose: sitzt aufrecht und würdevoll vor einem Burgtor mit wallendem Banner im Hintergrund
+hintergrund: Burginnenhof bei Sonnenuntergang
+geschirr_beschreibung: blau schimmerndes Leder mit polierten Stahlplatten, feinen Ketten und eingraviertem Ritterwappen
+---
+
+Ehre ist sein Schild – und Stahl ist sein Geschirr.
