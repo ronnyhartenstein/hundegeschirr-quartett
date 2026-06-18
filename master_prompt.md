@@ -11,7 +11,7 @@ Die Karte soll wie eine hochwertige Fantasy-Quartettkarte aussehen:
 - halb realistischer digitaler Malstil, cineastische Beleuchtung, detailreich
 
 Kartentitel oben:
-„[QUALITÄT]es Geschirr des [NAME]”
+„[NAME]”
 
 Untertitel:
 „[QUALITÄT]es Hundegeschirr”
