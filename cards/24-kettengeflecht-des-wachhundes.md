@@ -3,10 +3,10 @@ nummer: 24
 name: Kettengeflecht des Wachhundes
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 54
-schutz: 84
-beweglichkeit: 30
-instinkt: 62
+zugkraft: 5
+schutz: 9
+beweglichkeit: 3
+instinkt: 6
 hunderasse: Deutscher Schäferhund
 pose: sitzt nachts im Fackellicht vor dem Burgtor und blickt unverwandt in die Dunkelheit
 hintergrund: Burginnenhof bei Sonnenuntergang

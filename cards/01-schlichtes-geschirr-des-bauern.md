@@ -3,10 +3,10 @@ nummer: 01
 name: Schlichtes Geschirr des Bauern
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 44
-schutz: 44
-beweglichkeit: 40
-instinkt: 42
+zugkraft: 5
+schutz: 4
+beweglichkeit: 4
+instinkt: 4
 hunderasse: Berner Sennenhund
 pose: steht ruhig auf einem Feldweg vor einem Bauerndorf
 hintergrund: mittelalterliches Dorf am Waldrand

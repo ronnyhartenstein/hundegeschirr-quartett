@@ -3,10 +3,10 @@ nummer: 02
 name: Robustes Geschirr des Knechts
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 76
-schutz: 42
-beweglichkeit: 30
-instinkt: 22
+zugkraft: 8
+schutz: 4
+beweglichkeit: 3
+instinkt: 2
 hunderasse: Mastiff
 pose: steht breitbeinig und kraftvoll auf einem Hofplatz
 hintergrund: mittelalterliches Dorf am Waldrand

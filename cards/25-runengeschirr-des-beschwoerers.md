@@ -3,10 +3,10 @@ nummer: 25
 name: Runengeschirr des Beschwörers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 42
-schutz: 62
-beweglichkeit: 56
-instinkt: 100
+zugkraft: 4
+schutz: 6
+beweglichkeit: 6
+instinkt: 10
 hunderasse: Irischer Wolfshund
 pose: steht inmitten schwebender Runen-Symbole vor einer verfallenen Ruine im Morgenlicht
 hintergrund: verlassene Ruine im Morgenlicht

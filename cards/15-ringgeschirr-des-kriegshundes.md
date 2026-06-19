@@ -3,10 +3,10 @@ nummer: 15
 name: Ringgeschirr des Kriegshundes
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 86
-schutz: 54
-beweglichkeit: 28
-instinkt: 32
+zugkraft: 9
+schutz: 5
+beweglichkeit: 3
+instinkt: 3
 hunderasse: Mastiff
 pose: steht bedrohlich auf einem Burginnenhof und fletscht leicht die Zähne
 hintergrund: Burginnenhof bei Sonnenuntergang

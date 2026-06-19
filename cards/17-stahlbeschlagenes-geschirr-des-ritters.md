@@ -3,10 +3,10 @@ nummer: 17
 name: Stahlbeschlagenes Geschirr des Ritters
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 78
-schutz: 88
-beweglichkeit: 32
-instinkt: 32
+zugkraft: 8
+schutz: 9
+beweglichkeit: 3
+instinkt: 3
 hunderasse: Irischer Wolfshund
 pose: sitzt aufrecht und würdevoll vor einem Burgtor mit wallendem Banner im Hintergrund
 hintergrund: Burginnenhof bei Sonnenuntergang

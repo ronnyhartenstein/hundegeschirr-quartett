@@ -3,10 +3,10 @@ nummer: 11
 name: Genähtes Geschirr des Fährtenlesers
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 28
-schutz: 32
-beweglichkeit: 50
-instinkt: 90
+zugkraft: 3
+schutz: 3
+beweglichkeit: 5
+instinkt: 9
 hunderasse: Bluthund
 pose: hält die Schnauze tief am Boden eines Waldweges und folgt einer unsichtbaren Spur
 hintergrund: alter Waldweg mit Wegweisern

@@ -3,10 +3,10 @@ nummer: 37
 name: Kronengeschirr des Hochkönigs
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 80
-schutz: 78
-beweglichkeit: 72
-instinkt: 70
+zugkraft: 8
+schutz: 8
+beweglichkeit: 7
+instinkt: 7
 hunderasse: Neapolitanischer Mastiff
 pose: sitzt auf einem steinernen Thron im Burginnenhof, die Krone des Reiches im Blick
 hintergrund: Burginnenhof bei Sonnenuntergang

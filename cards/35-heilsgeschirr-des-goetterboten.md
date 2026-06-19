@@ -3,10 +3,10 @@ nummer: 35
 name: Heilsgeschirr des Götterboten
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 54
-schutz: 100
-beweglichkeit: 70
-instinkt: 76
+zugkraft: 5
+schutz: 10
+beweglichkeit: 7
+instinkt: 8
 hunderasse: Leonberger
 pose: steht in einem Lichtkegel, der direkt vom Himmel herabfällt, Federn und Goldpartikel schweben um ihn
 hintergrund: Burginnenhof bei Sonnenuntergang

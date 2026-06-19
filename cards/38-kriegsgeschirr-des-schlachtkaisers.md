@@ -3,10 +3,10 @@ nummer: 38
 name: Kriegsgeschirr des Schlachtkaisers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 94
-schutz: 92
-beweglichkeit: 54
-instinkt: 60
+zugkraft: 10
+schutz: 9
+beweglichkeit: 5
+instinkt: 6
 hunderasse: Kaukasischer Owtscharka
 pose: steht triumphierend auf einem zerstörten Schlachtfeld, der Horizont brennt hinter ihm
 hintergrund: verlassene Ruine im Morgenlicht

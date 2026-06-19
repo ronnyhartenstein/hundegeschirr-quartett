@@ -3,10 +3,10 @@ nummer: 31
 name: Sturmgeschirr des Windjägers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 50
-schutz: 34
-beweglichkeit: 100
-instinkt: 76
+zugkraft: 5
+schutz: 3
+beweglichkeit: 10
+instinkt: 8
 hunderasse: Windhund
 pose: rast über eine Steinbrücke, umgeben von Blitzen und peitschendem Sturmwind
 hintergrund: Steinbrücke über einen Fluss

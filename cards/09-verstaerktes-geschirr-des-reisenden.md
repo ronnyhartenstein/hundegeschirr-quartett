@@ -3,10 +3,10 @@ nummer: 09
 name: Verstärktes Geschirr des Reisenden
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 74
-schutz: 54
-beweglichkeit: 38
-instinkt: 34
+zugkraft: 8
+schutz: 5
+beweglichkeit: 4
+instinkt: 3
 hunderasse: Berner Sennenhund
 pose: läuft beharrlich auf einem langen Gebirgspfad, Satteltaschen vollgepackt
 hintergrund: Gebirgspfad mit Nebel

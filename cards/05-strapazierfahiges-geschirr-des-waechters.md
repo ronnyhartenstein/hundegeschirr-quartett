@@ -3,10 +3,10 @@ nummer: 05
 name: Strapazierfähiges Geschirr des Wächters
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 28
-schutz: 82
-beweglichkeit: 30
-instinkt: 30
+zugkraft: 3
+schutz: 8
+beweglichkeit: 3
+instinkt: 3
 hunderasse: Deutscher Schäferhund
 pose: sitzt wachsam vor einem Burgtor und blickt direkt in die Kamera
 hintergrund: Burginnenhof bei Sonnenuntergang

@@ -3,10 +3,10 @@ nummer: 14
 name: Schnallengeschirr des Boten
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 30
-schutz: 32
-beweglichkeit: 94
-instinkt: 44
+zugkraft: 3
+schutz: 3
+beweglichkeit: 10
+instinkt: 4
 hunderasse: Windhund
 pose: sprintet in vollem Tempo durch einen belebten Marktplatz
 hintergrund: Marktplatz einer Fantasy-Stadt

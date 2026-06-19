@@ -3,10 +3,10 @@ nummer: 23
 name: Marschgeschirr des Söldners
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 94
-schutz: 58
-beweglichkeit: 42
-instinkt: 36
+zugkraft: 9
+schutz: 6
+beweglichkeit: 4
+instinkt: 4
 hunderasse: Mastiff
 pose: steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund
 hintergrund: verlassene Ruine im Morgenlicht

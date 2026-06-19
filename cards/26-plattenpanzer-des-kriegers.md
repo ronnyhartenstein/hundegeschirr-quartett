@@ -3,10 +3,10 @@ nummer: 26
 name: Plattenpanzer des Kriegers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 96
-schutz: 82
-beweglichkeit: 40
-instinkt: 42
+zugkraft: 10
+schutz: 8
+beweglichkeit: 4
+instinkt: 4
 hunderasse: Mastiff
 pose: steht unerschütterlich im Mittelpunkt eines Schlachtfeldes, Burgmauern im Hintergrund
 hintergrund: Burginnenhof bei Sonnenuntergang

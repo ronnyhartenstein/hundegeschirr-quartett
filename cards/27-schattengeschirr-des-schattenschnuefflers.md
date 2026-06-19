@@ -3,10 +3,10 @@ nummer: 27
 name: Schattengeschirr des Schattenschnüfflers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 44
-schutz: 32
-beweglichkeit: 100
-instinkt: 84
+zugkraft: 4
+schutz: 3
+beweglichkeit: 10
+instinkt: 9
 hunderasse: Schwarzer Windhund
 pose: gleitet lautlos durch den Schatten einer Ruinenwand, kaum sichtbar im Zwielicht
 hintergrund: verlassene Ruine im Morgenlicht

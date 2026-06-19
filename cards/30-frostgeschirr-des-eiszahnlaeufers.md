@@ -3,10 +3,10 @@ nummer: 30
 name: Frostgeschirr des Eiszahnläufers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 70
-schutz: 80
-beweglichkeit: 46
-instinkt: 64
+zugkraft: 7
+schutz: 8
+beweglichkeit: 5
+instinkt: 6
 hunderasse: Husky
 pose: steht majestätisch auf einem schneebedeckten Gebirgspfad, Atem als Dampfwolke sichtbar
 hintergrund: Gebirgspfad mit Nebel

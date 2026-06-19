@@ -3,10 +3,10 @@ nummer: 36
 name: Geistergeschirr des Phantomläufers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 44
-schutz: 56
-beweglichkeit: 100
-instinkt: 100
+zugkraft: 4
+schutz: 6
+beweglichkeit: 10
+instinkt: 10
 hunderasse: Azawakh
 pose: ist halb in eine andere Dimension entrückt – Körper noch sichtbar, aber bereits verblassend
 hintergrund: verlassene Ruine im Morgenlicht

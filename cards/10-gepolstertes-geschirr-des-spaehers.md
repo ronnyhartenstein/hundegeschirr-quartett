@@ -3,10 +3,10 @@ nummer: 10
 name: Gepolstertes Geschirr des Spähers
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 28
-schutz: 34
-beweglichkeit: 82
-instinkt: 56
+zugkraft: 3
+schutz: 3
+beweglichkeit: 8
+instinkt: 6
 hunderasse: Windhund
 pose: späht um eine Mauerecke einer verlassenen Ruine
 hintergrund: verlassene Ruine im Morgenlicht

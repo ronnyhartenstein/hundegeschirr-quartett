@@ -3,10 +3,10 @@ nummer: 07
 name: Kunstledergeschirr des Jägers
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 68
-schutz: 24
-beweglichkeit: 24
-instinkt: 54
+zugkraft: 7
+schutz: 2
+beweglichkeit: 2
+instinkt: 6
 hunderasse: Irischer Wolfshund
 pose: steht stolz auf einem Waldweg und blickt in das Dickicht
 hintergrund: alter Waldweg mit Wegweisern

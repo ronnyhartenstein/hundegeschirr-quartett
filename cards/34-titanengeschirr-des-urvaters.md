@@ -3,10 +3,10 @@ nummer: 34
 name: Titanengeschirr des Urvaters
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 100
-schutz: 80
-beweglichkeit: 52
-instinkt: 68
+zugkraft: 10
+schutz: 8
+beweglichkeit: 5
+instinkt: 7
 hunderasse: Tibetischer Mastiff
 pose: steht auf einem Berggipfel über den Wolken, unerschütterlich wie der Fels selbst
 hintergrund: Gebirgspfad mit Nebel

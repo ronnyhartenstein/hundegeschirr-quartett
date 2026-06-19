@@ -3,10 +3,10 @@ nummer: 19
 name: Beschlagenes Geschirr des Berittenen
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 62
-schutz: 40
-beweglichkeit: 94
-instinkt: 34
+zugkraft: 7
+schutz: 4
+beweglichkeit: 9
+instinkt: 3
 hunderasse: Windhund
 pose: galoppiert mit federleichtem Schritt über einen Gebirgspfad
 hintergrund: Gebirgspfad mit Nebel

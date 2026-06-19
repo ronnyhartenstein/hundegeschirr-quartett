@@ -4,7 +4,7 @@ Ein mittelalterliches Fantasy-Trumpfquartett mit Hundegeschirren. 40 Karten in f
 
 ## Spielprinzip
 
-Jede Karte hat vier Werte (1–100, höher ist besser):
+Jede Karte hat vier Werte (1–10, höher ist besser):
 
 | Wert | Bedeutung |
 |---|---|
@@ -19,11 +19,11 @@ Spieler wählen abwechselnd einen Wert – wer den höheren Wert hat, gewinnt be
 
 | Stufe | Gesamtwert | Farbe |
 |---|---|---|
-| Gewöhnlich | 170 | Weiß/Silber |
-| Selten | 200 | Smaragdgrün |
-| Episch | 230 | Blau |
-| Magisch | 260 | Violett |
-| Legendär | 300 | Orange/Gold |
+| Gewöhnlich | 17 | Weiß/Silber |
+| Selten | 20 | Smaragdgrün |
+| Episch | 23 | Blau |
+| Magisch | 26 | Violett |
+| Legendär | 30 | Orange/Gold |
 
 ## Voraussetzungen
 

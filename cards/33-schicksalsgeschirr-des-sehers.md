@@ -3,10 +3,10 @@ nummer: 33
 name: Schicksalsgeschirr des Sehers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 48
-schutz: 70
-beweglichkeit: 82
-instinkt: 100
+zugkraft: 5
+schutz: 7
+beweglichkeit: 8
+instinkt: 10
 hunderasse: Tschechoslowakischer Wolfhund
 pose: steht reglos vor einem flackernden Orakelfeuer und blickt in eine unsichtbare Ferne
 hintergrund: verlassene Ruine im Morgenlicht

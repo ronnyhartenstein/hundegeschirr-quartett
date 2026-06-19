@@ -3,10 +3,10 @@ nummer: 04
 name: Baumwollgeschirr des Boten
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 32
-schutz: 26
-beweglichkeit: 80
-instinkt: 32
+zugkraft: 3
+schutz: 3
+beweglichkeit: 8
+instinkt: 3
 hunderasse: Windhund
 pose: läuft mit gestrecktem Körper über eine Steinbrücke
 hintergrund: Steinbrücke über einen Fluss

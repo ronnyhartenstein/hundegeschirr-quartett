@@ -3,10 +3,10 @@ nummer: 06
 name: Leichtes Geschirr des Läufers
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 22
-schutz: 28
-beweglichkeit: 84
-instinkt: 36
+zugkraft: 2
+schutz: 3
+beweglichkeit: 8
+instinkt: 4
 hunderasse: Windhund
 pose: streckt sich im vollen Galopp auf einem Waldweg
 hintergrund: alter Waldweg mit Wegweisern

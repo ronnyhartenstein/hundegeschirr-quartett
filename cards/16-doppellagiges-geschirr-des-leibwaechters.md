@@ -3,10 +3,10 @@ nummer: 16
 name: Doppellagiges Geschirr des Leibwächters
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 42
-schutz: 86
-beweglichkeit: 28
-instinkt: 44
+zugkraft: 4
+schutz: 9
+beweglichkeit: 3
+instinkt: 4
 hunderasse: Deutscher Schäferhund
 pose: sitzt dicht neben einem Thronsessel und blickt unverwandt auf den Eingang
 hintergrund: Burginnenhof bei Sonnenuntergang

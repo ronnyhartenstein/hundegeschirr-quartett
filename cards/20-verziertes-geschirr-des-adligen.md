@@ -3,10 +3,10 @@ nummer: 20
 name: Verziertes Geschirr des Adligen
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 36
-schutz: 48
-beweglichkeit: 64
-instinkt: 82
+zugkraft: 4
+schutz: 5
+beweglichkeit: 6
+instinkt: 8
 hunderasse: Irischer Wolfshund
 pose: steht elegant auf dem Marktplatz einer Fantasy-Stadt und beobachtet das Treiben
 hintergrund: Marktplatz einer Fantasy-Stadt

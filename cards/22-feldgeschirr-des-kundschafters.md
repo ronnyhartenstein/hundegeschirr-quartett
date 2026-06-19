@@ -3,10 +3,10 @@ nummer: 22
 name: Feldgeschirr des Kundschafters
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 34
-schutz: 36
-beweglichkeit: 96
-instinkt: 64
+zugkraft: 3
+schutz: 4
+beweglichkeit: 10
+instinkt: 6
 hunderasse: Windhund
 pose: späht von einer Anhöhe über das Gelände in die Ferne
 hintergrund: verlassene Ruine im Morgenlicht

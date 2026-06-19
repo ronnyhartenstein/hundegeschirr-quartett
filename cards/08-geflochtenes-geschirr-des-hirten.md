@@ -3,10 +3,10 @@ nummer: 08
 name: Geflochtenes Geschirr des Hirten
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 34
-schutz: 56
-beweglichkeit: 34
-instinkt: 46
+zugkraft: 3
+schutz: 6
+beweglichkeit: 3
+instinkt: 5
 hunderasse: Border Collie
 pose: steht aufrecht auf einer Anhöhe und überblickt eine Wiese
 hintergrund: mittelalterliches Dorf am Waldrand

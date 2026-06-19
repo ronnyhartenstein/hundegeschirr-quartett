@@ -51,13 +51,13 @@ Szenenspezifische Bildbeschreibung für gpt-image-2 (ergänzt das master_prompt.
 
 | Qualität   | Gesamtwert |
 |------------|------------|
-| Gewöhnlich | 170        |
-| Selten     | 200        |
-| Episch     | 230        |
-| Magisch    | 260        |
-| Legendär   | 300        |
+| Gewöhnlich | 17         |
+| Selten     | 20         |
+| Episch     | 23         |
+| Magisch    | 26         |
+| Legendär   | 30         |
 
-Werte gehen von 1–100, höher ist besser. Jede Karte hat eine Stärke und Schwächen – auch gewöhnliche Karten können magische in einzelnen Werten schlagen.
+Werte gehen von 1–10, höher ist besser. Jede Karte hat eine Stärke und Schwächen – auch gewöhnliche Karten können magische in einzelnen Werten schlagen.
 
 ## Placeholder-Mapping (master_prompt.md → Frontmatter)
 

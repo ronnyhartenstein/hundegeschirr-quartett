@@ -3,10 +3,10 @@ nummer: 21
 name: Jagdgeschirr des Fallenstellers
 qualitaet: Episch
 qualitaetsfarbe: blauer magischer Akzent
-zugkraft: 44
-schutz: 34
-beweglichkeit: 64
-instinkt: 88
+zugkraft: 4
+schutz: 3
+beweglichkeit: 7
+instinkt: 9
 hunderasse: Dackel
 pose: späht listig hinter einer Wurzel hervor und beobachtet etwas außerhalb des Bildes
 hintergrund: alter Waldweg mit Wegweisern

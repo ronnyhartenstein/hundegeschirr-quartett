@@ -3,10 +3,10 @@ nummer: 40
 name: Weltgeschirr des Weltenwanderers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 76
-schutz: 74
-beweglichkeit: 76
-instinkt: 74
+zugkraft: 8
+schutz: 7
+beweglichkeit: 8
+instinkt: 7
 hunderasse: Kangal
 pose: steht auf einem Hügel über einer endlosen Landschaft und überblickt ruhig die ganze Welt
 hintergrund: Gebirgspfad mit Nebel

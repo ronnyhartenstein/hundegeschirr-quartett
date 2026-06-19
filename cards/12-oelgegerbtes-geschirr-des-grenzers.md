@@ -3,10 +3,10 @@ nummer: 12
 name: Ölgegerbtes Geschirr des Grenzers
 qualitaet: Selten
 qualitaetsfarbe: smaragdgrüner Akzent
-zugkraft: 46
-schutz: 78
-beweglichkeit: 38
-instinkt: 38
+zugkraft: 5
+schutz: 7
+beweglichkeit: 4
+instinkt: 4
 hunderasse: Deutscher Schäferhund
 pose: steht mit erhobenem Kopf an einer alten Grenzstein-Markierung im Nebel
 hintergrund: verlassene Ruine im Morgenlicht

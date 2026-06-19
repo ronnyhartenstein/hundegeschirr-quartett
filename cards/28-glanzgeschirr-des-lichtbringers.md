@@ -3,10 +3,10 @@ nummer: 28
 name: Glanzgeschirr des Lichtbringers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 38
-schutz: 88
-beweglichkeit: 60
-instinkt: 74
+zugkraft: 4
+schutz: 9
+beweglichkeit: 6
+instinkt: 7
 hunderasse: Berner Sennenhund
 pose: steht im strahlenden Lichtkegel eines Sonnenuntergangs auf einem Burginnenhof
 hintergrund: Burginnenhof bei Sonnenuntergang

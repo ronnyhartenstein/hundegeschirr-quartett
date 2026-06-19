@@ -3,10 +3,10 @@ nummer: 03
 name: Einfaches Leder des Fährtenhundes
 qualitaet: Gewöhnlich
 qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 24
-schutz: 28
-beweglichkeit: 34
-instinkt: 84
+zugkraft: 2
+schutz: 3
+beweglichkeit: 3
+instinkt: 9
 hunderasse: Dackel
 pose: späht mit gesenktem Kopf tief in einen Waldpfad hinein
 hintergrund: alter Waldweg mit Wegweisern

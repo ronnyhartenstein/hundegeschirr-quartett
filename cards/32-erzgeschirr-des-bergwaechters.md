@@ -3,10 +3,10 @@ nummer: 32
 name: Erzgeschirr des Bergwächters
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 90
-schutz: 76
-beweglichkeit: 40
-instinkt: 54
+zugkraft: 9
+schutz: 8
+beweglichkeit: 4
+instinkt: 5
 hunderasse: Berner Sennenhund
 pose: steht wie ein Fels auf einem Gebirgspfad, Bergmassiv im Rücken
 hintergrund: Gebirgspfad mit Nebel

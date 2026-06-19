@@ -3,10 +3,10 @@ nummer: 39
 name: Sterngeschirr des Sternenwanderers
 qualitaet: Legendär
 qualitaetsfarbe: gold-orangefarbener magischer Akzent
-zugkraft: 56
-schutz: 62
-beweglichkeit: 88
-instinkt: 94
+zugkraft: 6
+schutz: 6
+beweglichkeit: 9
+instinkt: 9
 hunderasse: Saarloos-Wolfhund
 pose: läuft unter einem überwältigenden Sternenhimmel über einen einsamen Gebirgspfad
 hintergrund: Gebirgspfad mit Nebel

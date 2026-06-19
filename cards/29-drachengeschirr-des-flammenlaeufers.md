@@ -3,10 +3,10 @@ nummer: 29
 name: Drachengeschirr des Flammenläufers
 qualitaet: Magisch
 qualitaetsfarbe: violetter magischer Akzent
-zugkraft: 100
-schutz: 70
-beweglichkeit: 48
-instinkt: 42
+zugkraft: 10
+schutz: 7
+beweglichkeit: 5
+instinkt: 4
 hunderasse: Deutsche Dogge
 pose: steht auf einem Gebirgspfad, umgeben von lodernden Flammen und Glutpartikeln
 hintergrund: Gebirgspfad mit Nebel
