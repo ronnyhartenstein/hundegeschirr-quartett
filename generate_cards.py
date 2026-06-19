@@ -127,10 +127,31 @@ def ensure_webp(image_bytes: bytes) -> bytes:
     return buf.getvalue()
 
 
+def _next_backup_num(out: Path) -> int:
+    """Return the next free integer suffix for backup files of *out*."""
+    nums = []
+    for p in out.parent.glob(f"{out.stem}_*{out.suffix}"):
+        tail = p.stem[len(out.stem) + 1:]
+        if tail.isdigit():
+            nums.append(int(tail))
+    return max(nums, default=0) + 1
+
+
+def migrate_ts_backups(out: Path) -> None:
+    """Rename old timestamp-style backups (stem_YYYYMMDD_HHMMSS) to stem_N."""
+    for p in sorted(out.parent.glob(f"{out.stem}_*{out.suffix}")):
+        tail = p.stem[len(out.stem) + 1:]
+        if re.fullmatch(r"\d{8}_\d{6}", tail):
+            n = _next_backup_num(out)
+            new_path = p.with_stem(f"{out.stem}_{n}")
+            p.rename(new_path)
+            print(f"  [{_ts()}] [MIG]  {p.name} → {new_path.name}")
+
+
 def backup_existing(out: Path) -> None:
-    """Rename an existing output file with a timestamp suffix before overwriting."""
-    ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    backup = out.with_stem(f"{out.stem}_{ts}")
+    """Rename an existing output file with the next available integer suffix."""
+    n = _next_backup_num(out)
+    backup = out.with_stem(f"{out.stem}_{n}")
     out.rename(backup)
     print(f"  [{_ts()}] [BAK]  Backed up → {backup.name}")
 
@@ -205,39 +226,50 @@ def process_card(
     master_template: str,
     force: bool,
     quality: str,
-) -> bool:
-    """Generate and save the image for one card. Returns True if image was generated."""
+    variants: int = 1,
+) -> int:
+    """Generate and save image(s) for one card. Returns number of images generated."""
     out = output_path_for(card_path)
 
-    if out.exists() and not force:
+    migrate_ts_backups(out)
+
+    if out.exists() and not force and variants == 1:
         print(f"  [{_ts()}] [SKIP] Already exists: {out.relative_to(Path(__file__).parent)}")
-        return False
+        return 0
 
     prompt = build_prompt(master_template, card_path)
     if prompt is None:
-        return False
+        return 0
 
-    print(f"  [{_ts()}] [GEN]  {card_path.relative_to(CARDS_DIR)} → {out.name}")
+    generated = 0
+    for v in range(variants):
+        variant_label = f" (variant {v + 1}/{variants})" if variants > 1 else ""
+        print(f"  [{_ts()}] [GEN]  {card_path.relative_to(CARDS_DIR)} → {out.name}{variant_label}")
 
-    if out.exists():
-        backup_existing(out)
+        if out.exists():
+            backup_existing(out)
 
-    t0 = time.monotonic()
-    try:
-        image_bytes = generate_image(client, prompt, quality)
-    except Exception as exc:
-        print(f"  [{_ts()}] [ERR]  API error for {card_path.name}: {exc}")
-        return False
+        out.parent.mkdir(parents=True, exist_ok=True)
 
-    webp_bytes = ensure_webp(image_bytes)
-    elapsed = time.monotonic() - t0
+        t0 = time.monotonic()
+        try:
+            image_bytes = generate_image(client, prompt, quality)
+        except Exception as exc:
+            print(f"  [{_ts()}] [ERR]  API error for {card_path.name}: {exc}")
+            break
 
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_bytes(webp_bytes)
+        webp_bytes = ensure_webp(image_bytes)
+        elapsed = time.monotonic() - t0
+        out.write_bytes(webp_bytes)
+        generated += 1
 
-    size_kb = len(webp_bytes) / 1024
-    print(f"  [{_ts()}] [DONE] {elapsed:.1f}s — {size_kb:.0f} KB → {out.relative_to(Path(__file__).parent)}")
-    return True
+        size_kb = len(webp_bytes) / 1024
+        print(f"  [{_ts()}] [DONE] {elapsed:.1f}s — {size_kb:.0f} KB → {out.relative_to(Path(__file__).parent)}")
+
+        if v < variants - 1:
+            time.sleep(RATE_LIMIT_DELAY)
+
+    return generated
 
 
 def collect_cards(target: str | None) -> list[Path]:
@@ -292,6 +324,13 @@ def main() -> None:
         help="JPEG quality for --print (1–95, default: 95).",
     )
     parser.add_argument(
+        "--variants",
+        type=int,
+        default=1,
+        metavar="N",
+        help="Number of image variants to generate per card (default: 1).",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Print the prompt for each card without calling the API.",
@@ -311,7 +350,7 @@ def main() -> None:
         sys.exit("Error: OPENAI_API_KEY environment variable not set.")
 
     t_start = time.monotonic()
-    print(f"[{_ts()}] Started — quality={args.quality}, force={args.force}, format=WebP (quality={WEBP_QUALITY})")
+    print(f"[{_ts()}] Started — quality={args.quality}, force={args.force}, variants={args.variants}, format=WebP (quality={WEBP_QUALITY})")
 
     master_template = load_master_template()
     cards = collect_cards(args.target)
@@ -339,11 +378,12 @@ def main() -> None:
 
     for i, card_path in enumerate(cards, start=1):
         print(f"\n[{_ts()}] [{i:3}/{total}] {card_path.stem}")
-        was_generated = process_card(
-            client, card_path, master_template, force=args.force, quality=args.quality
+        count = process_card(
+            client, card_path, master_template,
+            force=args.force, quality=args.quality, variants=args.variants,
         )
-        if was_generated:
-            generated += 1
+        if count > 0:
+            generated += count
             if i < total:
                 time.sleep(RATE_LIMIT_DELAY)
         else:
