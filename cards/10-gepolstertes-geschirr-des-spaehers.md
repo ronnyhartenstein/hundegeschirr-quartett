@@ -7,10 +7,10 @@ schutz: 3
 beweglichkeit: 8
 instinkt: 7
 knurren: 3
-hunderasse: Windhund
-pose: späht um eine Mauerecke einer verlassenen Ruine
+hunderasse: Kelpie
+pose: späht um eine Mauerecke einer verlassenen Ruine, Ohren gespitzt, Körper angespannt
 hintergrund: verlassene Ruine im Morgenlicht
-geschirr_beschreibung: dunkelgrünes gepolstertes Leder mit Runen-Stichen und lautlosen Stoffunterlagen an den Schnallen
+geschirr_beschreibung: dunkelgrünes gepolstertes Leder mit smaragdgrünen Runen-Stichen und lautlosen Stoffunterlagen an den Schnallen
 ---
 
 ## Flavourtext
@@ -19,4 +19,4 @@ Sehen, ohne gesehen zu werden – das ist seine größte Gabe.
 
 ## Bildprompt
 
-Ein Windhund späht vorsichtig um eine verwitterte Mauerecke einer verlassenen Ruine, zartes Morgenlicht fällt durch Mauerritzen. Er trägt ein dunkelgrünes gepolstertes Ledergeschirr mit smaragdgrünen Runen-Stichen und lautlosen Stoffunterlagen an den Schnallen. Smaragdgrüne Akzente. Gedämpftes Licht, Stille und Spannung.
+Ein Kelpie späht vorsichtig um eine verwitterte Mauerecke einer verlassenen Ruine, Ohren gespitzt, zartes Morgenlicht fällt durch Mauerritzen. Er trägt dunkelgrünes gepolstertes Ledergeschirr mit smaragdgrünen Runen-Stichen und lautlosen Stoffunterlagen an den Schnallen. Smaragdgrüne Akzente. Gedämpftes Licht, Stille und Spannung.

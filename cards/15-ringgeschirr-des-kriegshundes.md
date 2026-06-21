@@ -7,16 +7,16 @@ schutz: 5
 beweglichkeit: 3
 instinkt: 1
 knurren: 6
-hunderasse: Mastiff
-pose: steht bedrohlich auf einem Burginnenhof und fletscht leicht die Zähne
+hunderasse: Bulldogge
+pose: steht breit und niedrig auf einem Burginnenhof, massiver Kiefer vorgestreckt
 hintergrund: Burginnenhof bei Sonnenuntergang
-geschirr_beschreibung: schweres Leder mit grün schimmernden Stahlringen, Metallnieten und einer Kampfkettenöse
+geschirr_beschreibung: schweres Leder mit smaragdgrün schimmernden Stahlringen, Metallnieten und einer Kampfkettenöse
 ---
 
 ## Flavourtext
 
-Die Ringe rasseln – und Feinde besinnen sich schnell eines Besseren.
+Was er beißt, gibt er nicht mehr her – das ist sein einziges Prinzip.
 
 ## Bildprompt
 
-Ein massiver Mastiff steht bedrohlich auf einem Burginnenhof im goldenen Sonnenuntergangslicht und fletscht leicht die Zähne. Er trägt schweres Leder mit smaragdgrün schimmernden Stahlringen, Metallnieten und einer Kampfkettenöse am Brustgurt. Smaragdgrüne Akzente. Dramatisches Abendlicht, einschüchternde Präsenz.
+Eine breite Englische Bulldogge steht bedrohlich auf einem Burginnenhof im goldenen Sonnenuntergangslicht, massiver Kiefer vorgestreckt, Körper geduckter Kampfbereitschaft. Sie trägt schweres Leder mit smaragdgrün schimmernden Stahlringen, Metallnieten und einer Kampfkettenöse am Brustgurt. Smaragdgrüne Akzente. Dramatisches Abendlicht, einschüchternde Präsenz.

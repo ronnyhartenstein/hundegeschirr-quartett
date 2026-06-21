@@ -7,8 +7,8 @@ schutz: 6
 beweglichkeit: 4
 instinkt: 2
 knurren: 6
-hunderasse: Mastiff
-pose: steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund
+hunderasse: Boxer
+pose: steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund, breiter Kiefer vorgeschoben
 hintergrund: verlassene Ruine im Morgenlicht
 geschirr_beschreibung: violett schimmerndes Leder mit massiven Metallplatten, Münzanhängern und Kampfspuren
 ---
@@ -19,4 +19,4 @@ Bezahlt – und trotzdem loyal, jedenfalls solange der Sold stimmt.
 
 ## Bildprompt
 
-Ein massiver Mastiff steht kampfbereit auf einem schlammigen Boden, verfallene Ruinen im Morgenlicht hinter ihm. Er trägt violett schimmerndes Leder mit massiven Metallplatten, klimpernden Münzanhängern und sichtbaren Kampfspuren. Violetter Akzent. Hartes Morgenlicht, Schlachtfeldatmosphäre, stoische Entschlossenheit.
+Ein Boxer steht kampfbereit auf einem schlammigen Boden, verfallene Ruinen im Morgenlicht hinter ihm, sein breiter Kiefer entschlossen vorgeschoben. Er trägt violett schimmerndes Leder mit massiven Metallplatten, klimpernden Münzanhängern und sichtbaren Kampfspuren. Violetter Akzent. Hartes Morgenlicht, Schlachtfeldatmosphäre, stoische Entschlossenheit.

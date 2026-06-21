@@ -7,8 +7,8 @@ schutz: 5
 beweglichkeit: 6
 instinkt: 7
 knurren: 5
-hunderasse: Irischer Wolfshund
-pose: steht elegant auf dem Marktplatz einer Fantasy-Stadt und beobachtet das Treiben
+hunderasse: Chow Chow
+pose: steht mit halbgeschlossenen Augen auf dem Marktplatz einer Fantasy-Stadt, dichtes Fell wie ein Pelzumhang
 hintergrund: Marktplatz einer Fantasy-Stadt
 geschirr_beschreibung: violett schimmerndes Leder mit Edelstein-Einlagen, einem Familienwappen und vergoldeten Zierschnallen
 ---
@@ -19,4 +19,4 @@ Aus edlem Stall und edlerem Blut – doch schärfer als sein Äußeres vermuten 
 
 ## Bildprompt
 
-Ein Irischer Wolfshund steht elegant auf einem belebten Fantasy-Marktplatz und beobachtet das Treiben mit ruhigem, intelligentem Blick. Er trägt violett schimmerndes Leder mit Edelstein-Einlagen, einem eingestanzten Familienwappen und vergoldeten Zierschnallen. Violetter Akzent. Warmes Stadtlicht, edle Zurückhaltung.
+Ein Chow Chow steht mit halbgeschlossenen Augen und edler Gleichgültigkeit auf einem belebten Fantasy-Marktplatz, sein flauschiges Fell wie ein Pelzumhang wirkend. Er trägt violett schimmerndes Leder mit Edelstein-Einlagen, einem eingestanzten Familienwappen und vergoldeten Zierschnallen. Violetter Akzent. Warmes Stadtlicht, exotische Würde.

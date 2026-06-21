@@ -7,16 +7,16 @@ schutz: 5
 beweglichkeit: 4
 instinkt: 3
 knurren: 4
-hunderasse: Berner Sennenhund
-pose: läuft beharrlich auf einem langen Gebirgspfad, Satteltaschen vollgepackt
+hunderasse: Bernhardiner
+pose: läuft beharrlich auf einem langen Gebirgspfad, ein kleines Holzfässchen am Halsband
 hintergrund: Gebirgspfad mit Nebel
-geschirr_beschreibung: verstärktes Leder mit grün leuchtenden Runen, kleinen Satteltaschen und Messing-Schnallen
+geschirr_beschreibung: verstärktes braun-rotes Leder mit smaragdgrün leuchtenden Runen, kleinen Satteltaschen, Messing-Schnallen und einem kleinen Holzfässchen
 ---
 
 ## Flavourtext
 
-Tausend Meilen Staub – und immer noch bereit für tausend mehr.
+Tausend Meilen Schnee – und er findet jeden, den er sucht.
 
 ## Bildprompt
 
-Ein Berner Sennenhund läuft beharrlich auf einem langen Gebirgspfad, Nebel wabert zwischen den Felsen. Er trägt ein verstärktes Ledergeschirr mit smaragdgrün leuchtenden Runen, voll bepackten Satteltaschen und Messing-Schnallen. Smaragdgrüne Akzente. Episches Bergpanorama, cineastisches Licht.
+Ein Bernhardiner läuft beharrlich auf einem langen Gebirgspfad, Nebel wabert zwischen den Felsen, ein kleines Holzfässchen baumelt an seinem Halsband. Er trägt verstärktes braun-rotes Ledergeschirr mit smaragdgrün leuchtenden Runen, voll bepackten Satteltaschen und Messing-Schnallen. Smaragdgrüne Akzente. Episches Bergpanorama, cineastisches Licht.

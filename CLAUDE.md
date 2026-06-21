@@ -81,25 +81,57 @@ Werte gehen von 1–10, höher ist besser. Jede Karte hat eine Stärke und Schw�
 
 ## Hunderassen-Zuordnung (thematisch)
 
-- **Tschechoslowakischer Wolfhund** – Seher (Legendär)
-- **Tibetischer Mastiff** – Urvater (Legendär)
-- **Leonberger** – Götterbote (Legendär)
-- **Azawakh** – Phantomläufer (Legendär)
-- **Neapolitanischer Mastiff** – Hochkönig (Legendär)
-- **Kaukasischer Owtscharka** – Schlachtkaiser (Legendär)
-- **Saarloos-Wolfhund** – Sternenwanderer (Legendär)
-- **Kangal** – Weltenwanderer (Legendär)
-- **Berner Sennenhund** – Bauer, Reisender, Paladin, Lichtbringer, Bergwächter
-- **Mastiff** – Knecht, Packtier, Kriegshund, Söldner, Krieger, Flammenläufer
-- **Windhund** – Bote, Läufer, Späher, Berittener, Kundschafter, Windjäger
-- **Schwarzer Windhund** – Schattenschnüffler
-- **Deutscher Schäferhund** – Wächter, Grenzer, Leibwächter, Wachhund
-- **Irischer Wolfshund** – Jäger, Ritter, Adliger, Beschwörer
-- **Dackel** – Fährtenhund, Fallensteller
-- **Bluthund** – Fährtenleser
+Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelrasse.
+
+**Legendär (8 Karten):**
+- **Tschechoslowakischer Wolfhund** – Seher
+- **Tibetischer Mastiff** – Urvater
+- **Leonberger** – Götterbote
+- **Azawakh** – Phantomläufer
+- **Neapolitanischer Mastiff** – Hochkönig
+- **Kaukasischer Owtscharka** – Schlachtkaiser
+- **Saarloos-Wolfhund** – Sternenwanderer
+- **Kangal** – Weltenwanderer
+
+**Gewöhnlich (8 Karten):**
+- **Berner Sennenhund** – Bauer
+- **Mastiff** – Knecht
+- **Dackel** – Fährtenhund
+- **Windhund** – Bote
+- **Deutscher Schäferhund** – Wächter
+- **Whippet** – Läufer
+- **Irischer Wolfshund** – Jäger
 - **Border Collie** – Hirte
-- **Deutsche Dogge** – Flammenläufer
+
+**Selten (8 Karten):**
+- **Bernhardiner** – Reisender
+- **Kelpie** – Späher
+- **Bluthund** – Fährtenleser
+- **Rottweiler** – Grenzer
+- **Labrador** – Packtier
+- **Borzoi** – Bote (Schnallengeschirr)
+- **Bulldogge** – Kriegshund
+- **Dobermann** – Leibwächter
+
+**Episch (8 Karten):**
+- **Deutsche Dogge** – Ritter
+- **Golden Retriever** – Paladin
+- **Australian Shepherd** – Berittener
+- **Chow Chow** – Adliger
+- **Jack Russell Terrier** – Fallensteller
+- **Dalmatiner** – Kundschafter
+- **Boxer** – Söldner
+- **Schnauzer** – Wachhund
+
+**Magisch (8 Karten):**
+- **Pudel** – Beschwörer
+- **Mops** – Krieger
+- **Nackthund** – Nachtschnüffler
+- **Samojede** – Lichtbringer
+- **Chihuahua** – Flammenläufer
 - **Husky** – Eiszahnläufer
+- **Beagle** – Windjäger
+- **Wolfsspitz** – Bergwächter
 
 ## Konventionen
 

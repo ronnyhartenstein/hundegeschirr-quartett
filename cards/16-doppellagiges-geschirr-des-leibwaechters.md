@@ -7,10 +7,10 @@ schutz: 9
 beweglichkeit: 3
 instinkt: 2
 knurren: 6
-hunderasse: Deutscher Schäferhund
+hunderasse: Dobermann
 pose: sitzt dicht neben einem Thronsessel und blickt unverwandt auf den Eingang
 hintergrund: Burginnenhof bei Sonnenuntergang
-geschirr_beschreibung: doppellagiges Leder mit grünen Schutzrunen, gepolsterten Schultern und Brustplatten aus Messing
+geschirr_beschreibung: doppellagiges Leder mit smaragdgrünen Schutzrunen, gepolsterten Schultern und Brustplatten aus Messing
 ---
 
 ## Flavourtext
@@ -19,4 +19,4 @@ Zwischen Herr und Klinge steht immer er – und er weicht nicht.
 
 ## Bildprompt
 
-Ein Deutscher Schäferhund sitzt dicht neben einem steinernen Thronsessel im Burginnenhof und blickt unverwandt auf den Eingang, Sonnenuntergang im Hintergrund. Er trägt doppellagiges Leder mit smaragdgrünen Schutzrunen, gepolsterten Schultern und Brustplatten aus Messing. Smaragdgrüne Akzente. Goldenes Abendlicht, absolute Konzentration.
+Ein eleganter Dobermann sitzt dicht neben einem steinernen Thronsessel im Burginnenhof und blickt unverwandt auf den Eingang, Sonnenuntergang im Hintergrund. Er trägt doppellagiges Leder mit smaragdgrünen Schutzrunen, gepolsterten Schultern und Brustplatten aus Messing. Smaragdgrüne Akzente. Goldenes Abendlicht, absolute Konzentration.

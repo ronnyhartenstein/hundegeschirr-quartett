@@ -7,10 +7,10 @@ schutz: 3
 beweglichkeit: 10
 instinkt: 6
 knurren: 2
-hunderasse: Windhund
-pose: sprintet in vollem Tempo durch einen belebten Marktplatz
+hunderasse: Borzoi
+pose: sprintet in elegantem Galopp durch einen belebten Marktplatz, Silhouette wie ein Pfeil
 hintergrund: Marktplatz einer Fantasy-Stadt
-geschirr_beschreibung: schlankes Leder mit grün leuchtenden Schnallen und einer fest verschlossenen Botentasche am Rücken
+geschirr_beschreibung: schlankes elegantes Leder mit smaragdgrün leuchtenden Schnallen und einer fest verschlossenen Botentasche am Rücken
 ---
 
 ## Flavourtext
@@ -19,4 +19,4 @@ Keine Botschaft kommt zu spät – wenn er sie trägt.
 
 ## Bildprompt
 
-Ein Windhund sprintet in vollem Tempo durch einen belebten mittelalterlichen Fantasy-Marktplatz, Stände und Figuren verschwimmen im Hintergrund. Er trägt schlankes Leder mit smaragdgrün leuchtenden Schnallen und einer fest verschlossenen Botentasche am Rücken. Smaragdgrüne Akzente. Dynamische Bewegung, lebendiges Markttreiben.
+Ein Borzoi sprintet in elegantem Galopp durch einen belebten mittelalterlichen Fantasy-Marktplatz, Stände und Figuren verschwimmen im Hintergrund, seine Silhouette einem Pfeil gleich. Er trägt schlankes Leder mit smaragdgrün leuchtenden Schnallen und einer fest verschlossenen Botentasche am Rücken. Smaragdgrüne Akzente. Dynamische Bewegung, lebendiges Markttreiben.
