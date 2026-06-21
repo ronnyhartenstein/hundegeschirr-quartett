@@ -143,6 +143,11 @@ def build_html(cards: list[dict], stats: dict) -> str:
   <div class="chart-wrap-tall"><canvas id="totalChart"></canvas></div>
 </div>
 
+<h2>5 · Einzelwerte gestapelt je Karte</h2>
+<div class="card">
+  <div class="chart-wrap-tall"><canvas id="stackedChart"></canvas></div>
+</div>
+
 <script>
 const cards = {cards_json};
 const statsByQuality = {stats_json};
@@ -252,7 +257,7 @@ STATS.forEach((stat, idx) => {{
 
 // ── 4 · Total points per card ────────────────────────────────────────────────
 const totalLabels = cards.map(c => c.nummer ? String(c.nummer).padStart(2,'0') : '');
-const totalValues = cards.map(c => c.zugkraft + c.schutz + c.beweglichkeit + c.instinkt);
+const totalValues = cards.map(c => c.zugkraft + c.schutz + c.beweglichkeit + c.instinkt + c.knurren);
 const totalColors = cards.map(c => QUALITY_COLORS[c.qualitaet]);
 const totalTargets = cards.map(c => QUALITY_TARGET[c.qualitaet]);
 
@@ -307,6 +312,38 @@ new Chart(document.getElementById('totalChart'), {{
     scales: {{
       x: {{ ticks: {{ color: '#94a3b8', maxRotation: 0 }}, grid: {{ color: '#1e293b' }} }},
       y: {{ min: 14, max: 38, ticks: {{ color: '#94a3b8' }}, grid: {{ color: '#1e293b' }} }},
+    }},
+  }},
+}});
+
+// ── 5 · Stacked individual stats per card ────────────────────────────────────
+const stackedDatasets = STATS.map((stat, i) => ({{
+  label: STAT_LABELS[stat],
+  data: cards.map(c => c[stat]),
+  backgroundColor: statColors[i],
+  borderWidth: 0,
+}}));
+
+new Chart(document.getElementById('stackedChart'), {{
+  type: 'bar',
+  data: {{ labels: totalLabels, datasets: stackedDatasets }},
+  options: {{
+    responsive: true, maintainAspectRatio: false,
+    plugins: {{
+      legend: {{ labels: {{ color: '#cbd5e1' }} }},
+      tooltip: {{
+        callbacks: {{
+          title: (items) => cards[items[0].dataIndex].name,
+          afterTitle: (items) => {{
+            const c = cards[items[0].dataIndex];
+            return `${{c.qualitaet}} · Gesamt: ${{STATS.reduce((s, st) => s + c[st], 0)}}`;
+          }},
+        }},
+      }},
+    }},
+    scales: {{
+      x: {{ stacked: true, ticks: {{ color: '#94a3b8', maxRotation: 0 }}, grid: {{ color: '#1e293b' }} }},
+      y: {{ stacked: true, min: 0, max: 38, ticks: {{ color: '#94a3b8' }}, grid: {{ color: '#1e293b' }} }},
     }},
   }},
 }});
