@@ -38,11 +38,13 @@ Schutz: [SCHUTZ]
 Beweglichkeit: [BEWEGLICHKEIT]
 Instinkt: [INSTINKT]
 
-Links neben jeder Zeile ein kleines passendes 3D Icon in Qualitätsfarbe:
+Links neben jeder Zeile ein kleines passendes 3D Icon ohne Rahmen in Qualitätsfarbe:
 - Muskel für Zugkraft
 - Schild für Schutz
 - Blitz für Beweglichkeit
 - Stern für Instinkt
+
+Der Zahlenwert der Zeile [HÖCHSTER_STAT] hat einen goldenen Leuchtschein – es ist der höchste Wert der Karte.
 
 Designregeln:
 - nur die genannten Texte verwenden

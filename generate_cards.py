@@ -47,6 +47,19 @@ QUALITAETSFARBE_MAP = {
     "Legendär":   "gold-orangefarbener magischer Akzent",
 }
 
+
+def _highest_stat_names(meta: dict) -> str:
+    stats = {
+        "Zugkraft":      int(meta.get("zugkraft", 0)),
+        "Schutz":        int(meta.get("schutz", 0)),
+        "Beweglichkeit": int(meta.get("beweglichkeit", 0)),
+        "Instinkt":      int(meta.get("instinkt", 0)),
+    }
+    max_val = max(stats.values())
+    winners = [name for name, val in stats.items() if val == max_val]
+    return " und ".join(winners)
+
+
 # Maps master_prompt.md placeholders to frontmatter fields / transformations.
 # Each value is a callable (meta: dict) -> str.
 PLACEHOLDER_MAP: dict[str, object] = {
@@ -61,6 +74,7 @@ PLACEHOLDER_MAP: dict[str, object] = {
     "[SCHUTZ]":               lambda m: str(m.get("schutz", "")),
     "[BEWEGLICHKEIT]":        lambda m: str(m.get("beweglichkeit", "")),
     "[INSTINKT]":             lambda m: str(m.get("instinkt", "")),
+    "[HÖCHSTER_STAT]":        lambda m: _highest_stat_names(m),
 }
 
 
