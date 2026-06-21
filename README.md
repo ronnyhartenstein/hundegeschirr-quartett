@@ -4,7 +4,7 @@ Ein mittelalterliches Fantasy-Trumpfquartett mit Hundegeschirren. 40 Karten in f
 
 ## Spielprinzip
 
-Jede Karte hat vier Werte (1–10, höher ist besser):
+Jede Karte hat fünf Werte (1–10, höher ist besser):
 
 | Wert | Bedeutung |
 |---|---|
@@ -12,18 +12,19 @@ Jede Karte hat vier Werte (1–10, höher ist besser):
 | **Schutz** | Rüstung, Widerstandskraft, Standfestigkeit |
 | **Beweglichkeit** | Geschwindigkeit, Ausweichen, Wendigkeit |
 | **Instinkt** | Spurfinden, Wachsamkeit, Magie, Treue |
+| **Knurren** | Kampfaggression, Einschüchterung, Bissigkeit |
 
-Spieler wählen abwechselnd einen Wert – wer den höheren Wert hat, gewinnt beide Karten. Magische Karten sind im Schnitt stärker, haben aber Schwächen: ein gewöhnliches Läufergeschirr (Beweglichkeit 84) schlägt den magischen Plattenpanzer (Beweglichkeit 40).
+Spieler wählen abwechselnd einen Wert – wer den höheren Wert hat, gewinnt beide Karten. Magische Karten sind im Schnitt stärker, haben aber Schwächen: ein gewöhnliches Läufergeschirr (Beweglichkeit 8) schlägt den magischen Plattenpanzer (Beweglichkeit 4).
 
 ### Qualitätsstufen
 
 | Stufe | Gesamtwert | Farbe |
 |---|---|---|
-| Gewöhnlich | 17 | Weiß/Silber |
-| Selten | 20 | Smaragdgrün |
-| Episch | 23 | Violett |
-| Magisch | 26 | Blau |
-| Legendär | 30 | Orange/Gold |
+| Gewöhnlich | 23 | Weiß/Silber |
+| Selten | 26 | Smaragdgrün |
+| Episch | 29 | Violett |
+| Magisch | 32 | Blau |
+| Legendär | 34 | Orange/Gold |
 
 ## Voraussetzungen
 
