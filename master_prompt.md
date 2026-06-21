@@ -13,11 +13,11 @@ Die Karte soll wie eine hochwertige Fantasy-Quartettkarte aussehen:
 Kartentitel oben:
 „[NAME]”
 
-Untertitel:
-„[QUALITÄT]es Hundegeschirr”
-
-Flavourtext unter dem Untertitel:
+Flavourtext unter dem Titel:
 „[FLAVOURTEXT]”
+
+Qualitätsplakette unter dem Flavourtext:
+Eine kleine ornamentale Metallplakette mit der eingravierten Aufschrift „[QUALITÄT]” in Qualitätsfarbe, im Stil einer mittelalterlichen Auszeichnung.
 
 Hund:
 - Rasse: [HUNDERASSE]
@@ -31,6 +31,7 @@ Hintergrund:
 [HINTERGRUND], mittelalterliche Fantasy-Atmosphäre, natürliches Licht, leichter Nebel, epische Landschaft.
 
 Unterer Wertebereich:
+Direkt über dem Wertefeld ein schmales ornamentales Namensschild aus dunklem Metall, in das mittig der Text „[HUNDERASSE]" graviert ist, flankiert von kleinen dekorativen Symbolen in Qualitätsfarbe.
 Dunkles Lederfeld mit exakt diesen fünf Zeilen, gut lesbar, sauber gesetzt, keine zusätzlichen Texte:
 
 Zugkraft: [ZUGKRAFT]
