@@ -27,13 +27,71 @@
   .ok { color: #4ade80; }
   .err { color: #f87171; font-weight: 700; }
   .table-wrap { max-height: 480px; overflow-y: auto; border-radius: 0.5rem; }
+
+  /* Principle & assessment sections */
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 900px) { .info-grid { grid-template-columns: 1fr; } }
+  .info-box { background: #0f172a; border-radius: 0.5rem; padding: 1.1rem 1.25rem; border-left: 3px solid #334155; }
+  .info-box h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.4rem; color: #e2e8f0; }
+  .info-box p { font-size: 0.82rem; color: #94a3b8; line-height: 1.65; }
+  .qual-pill { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.2rem 0.55rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; margin: 0.15rem 0.1rem; }
+  .section-intro { font-size: 0.85rem; color: #94a3b8; line-height: 1.7; margin-bottom: 1.25rem; border-left: 2px solid #1e293b; padding-left: 0.85rem; }
+  .section-intro strong { color: #cbd5e1; }
+  .hcard-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+  .hcard { background: #0f172a; border-radius: 0.5rem; padding: 0.85rem 1rem; flex: 1 1 270px; border-left: 3px solid #334155; }
+  .hcard-name { font-size: 0.82rem; font-weight: 700; margin-bottom: 0.2rem; color: #e2e8f0; }
+  .hcard-meta { font-size: 0.72rem; color: #64748b; margin-bottom: 0.35rem; }
+  .hcard-desc { font-size: 0.8rem; color: #94a3b8; line-height: 1.55; }
+  .stat-chip { display: inline-block; padding: 0.1rem 0.45rem; border-radius: 4px; font-size: 0.72rem; font-weight: 700; background: #1e293b; color: #e2e8f0; margin: 0 0.1rem; }
+  .upset-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-top: 0.75rem; }
+  .upset-table th { background: #0f172a; padding: 0.45rem 0.75rem; text-align: left; color: #94a3b8; font-weight: 600; }
+  .upset-table td { padding: 0.4rem 0.75rem; border-bottom: 1px solid #1e293b; color: #cbd5e1; }
+  .upset-table tr:hover td { background: #263344; }
+  .legend-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-top: 0.75rem; }
+  .legend-table th { background: #0f172a; padding: 0.45rem 0.75rem; text-align: left; color: #94a3b8; font-weight: 600; }
+  .legend-table td { padding: 0.4rem 0.75rem; border-bottom: 1px solid #1e293b; }
+  .legend-table tr:hover td { background: #263344; }
+  .insight-box { background: #0f172a; border-radius: 0.5rem; padding: 1rem 1.25rem; margin-top: 1rem; border: 1px solid #1e293b; }
+  .insight-box p { font-size: 0.83rem; color: #94a3b8; line-height: 1.7; margin: 0; }
+  .insight-box p + p { margin-top: 0.5rem; }
+  .sub-h2 { font-size: 1rem; margin: 1.5rem 0 0.5rem; color: #94a3b8; border: none; padding: 0; }
 </style>
 </head>
 <body>
 <h1>Hundegeschirr-Quartett</h1>
 <p class="subtitle">Balance-Analyse · 40 Karten · 5 Qualitätsstufen</p>
 
+<h2>Spielprinzip &amp; Balancing</h2>
+<div class="card">
+  <div class="info-grid">
+    <div class="info-box" style="border-color:#3b82f6">
+      <h3>Fünf Spielwerte</h3>
+      <p>Jede Karte hat fünf Werte (1–10, höher = besser). Der aktive Spieler wählt einen Wert – wer den höheren Wert hat, gewinnt alle Karten der Runde. Bei Gleichstand kommen beide Karten in die Mitte; derselbe Spieler wählt mit der nächsten Karte erneut, und wer dann gewinnt, bekommt alles.</p>
+    </div>
+    <div class="info-box" style="border-color:#f59e0b">
+      <h3>Qualitätsstufen &amp; Gesamtwerte</h3>
+      <p>Fünf Stufen mit festem Gesamtpunkte-Soll – der Wert wird <em>nicht</em> aufgedruckt, dient nur dem Balancing. Abstände von +3 pro Stufe; Legendär macht bewusst +4, damit sich diese Karten als echte Supertrümpfe anfühlen.</p>
+      <div style="margin-top:0.65rem">
+        <span class="qual-pill" style="background:#334155;color:#e2e8f0">Gewöhnlich · 23</span>
+        <span class="qual-pill" style="background:#16a34a;color:#fff">Selten · 26</span>
+        <span class="qual-pill" style="background:#A335EE;color:#fff">Episch · 29</span>
+        <span class="qual-pill" style="background:#0070DD;color:#fff">Magisch · 32</span>
+        <span class="qual-pill" style="background:#FF8000;color:#fff">Legendär · 34</span>
+      </div>
+    </div>
+    <div class="info-box" style="border-color:#22c55e">
+      <h3>Spezialisten schlagen höhere Stufen</h3>
+      <p>Das zentrale Designziel: Auch eine Gewöhnliche Karte kann eine Magische schlagen – wenn der Spieler den richtigen Wert ausruft. Dafür hat jede Karte mindestens eine Stärke und mindestens eine Schwäche, unabhängig von der Qualitätsstufe.</p>
+    </div>
+    <div class="info-box" style="border-color:#FF8000">
+      <h3>Legendäre Karten – Supertrümpfe mit Angriffspunkten</h3>
+      <p>Jede Legendäre Karte hat mindestens einen Wert unter 7. Kein Supertrumpf dominiert alle fünf Kategorien gleichzeitig. Wer eine Legendäre Karte mit dem richtigen Wert herausfordert, kann sie trotzdem schlagen.</p>
+    </div>
+  </div>
+</div>
+
 <h2>1 · Kartenübersicht</h2>
+<p class="section-intro">Alle 40 Karten mit ihren Rohwerten. Die Spalte <strong>Gesamt</strong> zeigt die Summe der fünf Spielwerte – grün wenn sie exakt dem Soll der Qualitätsstufe entspricht, rot bei Abweichungen. Das Soll wird nicht auf die Karte gedruckt.</p>
 <div class="card">
   <div class="table-wrap">
     <table id="cardTable">
@@ -57,11 +115,13 @@
 </div>
 
 <h2>2 · Durchschnittswerte je Qualitätsstufe</h2>
+<p class="section-intro">Durchschnittliche Stat-Werte je Qualitätsstufe. Auffällig: <strong>Instinkt</strong> variiert am wenigsten zwischen den Stufen (Spanne Gewöhnlich→Legendär: ~0,9 Punkte) – Instinkt-Spezialisten aus niedrigen Stufen sind deshalb besonders konkurrenzfähig. <strong>Zugkraft</strong> bei Magisch liegt sogar über dem Legendär-Durchschnitt – bedingt durch die extremen 10er-Werte bei Mops und Chihuahua.</p>
 <div class="card">
   <div class="chart-wrap"><canvas id="avgChart"></canvas></div>
 </div>
 
 <h2>3 · Wertebereich je Stat &amp; Qualitätsstufe</h2>
+<p class="section-intro">Min, Durchschnitt und Max je Stat innerhalb einer Qualitätsstufe. Breite Balken zeigen hohe Streuung – hier verstecken sich die Spezialisten. Selbst innerhalb von Gewöhnlich gibt es Karten mit Wert 10 (Dackel: Instinkt) und Karten mit Wert 1 (Schäferhund: Zugkraft/Beweglichkeit). Diese Streuung ist absichtlich: Sie macht den Werteaufruf zur taktischen Entscheidung.</p>
 <div class="card grid-2">
   <div class="chart-wrap"><canvas id="rangeZugkraft"></canvas></div>
   <div class="chart-wrap"><canvas id="rangeSchutz"></canvas></div>
@@ -71,13 +131,186 @@
 </div>
 
 <h2>4 · Gesamtpunkte aller Karten (Ist vs. Soll)</h2>
+<p class="section-intro">Jede Karte als farbige Säule, die gestrichelte Linie zeigt den Sollwert ihrer Qualitätsstufe. Alle Säulen sollten exakt auf der Linie landen – Abweichungen weisen auf Balancing-Fehler hin. Die Farbblöcke folgen den Qualitätsfarben: Weiß (Gewöhnlich), Grün (Selten), Lila (Episch), Blau (Magisch), Orange (Legendär).</p>
 <div class="card">
   <div class="chart-wrap-tall"><canvas id="totalChart"></canvas></div>
 </div>
 
 <h2>5 · Einzelwerte gestapelt je Karte</h2>
+<p class="section-intro">Jede Karte als gestapelter Balken – die fünf Farbsegmente zeigen die Verteilung der Punkte auf die einzelnen Stats. Gleichmäßig breite Segmente = ausgewogene Karte; ein dominierendes Segment = Spezialist. Karten mit einer sehr breiten Farbe (z.B. Knurren bei Mops oder Instinkt beim Dackel) sind die taktischen Joker des Decks.</p>
 <div class="card">
   <div class="chart-wrap-tall"><canvas id="stackedChart"></canvas></div>
+</div>
+
+<h2>6 · Einschätzungen</h2>
+
+<h2 class="sub-h2">Absurde Karten – bewusste Ausreißer</h2>
+<p class="section-intro">Diese Karten haben extreme Stat-Kombinationen, die spielerisch für Überraschungen sorgen. Sie sind absichtlich so designed – jede hat ein klares Thema und eine klare Gegenspiel-Lücke.</p>
+<div class="card">
+  <div class="hcard-grid">
+    <div class="hcard" style="border-color:#FFFFFF">
+      <div class="hcard-name">Corgi – Flickengeschirr des Hofboten</div>
+      <div class="hcard-meta">Gewöhnlich · #07</div>
+      <div class="hcard-desc">
+        <span class="stat-chip">K 8</span> <span class="stat-chip">Z 7</span> – aber <span class="stat-chip" style="color:#f87171">B 2</span>.
+        Der kurzbeinige Hofbote kommt nirgendwo schnell hin, ist aber für seine Stufe überraschend bissig. Knurren 8 schlägt mehrere Magisch-Karten.
+      </div>
+    </div>
+    <div class="hcard" style="border-color:#16a34a">
+      <div class="hcard-name">Basset Hound – Schlappohr-Geschirr des Faulenzers</div>
+      <div class="hcard-meta">Selten · #13</div>
+      <div class="hcard-desc">
+        <span class="stat-chip">I 9</span> <span class="stat-chip">S 7</span> – aber <span class="stat-chip" style="color:#f87171">B 1</span> (Minimum im gesamten Spiel).
+        Er macht nichts schnell. Dafür erschnüffelt er alles. Gegenspiel: jeden Beweglichkeitswert über 1 gewinnt gegen ihn.
+      </div>
+    </div>
+    <div class="hcard" style="border-color:#A335EE">
+      <div class="hcard-name">Afghaner Windhund – Goldgeschirr des Aufschneiders</div>
+      <div class="hcard-meta">Episch · #20</div>
+      <div class="hcard-desc">
+        <span class="stat-chip">Z 8</span> <span class="stat-chip">B 9</span> <span class="stat-chip">I 8</span> – aber <span class="stat-chip" style="color:#f87171">S 2</span> <span class="stat-chip" style="color:#f87171">K 2</span>.
+        Läuft schnell weg, macht viel Wind, hält aber keinen Treffer aus und beißt nie.
+      </div>
+    </div>
+    <div class="hcard" style="border-color:#0070DD">
+      <div class="hcard-name">Mops – Plattenpanzer des Kriegers</div>
+      <div class="hcard-meta">Magisch · #26</div>
+      <div class="hcard-desc">
+        <span class="stat-chip">Z 10</span> <span class="stat-chip">S 8</span> <span class="stat-chip">K 9</span> – aber <span class="stat-chip" style="color:#f87171">I 1</span> <span class="stat-chip" style="color:#f87171">B 4</span>.
+        Unverhoffte Zugkraft 10 aus einem Mops. Findet keine Fährte, rennt nirgendwo hin – aber macht alles kurz und klein.
+      </div>
+    </div>
+    <div class="hcard" style="border-color:#0070DD">
+      <div class="hcard-name">Chihuahua – Drachengeschirr des Flammenläufers</div>
+      <div class="hcard-meta">Magisch · #29</div>
+      <div class="hcard-desc">
+        <span class="stat-chip">Z 10</span> <span class="stat-chip">S 7</span> <span class="stat-chip">K 9</span> – aber <span class="stat-chip" style="color:#f87171">I 1</span> <span class="stat-chip" style="color:#f87171">B 5</span>.
+        Zweite Magisch-Karte mit Zugkraft 10 – damit hat diese Stufe den höchsten Zugkraft-Durchschnitt aller Stufen.
+      </div>
+    </div>
+    <div class="hcard" style="border-color:#FF8000">
+      <div class="hcard-name">Komondor – Narrenschellen-Geschirr des Gauklers</div>
+      <div class="hcard-meta">Legendär · #40</div>
+      <div class="hcard-desc">
+        <span class="stat-chip">K 10</span> <span class="stat-chip">B 10</span> <span class="stat-chip">I 10</span> – aber <span class="stat-chip" style="color:#f87171">Z 2</span> <span class="stat-chip" style="color:#f87171">S 2</span>.
+        Höchstes Knurren im Spiel. Unantastbar in drei Stats. Ruft ein Gegner Zugkraft oder Schutz aus, verliert der Gaukler gegen nahezu jede Karte im Deck.
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="sub-h2">Stufen-Überraschungen – Gewöhnlich schlägt Magisch &amp; Legendär</h2>
+<p class="section-intro">Durch die breite Stat-Streuung innerhalb jeder Qualitätsstufe gibt es zahlreiche Konstellationen, in denen eine Gewöhnliche Karte eine Magische oder sogar Legendäre schlägt.</p>
+<div class="card">
+  <table class="upset-table">
+    <thead>
+      <tr>
+        <th>Gewöhnliche Karte</th>
+        <th>Wert</th>
+        <th>Schlägt</th>
+        <th>Wert (Gegner)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Leichtes Geschirr des Läufers (Whippet)</td>
+        <td><span class="stat-chip">B 8</span></td>
+        <td>Plattenpanzer des Kriegers (Magisch, Mops)</td>
+        <td><span class="stat-chip" style="color:#f87171">B 4</span></td>
+      </tr>
+      <tr>
+        <td>Strapazierfähiges Geschirr des Wächters (Schäferhund)</td>
+        <td><span class="stat-chip">S 8</span></td>
+        <td>Schattengeschirr des Nachtschnüfflers (Magisch)</td>
+        <td><span class="stat-chip" style="color:#f87171">S 3</span></td>
+      </tr>
+      <tr>
+        <td>Strapazierfähiges Geschirr des Wächters (Schäferhund)</td>
+        <td><span class="stat-chip">S 8</span></td>
+        <td>Schicksalsgeschirr des Sehers (Legendär)</td>
+        <td><span class="stat-chip" style="color:#f87171">S 7</span></td>
+      </tr>
+      <tr>
+        <td>Einfaches Leder des Fährtenhundes (Dackel)</td>
+        <td><span class="stat-chip">I 10</span></td>
+        <td>Titanengeschirr des Urvaters (Legendär)</td>
+        <td><span class="stat-chip" style="color:#f87171">I 3</span></td>
+      </tr>
+      <tr>
+        <td>Einfaches Leder des Fährtenhundes (Dackel)</td>
+        <td><span class="stat-chip">I 10</span></td>
+        <td>Kriegsgeschirr des Schlachtkaisers (Legendär)</td>
+        <td><span class="stat-chip" style="color:#f87171">I 1</span></td>
+      </tr>
+      <tr>
+        <td>Einfaches Leder des Fährtenhundes (Dackel)</td>
+        <td><span class="stat-chip">I 10</span></td>
+        <td>Heilsgeschirr des Götterboten (Legendär)</td>
+        <td><span class="stat-chip" style="color:#f87171">I 7</span></td>
+      </tr>
+      <tr>
+        <td>Robustes Geschirr des Knechts (Mastiff)</td>
+        <td><span class="stat-chip">K 9</span></td>
+        <td>Runengeschirr des Beschwörers (Magisch, Pudel)</td>
+        <td><span class="stat-chip" style="color:#f87171">K 4</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="insight-box">
+    <p>Der <strong>Dackel</strong> (Gewöhnlich, Instinkt 10) schlägt in diesem Wert 5 von 8 Legendären Karten – darunter den Schlachtkaiser (Instinkt 1) und den Urvater (Instinkt 3). Kein anderer Wert zeigt so wenig Respekt vor Qualitätsstufen wie <strong>Instinkt</strong>.</p>
+  </div>
+</div>
+
+<h2 class="sub-h2">Legendäre Karten – Stärken &amp; Angriffspunkte</h2>
+<p class="section-intro">Jede Legendäre Karte hat mindestens einen Wert unter 7. Diese Schwächen sind bewusste Design-Entscheidungen: Sie schaffen Gegenspiel und verhindern, dass Legendäre Karten automatisch gewinnen.</p>
+<div class="card">
+  <table class="legend-table">
+    <thead>
+      <tr><th>#</th><th>Karte</th><th>Stärke</th><th>Angriffspunkt</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>33</td><td>Schicksalsgeschirr des Sehers</td>
+        <td><span class="stat-chip" style="color:#4ade80">I 10</span></td>
+        <td><span class="stat-chip" style="color:#f87171">Z 5</span> <span class="stat-chip" style="color:#f87171">K 4</span></td>
+      </tr>
+      <tr>
+        <td>34</td><td>Titanengeschirr des Urvaters</td>
+        <td><span class="stat-chip" style="color:#4ade80">Z 10</span> <span class="stat-chip" style="color:#4ade80">K 8</span></td>
+        <td><span class="stat-chip" style="color:#f87171">I 3</span> <span class="stat-chip" style="color:#f87171">B 5</span></td>
+      </tr>
+      <tr>
+        <td>35</td><td>Heilsgeschirr des Götterboten</td>
+        <td><span class="stat-chip" style="color:#4ade80">S 10</span></td>
+        <td><span class="stat-chip" style="color:#f87171">Z 5</span> <span class="stat-chip" style="color:#f87171">K 5</span></td>
+      </tr>
+      <tr>
+        <td>36</td><td>Geistergeschirr des Phantomläufers</td>
+        <td><span class="stat-chip" style="color:#4ade80">B 10</span> <span class="stat-chip" style="color:#4ade80">I 10</span></td>
+        <td><span class="stat-chip" style="color:#f87171">Z 4</span> <span class="stat-chip" style="color:#f87171">K 4</span></td>
+      </tr>
+      <tr>
+        <td>37</td><td>Kronengeschirr des Hochkönigs</td>
+        <td>Ausgeglichen (min. 5)</td>
+        <td><span class="stat-chip" style="color:#fbbf24">I 5</span> – kein Spitzenwert, berechenbar</td>
+      </tr>
+      <tr>
+        <td>38</td><td>Kriegsgeschirr des Schlachtkaisers</td>
+        <td><span class="stat-chip" style="color:#4ade80">Z 10</span> <span class="stat-chip" style="color:#4ade80">K 9</span> <span class="stat-chip" style="color:#4ade80">S 9</span></td>
+        <td><span class="stat-chip" style="color:#f87171">I 1</span> – leichteste Beute für Instinkt-Spezialisten</td>
+      </tr>
+      <tr>
+        <td>39</td><td>Sterngeschirr des Sternenwanderers</td>
+        <td><span class="stat-chip" style="color:#4ade80">B 9</span> <span class="stat-chip" style="color:#4ade80">I 8</span></td>
+        <td><span class="stat-chip" style="color:#f87171">Z 6</span> <span class="stat-chip" style="color:#f87171">S 6</span></td>
+      </tr>
+      <tr>
+        <td>40</td><td>Narrenschellen-Geschirr des Gauklers</td>
+        <td><span class="stat-chip" style="color:#4ade80">K 10</span> <span class="stat-chip" style="color:#4ade80">B 10</span> <span class="stat-chip" style="color:#4ade80">I 10</span></td>
+        <td><span class="stat-chip" style="color:#f87171">Z 2</span> <span class="stat-chip" style="color:#f87171">S 2</span> – verliert gegen fast jede Karte in diesen Werten</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <script>

@@ -17,7 +17,7 @@ qualitaetsstufen.md       # Farben und Symbole je Qualitätsstufe
 rueckseite.md             # Kartenrücken-Prompt und Varianten
 platzhalter-beispiele.md  # Beispielwerte für die Prompt-Platzhalter
 generate_cards.py         # Bildgenerierungs-Script (OpenAI gpt-image-2)
-visualize_balance.py      # Balancing-Visualisierung → balance.html
+visualize_balance.py      # Balancing-Visualisierung → balance.html  ← GENERIERT, nie direkt editieren!
 docker-compose.yml        # Docker-Setup für generate_cards.py
 ```
 
