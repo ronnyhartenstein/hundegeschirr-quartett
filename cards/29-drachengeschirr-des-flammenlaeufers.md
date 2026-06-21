@@ -5,7 +5,8 @@ qualitaet: Magisch
 zugkraft: 10
 schutz: 7
 beweglichkeit: 5
-instinkt: 4
+instinkt: 1
+knurren: 7
 hunderasse: Deutsche Dogge
 pose: steht auf einem Gebirgspfad, umgeben von lodernden Flammen und Glutpartikeln
 hintergrund: Gebirgspfad mit Nebel

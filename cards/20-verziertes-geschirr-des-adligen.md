@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 4
 schutz: 5
 beweglichkeit: 6
-instinkt: 8
+instinkt: 7
+knurren: 5
 hunderasse: Irischer Wolfshund
 pose: steht elegant auf dem Marktplatz einer Fantasy-Stadt und beobachtet das Treiben
 hintergrund: Marktplatz einer Fantasy-Stadt

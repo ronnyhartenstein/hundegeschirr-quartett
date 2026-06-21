@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 7
 schutz: 4
 beweglichkeit: 9
-instinkt: 3
+instinkt: 4
+knurren: 3
 hunderasse: Windhund
 pose: galoppiert mit federleichtem Schritt über einen Gebirgspfad
 hintergrund: Gebirgspfad mit Nebel

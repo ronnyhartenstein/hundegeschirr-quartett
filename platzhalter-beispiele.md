@@ -1,3 +1,5 @@
+[KNURREN] = 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10
+
 [HUNDERASSE] = Border Collie / Berner Sennenhund / Irischer Wolfshund / Deutscher Schäferhund / Windhund / Dackel / Mastiff / Husky
 
 [POSE] = steht stolz auf einem Waldweg / sitzt wachsam vor einer Burg / läuft über eine Steinbrücke / späht in die Ferne / steht auf einem Gebirgspfad

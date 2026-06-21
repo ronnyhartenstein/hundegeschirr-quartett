@@ -5,7 +5,8 @@ qualitaet: Legendär
 zugkraft: 8
 schutz: 7
 beweglichkeit: 8
-instinkt: 7
+instinkt: 6
+knurren: 5
 hunderasse: Kangal
 pose: steht auf einem Hügel über einer endlosen Landschaft und überblickt ruhig die ganze Welt
 hintergrund: Gebirgspfad mit Nebel

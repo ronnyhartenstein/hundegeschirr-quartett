@@ -5,7 +5,8 @@ qualitaet: Legendär
 zugkraft: 10
 schutz: 9
 beweglichkeit: 5
-instinkt: 6
+instinkt: 1
+knurren: 9
 hunderasse: Kaukasischer Owtscharka
 pose: steht triumphierend auf einem zerstörten Schlachtfeld, der Horizont brennt hinter ihm
 hintergrund: verlassene Ruine im Morgenlicht

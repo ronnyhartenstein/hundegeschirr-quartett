@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 5
 schutz: 9
 beweglichkeit: 3
-instinkt: 6
+instinkt: 4
+knurren: 6
 hunderasse: Deutscher Schäferhund
 pose: sitzt nachts im Fackellicht vor dem Burgtor und blickt unverwandt in die Dunkelheit
 hintergrund: Burginnenhof bei Sonnenuntergang

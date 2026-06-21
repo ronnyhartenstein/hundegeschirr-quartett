@@ -6,6 +6,7 @@ zugkraft: 4
 schutz: 3
 beweglichkeit: 10
 instinkt: 9
+knurren: 4
 hunderasse: Schwarzer Windhund
 pose: gleitet lautlos durch den Schatten einer Ruinenwand, kaum sichtbar im Zwielicht
 hintergrund: verlassene Ruine im Morgenlicht

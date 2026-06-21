@@ -5,7 +5,8 @@ qualitaet: Legendär
 zugkraft: 8
 schutz: 8
 beweglichkeit: 7
-instinkt: 7
+instinkt: 5
+knurren: 6
 hunderasse: Neapolitanischer Mastiff
 pose: sitzt auf einem steinernen Thron im Burginnenhof, die Krone des Reiches im Blick
 hintergrund: Burginnenhof bei Sonnenuntergang

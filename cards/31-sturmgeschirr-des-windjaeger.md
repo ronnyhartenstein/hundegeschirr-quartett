@@ -5,7 +5,8 @@ qualitaet: Magisch
 zugkraft: 5
 schutz: 3
 beweglichkeit: 10
-instinkt: 8
+instinkt: 9
+knurren: 3
 hunderasse: Windhund
 pose: rast über eine Steinbrücke, umgeben von Blitzen und peitschendem Sturmwind
 hintergrund: Steinbrücke über einen Fluss

@@ -5,7 +5,8 @@ qualitaet: Selten
 zugkraft: 3
 schutz: 3
 beweglichkeit: 10
-instinkt: 4
+instinkt: 6
+knurren: 2
 hunderasse: Windhund
 pose: sprintet in vollem Tempo durch einen belebten Marktplatz
 hintergrund: Marktplatz einer Fantasy-Stadt

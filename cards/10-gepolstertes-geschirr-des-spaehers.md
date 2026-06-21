@@ -5,7 +5,8 @@ qualitaet: Selten
 zugkraft: 3
 schutz: 3
 beweglichkeit: 8
-instinkt: 6
+instinkt: 7
+knurren: 3
 hunderasse: Windhund
 pose: späht um eine Mauerecke einer verlassenen Ruine
 hintergrund: verlassene Ruine im Morgenlicht

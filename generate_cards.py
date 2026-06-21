@@ -54,6 +54,7 @@ def _highest_stat_names(meta: dict) -> str:
         "Schutz":        int(meta.get("schutz", 0)),
         "Beweglichkeit": int(meta.get("beweglichkeit", 0)),
         "Instinkt":      int(meta.get("instinkt", 0)),
+        "Knurren":       int(meta.get("knurren", 0)),
     }
     max_val = max(stats.values())
     winners = [name for name, val in stats.items() if val == max_val]
@@ -74,6 +75,7 @@ PLACEHOLDER_MAP: dict[str, object] = {
     "[SCHUTZ]":               lambda m: str(m.get("schutz", "")),
     "[BEWEGLICHKEIT]":        lambda m: str(m.get("beweglichkeit", "")),
     "[INSTINKT]":             lambda m: str(m.get("instinkt", "")),
+    "[KNURREN]":              lambda m: str(m.get("knurren", "")),
     "[HÖCHSTER_STAT]":        lambda m: _highest_stat_names(m),
 }
 

@@ -5,7 +5,8 @@ qualitaet: Gewöhnlich
 zugkraft: 7
 schutz: 2
 beweglichkeit: 2
-instinkt: 6
+instinkt: 4
+knurren: 6
 hunderasse: Irischer Wolfshund
 pose: steht stolz auf einem Waldweg und blickt in das Dickicht
 hintergrund: alter Waldweg mit Wegweisern

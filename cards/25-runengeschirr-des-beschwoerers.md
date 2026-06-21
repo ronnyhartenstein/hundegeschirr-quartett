@@ -6,6 +6,7 @@ zugkraft: 4
 schutz: 6
 beweglichkeit: 6
 instinkt: 10
+knurren: 4
 hunderasse: Irischer Wolfshund
 pose: steht inmitten schwebender Runen-Symbole vor einer verfallenen Ruine im Morgenlicht
 hintergrund: verlassene Ruine im Morgenlicht

@@ -10,7 +10,7 @@ CARDS_DIR = Path(__file__).parent / "cards"
 OUTPUT_FILE = Path(__file__).parent / "balance.html"
 
 QUALITY_ORDER = ["Gewöhnlich", "Selten", "Episch", "Magisch", "Legendär"]
-QUALITY_TARGET = {"Gewöhnlich": 17, "Selten": 20, "Episch": 23, "Magisch": 26, "Legendär": 30}
+QUALITY_TARGET = {"Gewöhnlich": 21, "Selten": 24, "Episch": 27, "Magisch": 30, "Legendär": 34}
 QUALITY_COLORS = {
     "Gewöhnlich": "#9ca3af",
     "Selten": "#3b82f6",
@@ -18,8 +18,8 @@ QUALITY_COLORS = {
     "Magisch": "#f59e0b",
     "Legendär": "#ef4444",
 }
-STATS = ["zugkraft", "schutz", "beweglichkeit", "instinkt"]
-STAT_LABELS = {"zugkraft": "Zugkraft", "schutz": "Schutz", "beweglichkeit": "Beweglichkeit", "instinkt": "Instinkt"}
+STATS = ["zugkraft", "schutz", "beweglichkeit", "instinkt", "knurren"]
+STAT_LABELS = {"zugkraft": "Zugkraft", "schutz": "Schutz", "beweglichkeit": "Beweglichkeit", "instinkt": "Instinkt", "knurren": "Knurren"}
 
 
 def parse_card(path: Path) -> dict:

@@ -6,6 +6,7 @@ zugkraft: 4
 schutz: 6
 beweglichkeit: 10
 instinkt: 10
+knurren: 4
 hunderasse: Azawakh
 pose: ist halb in eine andere Dimension entrückt – Körper noch sichtbar, aber bereits verblassend
 hintergrund: verlassene Ruine im Morgenlicht

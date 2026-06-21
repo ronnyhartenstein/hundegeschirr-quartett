@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 4
 schutz: 3
 beweglichkeit: 7
-instinkt: 9
+instinkt: 8
+knurren: 5
 hunderasse: Dackel
 pose: späht listig hinter einer Wurzel hervor und beobachtet etwas außerhalb des Bildes
 hintergrund: alter Waldweg mit Wegweisern

@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 9
 schutz: 6
 beweglichkeit: 4
-instinkt: 4
+instinkt: 2
+knurren: 6
 hunderasse: Mastiff
 pose: steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund
 hintergrund: verlassene Ruine im Morgenlicht

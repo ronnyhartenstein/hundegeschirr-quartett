@@ -5,7 +5,8 @@ qualitaet: Legendär
 zugkraft: 10
 schutz: 8
 beweglichkeit: 5
-instinkt: 7
+instinkt: 3
+knurren: 8
 hunderasse: Tibetischer Mastiff
 pose: steht auf einem Berggipfel über den Wolken, unerschütterlich wie der Fels selbst
 hintergrund: Gebirgspfad mit Nebel

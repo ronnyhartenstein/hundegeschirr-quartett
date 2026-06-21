@@ -5,7 +5,8 @@ qualitaet: Magisch
 zugkraft: 10
 schutz: 8
 beweglichkeit: 4
-instinkt: 4
+instinkt: 1
+knurren: 7
 hunderasse: Mastiff
 pose: steht unerschütterlich im Mittelpunkt eines Schlachtfeldes, Burgmauern im Hintergrund
 hintergrund: Burginnenhof bei Sonnenuntergang

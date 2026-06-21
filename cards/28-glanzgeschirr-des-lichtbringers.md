@@ -6,6 +6,7 @@ zugkraft: 4
 schutz: 9
 beweglichkeit: 6
 instinkt: 7
+knurren: 4
 hunderasse: Berner Sennenhund
 pose: steht im strahlenden Lichtkegel eines Sonnenuntergangs auf einem Burginnenhof
 hintergrund: Burginnenhof bei Sonnenuntergang

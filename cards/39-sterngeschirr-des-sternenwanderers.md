@@ -5,7 +5,8 @@ qualitaet: Legendär
 zugkraft: 6
 schutz: 6
 beweglichkeit: 9
-instinkt: 9
+instinkt: 8
+knurren: 5
 hunderasse: Saarloos-Wolfhund
 pose: läuft unter einem überwältigenden Sternenhimmel über einen einsamen Gebirgspfad
 hintergrund: Gebirgspfad mit Nebel

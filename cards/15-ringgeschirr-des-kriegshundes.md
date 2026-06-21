@@ -5,7 +5,8 @@ qualitaet: Selten
 zugkraft: 9
 schutz: 5
 beweglichkeit: 3
-instinkt: 3
+instinkt: 1
+knurren: 6
 hunderasse: Mastiff
 pose: steht bedrohlich auf einem Burginnenhof und fletscht leicht die Zähne
 hintergrund: Burginnenhof bei Sonnenuntergang

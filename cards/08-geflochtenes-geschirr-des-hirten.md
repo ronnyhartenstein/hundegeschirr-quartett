@@ -5,7 +5,8 @@ qualitaet: Gewöhnlich
 zugkraft: 3
 schutz: 6
 beweglichkeit: 3
-instinkt: 5
+instinkt: 6
+knurren: 3
 hunderasse: Border Collie
 pose: steht aufrecht auf einer Anhöhe und überblickt eine Wiese
 hintergrund: mittelalterliches Dorf am Waldrand

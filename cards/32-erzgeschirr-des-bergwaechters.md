@@ -5,7 +5,8 @@ qualitaet: Magisch
 zugkraft: 9
 schutz: 8
 beweglichkeit: 4
-instinkt: 5
+instinkt: 3
+knurren: 6
 hunderasse: Berner Sennenhund
 pose: steht wie ein Fels auf einem Gebirgspfad, Bergmassiv im Rücken
 hintergrund: Gebirgspfad mit Nebel

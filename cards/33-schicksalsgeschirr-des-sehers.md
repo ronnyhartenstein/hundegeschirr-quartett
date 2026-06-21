@@ -6,6 +6,7 @@ zugkraft: 5
 schutz: 7
 beweglichkeit: 8
 instinkt: 10
+knurren: 4
 hunderasse: Tschechoslowakischer Wolfhund
 pose: steht reglos vor einem flackernden Orakelfeuer und blickt in eine unsichtbare Ferne
 hintergrund: verlassene Ruine im Morgenlicht

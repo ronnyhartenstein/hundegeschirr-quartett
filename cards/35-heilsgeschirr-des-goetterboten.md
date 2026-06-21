@@ -5,7 +5,8 @@ qualitaet: Legendär
 zugkraft: 5
 schutz: 10
 beweglichkeit: 7
-instinkt: 8
+instinkt: 7
+knurren: 5
 hunderasse: Leonberger
 pose: steht in einem Lichtkegel, der direkt vom Himmel herabfällt, Federn und Goldpartikel schweben um ihn
 hintergrund: Burginnenhof bei Sonnenuntergang

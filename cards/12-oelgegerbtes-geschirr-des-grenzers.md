@@ -5,7 +5,8 @@ qualitaet: Selten
 zugkraft: 5
 schutz: 7
 beweglichkeit: 4
-instinkt: 4
+instinkt: 3
+knurren: 5
 hunderasse: Deutscher Schäferhund
 pose: steht mit erhobenem Kopf an einer alten Grenzstein-Markierung im Nebel
 hintergrund: verlassene Ruine im Morgenlicht

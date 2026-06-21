@@ -4,7 +4,7 @@ Thema: „Hunde im Geschirr“ in einem mittelalterlichen Fantasy-Setting.
 
 Die Karte soll wie eine hochwertige Fantasy-Quartettkarte aussehen:
 - obere Hälfte: großes Motiv eines Hundes mit mittelalterlichem Geschirr
-- untere Hälfte: Wertebereich mit exakt vier gut lesbaren Wertezeilen
+- untere Hälfte: Wertebereich mit exakt fünf gut lesbaren Wertezeilen
 - oben ein Titelbereich
 - kunstvoller Rahmen aus dunklem Metall, Bronze, Leder und mittelalterlichen Ornamenten
 - edler RPG-Item-Stil, inspiriert von klassischen Fantasy-Rollenspiel-Qualitätsstufen
@@ -31,20 +31,22 @@ Hintergrund:
 [HINTERGRUND], mittelalterliche Fantasy-Atmosphäre, natürliches Licht, leichter Nebel, epische Landschaft.
 
 Unterer Wertebereich:
-Dunkles Lederfeld mit exakt diesen vier Zeilen, gut lesbar, sauber gesetzt, keine zusätzlichen Texte:
+Dunkles Lederfeld mit exakt diesen fünf Zeilen, gut lesbar, sauber gesetzt, keine zusätzlichen Texte:
 
 Zugkraft: [ZUGKRAFT]
 Schutz: [SCHUTZ]
 Beweglichkeit: [BEWEGLICHKEIT]
 Instinkt: [INSTINKT]
+Knurren: [KNURREN]
 
 Links neben jeder Zeile ein kleines passendes 3D Icon ohne Rahmen in Qualitätsfarbe:
 - Muskel für Zugkraft
 - Schild für Schutz
 - Blitz für Beweglichkeit
 - Stern für Instinkt
+- Reißzahn für Knurren
 
-Der Zahlenwert der Zeile [HÖCHSTER_STAT] hat einen goldenen Leuchtschein – es ist der höchste Wert der Karte.
+Der Zahlenwert (nicht das Icon!) der Zeile [HÖCHSTER_STAT] hat einen goldenen Leuchtschein – es ist der höchste Wert der Karte.
 
 Designregeln:
 - nur die genannten Texte verwenden

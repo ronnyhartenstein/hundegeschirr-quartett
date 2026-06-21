@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 8
 schutz: 9
 beweglichkeit: 3
-instinkt: 3
+instinkt: 1
+knurren: 6
 hunderasse: Irischer Wolfshund
 pose: sitzt aufrecht und würdevoll vor einem Burgtor mit wallendem Banner im Hintergrund
 hintergrund: Burginnenhof bei Sonnenuntergang

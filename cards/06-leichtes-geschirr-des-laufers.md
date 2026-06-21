@@ -5,7 +5,8 @@ qualitaet: Gewöhnlich
 zugkraft: 2
 schutz: 3
 beweglichkeit: 8
-instinkt: 4
+instinkt: 6
+knurren: 2
 hunderasse: Windhund
 pose: streckt sich im vollen Galopp auf einem Waldweg
 hintergrund: alter Waldweg mit Wegweisern

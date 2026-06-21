@@ -5,7 +5,8 @@ qualitaet: Selten
 zugkraft: 8
 schutz: 4
 beweglichkeit: 3
-instinkt: 5
+instinkt: 4
+knurren: 5
 hunderasse: Mastiff
 pose: steht beladen mit Packtaschen auf einem Gebirgspfad und blickt stoisch nach vorn
 hintergrund: Gebirgspfad mit Nebel

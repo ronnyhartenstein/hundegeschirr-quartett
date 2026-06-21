@@ -5,7 +5,8 @@ qualitaet: Episch
 zugkraft: 3
 schutz: 4
 beweglichkeit: 10
-instinkt: 6
+instinkt: 7
+knurren: 3
 hunderasse: Windhund
 pose: späht von einer Anhöhe über das Gelände in die Ferne
 hintergrund: verlassene Ruine im Morgenlicht

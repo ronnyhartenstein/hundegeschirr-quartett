@@ -5,7 +5,8 @@ qualitaet: Selten
 zugkraft: 4
 schutz: 9
 beweglichkeit: 3
-instinkt: 4
+instinkt: 2
+knurren: 6
 hunderasse: Deutscher Schäferhund
 pose: sitzt dicht neben einem Thronsessel und blickt unverwandt auf den Eingang
 hintergrund: Burginnenhof bei Sonnenuntergang

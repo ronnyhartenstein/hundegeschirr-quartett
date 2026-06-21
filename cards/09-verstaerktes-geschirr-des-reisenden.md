@@ -6,6 +6,7 @@ zugkraft: 8
 schutz: 5
 beweglichkeit: 4
 instinkt: 3
+knurren: 4
 hunderasse: Berner Sennenhund
 pose: läuft beharrlich auf einem langen Gebirgspfad, Satteltaschen vollgepackt
 hintergrund: Gebirgspfad mit Nebel
