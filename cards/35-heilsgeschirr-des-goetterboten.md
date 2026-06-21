@@ -2,7 +2,6 @@
 nummer: 35
 name: Heilsgeschirr des Götterboten
 qualitaet: Legendär
-qualitaetsfarbe: gold-orangefarbener magischer Akzent
 zugkraft: 5
 schutz: 10
 beweglichkeit: 7

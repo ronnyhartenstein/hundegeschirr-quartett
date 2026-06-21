@@ -2,7 +2,6 @@
 nummer: 39
 name: Sterngeschirr des Sternenwanderers
 qualitaet: Legendär
-qualitaetsfarbe: gold-orangefarbener magischer Akzent
 zugkraft: 6
 schutz: 6
 beweglichkeit: 9

@@ -2,7 +2,6 @@
 nummer: 22
 name: Feldgeschirr des Kundschafters
 qualitaet: Episch
-qualitaetsfarbe: blauer magischer Akzent
 zugkraft: 3
 schutz: 4
 beweglichkeit: 10

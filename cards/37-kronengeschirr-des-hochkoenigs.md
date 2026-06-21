@@ -2,7 +2,6 @@
 nummer: 37
 name: Kronengeschirr des Hochkönigs
 qualitaet: Legendär
-qualitaetsfarbe: gold-orangefarbener magischer Akzent
 zugkraft: 8
 schutz: 8
 beweglichkeit: 7

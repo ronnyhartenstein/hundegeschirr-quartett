@@ -2,7 +2,6 @@
 nummer: 32
 name: Erzgeschirr des Bergwächters
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 9
 schutz: 8
 beweglichkeit: 4

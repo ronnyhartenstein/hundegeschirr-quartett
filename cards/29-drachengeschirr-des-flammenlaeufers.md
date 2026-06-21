@@ -2,7 +2,6 @@
 nummer: 29
 name: Drachengeschirr des Flammenläufers
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 10
 schutz: 7
 beweglichkeit: 5

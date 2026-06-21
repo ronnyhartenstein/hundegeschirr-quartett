@@ -2,7 +2,6 @@
 nummer: 34
 name: Titanengeschirr des Urvaters
 qualitaet: Legendär
-qualitaetsfarbe: gold-orangefarbener magischer Akzent
 zugkraft: 10
 schutz: 8
 beweglichkeit: 5

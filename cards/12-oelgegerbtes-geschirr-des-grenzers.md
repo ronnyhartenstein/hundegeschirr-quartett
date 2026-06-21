@@ -2,7 +2,6 @@
 nummer: 12
 name: Ölgegerbtes Geschirr des Grenzers
 qualitaet: Selten
-qualitaetsfarbe: smaragdgrüner Akzent
 zugkraft: 5
 schutz: 7
 beweglichkeit: 4

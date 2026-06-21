@@ -2,7 +2,6 @@
 nummer: 31
 name: Sturmgeschirr des Windjägers
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 5
 schutz: 3
 beweglichkeit: 10

@@ -2,7 +2,6 @@
 nummer: 16
 name: Doppellagiges Geschirr des Leibwächters
 qualitaet: Selten
-qualitaetsfarbe: smaragdgrüner Akzent
 zugkraft: 4
 schutz: 9
 beweglichkeit: 3

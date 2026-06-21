@@ -2,7 +2,6 @@
 nummer: 25
 name: Runengeschirr des Beschwörers
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 4
 schutz: 6
 beweglichkeit: 6

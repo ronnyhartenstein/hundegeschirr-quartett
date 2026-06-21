@@ -2,7 +2,6 @@
 nummer: 13
 name: Gurtgeschirr des Packtiers
 qualitaet: Selten
-qualitaetsfarbe: smaragdgrüner Akzent
 zugkraft: 8
 schutz: 4
 beweglichkeit: 3

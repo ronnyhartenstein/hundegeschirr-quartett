@@ -2,7 +2,6 @@
 nummer: 14
 name: Schnallengeschirr des Boten
 qualitaet: Selten
-qualitaetsfarbe: smaragdgrüner Akzent
 zugkraft: 3
 schutz: 3
 beweglichkeit: 10

@@ -2,7 +2,6 @@
 nummer: 04
 name: Baumwollgeschirr des Boten
 qualitaet: Gewöhnlich
-qualitaetsfarbe: weiß-silberner Akzent
 zugkraft: 3
 schutz: 3
 beweglichkeit: 8

@@ -2,7 +2,6 @@
 nummer: 10
 name: Gepolstertes Geschirr des Spähers
 qualitaet: Selten
-qualitaetsfarbe: smaragdgrüner Akzent
 zugkraft: 3
 schutz: 3
 beweglichkeit: 8

@@ -2,7 +2,6 @@
 nummer: 21
 name: Jagdgeschirr des Fallenstellers
 qualitaet: Episch
-qualitaetsfarbe: blauer magischer Akzent
 zugkraft: 4
 schutz: 3
 beweglichkeit: 7

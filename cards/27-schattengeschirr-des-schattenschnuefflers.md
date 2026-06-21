@@ -2,7 +2,6 @@
 nummer: 27
 name: Schattengeschirr des Nachtschnüfflers
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 4
 schutz: 3
 beweglichkeit: 10

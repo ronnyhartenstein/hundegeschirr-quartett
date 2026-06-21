@@ -39,6 +39,14 @@ RATE_LIMIT_DELAY = 1.0  # seconds between API calls
 WEBP_QUALITY = 25       # lossy WebP quality (0–100); 25 is plenty for low/medium API output
 RECOMPRESS_THRESHOLD = 3 * 1024 * 1024  # bytes; images larger than this get recompressed
 
+QUALITAETSFARBE_MAP = {
+    "Gewöhnlich": "weiß-silberner Akzent",
+    "Selten":     "smaragdgrüner Akzent",
+    "Episch":     "violetter Akzent",
+    "Magisch":    "blauer magischer Akzent",
+    "Legendär":   "gold-orangefarbener magischer Akzent",
+}
+
 # Maps master_prompt.md placeholders to frontmatter fields / transformations.
 # Each value is a callable (meta: dict) -> str.
 PLACEHOLDER_MAP: dict[str, object] = {
@@ -47,7 +55,7 @@ PLACEHOLDER_MAP: dict[str, object] = {
     "[HUNDERASSE]":           lambda m: str(m.get("hunderasse", "")),
     "[POSE]":                 lambda m: str(m.get("pose", "")),
     "[GESCHIRR_BESCHREIBUNG]": lambda m: str(m.get("geschirr_beschreibung", "")),
-    "[QUALITÄTSFARBE]":       lambda m: str(m.get("qualitaetsfarbe", "")),
+    "[QUALITÄTSFARBE]":       lambda m: QUALITAETSFARBE_MAP.get(str(m.get("qualitaet", "")), ""),
     "[HINTERGRUND]":          lambda m: str(m.get("hintergrund", "")),
     "[ZUGKRAFT]":             lambda m: str(m.get("zugkraft", "")),
     "[SCHUTZ]":               lambda m: str(m.get("schutz", "")),

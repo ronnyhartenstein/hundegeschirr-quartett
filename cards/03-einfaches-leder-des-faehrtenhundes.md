@@ -2,7 +2,6 @@
 nummer: 03
 name: Einfaches Leder des Fährtenhundes
 qualitaet: Gewöhnlich
-qualitaetsfarbe: weiß-silberner Akzent
 zugkraft: 2
 schutz: 3
 beweglichkeit: 3

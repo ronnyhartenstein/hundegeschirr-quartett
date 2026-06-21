@@ -2,7 +2,6 @@
 nummer: 33
 name: Schicksalsgeschirr des Sehers
 qualitaet: Legendär
-qualitaetsfarbe: gold-orangefarbener magischer Akzent
 zugkraft: 5
 schutz: 7
 beweglichkeit: 8

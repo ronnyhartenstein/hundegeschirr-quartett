@@ -2,7 +2,6 @@
 nummer: 26
 name: Plattenpanzer des Kriegers
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 10
 schutz: 8
 beweglichkeit: 4

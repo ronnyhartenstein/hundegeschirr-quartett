@@ -2,7 +2,6 @@
 nummer: 15
 name: Ringgeschirr des Kriegshundes
 qualitaet: Selten
-qualitaetsfarbe: smaragdgrüner Akzent
 zugkraft: 9
 schutz: 5
 beweglichkeit: 3

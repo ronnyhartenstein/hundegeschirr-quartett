@@ -2,7 +2,6 @@
 nummer: 28
 name: Glanzgeschirr des Lichtbringers
 qualitaet: Magisch
-qualitaetsfarbe: violetter magischer Akzent
 zugkraft: 4
 schutz: 9
 beweglichkeit: 6

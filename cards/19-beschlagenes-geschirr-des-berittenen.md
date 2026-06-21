@@ -2,7 +2,6 @@
 nummer: 19
 name: Beschlagenes Geschirr des Berittenen
 qualitaet: Episch
-qualitaetsfarbe: blauer magischer Akzent
 zugkraft: 7
 schutz: 4
 beweglichkeit: 9

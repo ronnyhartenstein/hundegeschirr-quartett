@@ -2,7 +2,6 @@
 nummer: 40
 name: Weltgeschirr des Weltenwanderers
 qualitaet: Legendär
-qualitaetsfarbe: gold-orangefarbener magischer Akzent
 zugkraft: 8
 schutz: 7
 beweglichkeit: 8

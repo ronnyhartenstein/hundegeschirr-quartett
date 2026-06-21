@@ -2,7 +2,6 @@
 nummer: 01
 name: Schlichtes Geschirr des Bauern
 qualitaet: Gewöhnlich
-qualitaetsfarbe: weiß-silberner Akzent
 zugkraft: 5
 schutz: 4
 beweglichkeit: 4

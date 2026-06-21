@@ -2,7 +2,6 @@
 nummer: 07
 name: Kunstledergeschirr des Jägers
 qualitaet: Gewöhnlich
-qualitaetsfarbe: weiß-silberner Akzent
 zugkraft: 7
 schutz: 2
 beweglichkeit: 2
