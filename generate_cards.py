@@ -295,6 +295,18 @@ def collect_cards(target: str | None) -> list[Path]:
     return sorted(search_root.rglob("*.md"))
 
 
+def sample_one_per_quality(cards: list[Path]) -> list[Path]:
+    """Return one card per quality level (in canonical order)."""
+    order = ["Gewöhnlich", "Selten", "Episch", "Magisch", "Legendär"]
+    by_quality: dict[str, Path] = {}
+    for card_path in cards:
+        post = frontmatter.load(str(card_path))
+        q = str(post.metadata.get("qualitaet", ""))
+        if q and q not in by_quality:
+            by_quality[q] = card_path
+    return [by_quality[q] for q in order if q in by_quality]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate card images for Hundegeschirr-Quartett")
     parser.add_argument(
@@ -343,6 +355,11 @@ def main() -> None:
         action="store_true",
         help="Print the prompt for each card without calling the API.",
     )
+    parser.add_argument(
+        "--sample",
+        action="store_true",
+        help="Generate one card per quality level (5 cards total) — useful for test runs.",
+    )
     args = parser.parse_args()
 
     if args.recompress:
@@ -362,6 +379,10 @@ def main() -> None:
 
     master_template = load_master_template()
     cards = collect_cards(args.target)
+
+    if args.sample:
+        cards = sample_one_per_quality(cards)
+        print(f"[{_ts()}] --sample: selected {len(cards)} card(s), one per quality level")
 
     if not cards:
         print("No card files found.")
