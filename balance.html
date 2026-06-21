@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hundegeschirr-Quartett – Balance-Analyse</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; padding: 2rem; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; color: #f1f5f9; }
+  .subtitle { color: #64748b; margin-bottom: 2rem; font-size: 0.9rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 1rem; color: #cbd5e1; border-bottom: 1px solid #1e293b; padding-bottom: 0.5rem; }
+  .card { background: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem; }
+  .chart-wrap { position: relative; height: 380px; }
+  .chart-wrap-tall { position: relative; height: 480px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { background: #0f172a; padding: 0.5rem 0.75rem; text-align: left; color: #94a3b8; font-weight: 600; position: sticky; top: 0; }
+  td { padding: 0.4rem 0.75rem; border-bottom: 1px solid #0f172a; }
+  tr:hover td { background: #263344; }
+  .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; color: #fff; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .ok { color: #4ade80; }
+  .err { color: #f87171; font-weight: 700; }
+  .table-wrap { max-height: 480px; overflow-y: auto; border-radius: 0.5rem; }
+</style>
+</head>
+<body>
+<h1>Hundegeschirr-Quartett</h1>
+<p class="subtitle">Balance-Analyse · 40 Karten · 5 Qualitätsstufen</p>
+
+<h2>1 · Kartenübersicht</h2>
+<div class="card">
+  <div class="table-wrap">
+    <table id="cardTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Qualität</th>
+          <th class="num">Zugkraft</th>
+          <th class="num">Schutz</th>
+          <th class="num">Beweglichkeit</th>
+          <th class="num">Instinkt</th>
+          <th class="num">Gesamt</th>
+          <th class="num">Soll</th>
+        </tr>
+      </thead>
+      <tbody id="cardTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<h2>2 · Durchschnittswerte je Qualitätsstufe</h2>
+<div class="card">
+  <div class="chart-wrap"><canvas id="avgChart"></canvas></div>
+</div>
+
+<h2>3 · Wertebereich je Stat &amp; Qualitätsstufe</h2>
+<div class="card grid-2">
+  <div class="chart-wrap"><canvas id="rangeZugkraft"></canvas></div>
+  <div class="chart-wrap"><canvas id="rangeSchutz"></canvas></div>
+  <div class="chart-wrap"><canvas id="rangeBeweglichkeit"></canvas></div>
+  <div class="chart-wrap"><canvas id="rangeInstinkt"></canvas></div>
+</div>
+
+<h2>4 · Gesamtpunkte aller Karten (Ist vs. Soll)</h2>
+<div class="card">
+  <div class="chart-wrap-tall"><canvas id="totalChart"></canvas></div>
+</div>
+
+<script>
+const cards = [{"nummer": 1, "name": "Schlichtes Geschirr des Bauern", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 5, "schutz": 4, "beweglichkeit": 4, "instinkt": 4, "hunderasse": "Berner Sennenhund", "pose": "steht ruhig auf einem Feldweg vor einem Bauerndorf", "hintergrund": "mittelalterliches Dorf am Waldrand", "geschirr_beschreibung": "robustes braunes Leder mit einfachen Eisenschnallen und einem schlichten Zuggurt", "file": "01-schlichtes-geschirr-des-bauern.md"}, {"nummer": 2, "name": "Robustes Geschirr des Knechts", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 8, "schutz": 4, "beweglichkeit": 3, "instinkt": 2, "hunderasse": "Mastiff", "pose": "steht breitbeinig und kraftvoll auf einem Hofplatz", "hintergrund": "mittelalterliches Dorf am Waldrand", "geschirr_beschreibung": "breites braunes Leder mit schweren Eisenschnallen und verstärktem Brustgurt", "file": "02-robustes-geschirr-des-knechts.md"}, {"nummer": 3, "name": "Einfaches Leder des Fährtenhundes", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 2, "schutz": 3, "beweglichkeit": 3, "instinkt": 9, "hunderasse": "Dackel", "pose": "späht mit gesenktem Kopf tief in einen Waldpfad hinein", "hintergrund": "alter Waldweg mit Wegweisern", "geschirr_beschreibung": "leichtes braunes Leder mit schmalen Riemen und einem kleinen Nasensymbol als Schnallenverzierung", "file": "03-einfaches-leder-des-faehrtenhundes.md"}, {"nummer": 4, "name": "Baumwollgeschirr des Boten", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 3, "schutz": 3, "beweglichkeit": 8, "instinkt": 3, "hunderasse": "Windhund", "pose": "läuft mit gestrecktem Körper über eine Steinbrücke", "hintergrund": "Steinbrücke über einen Fluss", "geschirr_beschreibung": "helles Baumwollgeschirr mit einfachen Schnallen und einer kleinen angenähten Botentasche", "file": "04-baumwollgeschirr-des-boten.md"}, {"nummer": 5, "name": "Strapazierfähiges Geschirr des Wächters", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 3, "schutz": 8, "beweglichkeit": 3, "instinkt": 3, "hunderasse": "Deutscher Schäferhund", "pose": "sitzt wachsam vor einem Burgtor und blickt direkt in die Kamera", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "abgenutztes aber robustes braunes Leder mit verstärkten Schulterpolstern und eisernen Brustplatten", "file": "05-strapazierfahiges-geschirr-des-waechters.md"}, {"nummer": 6, "name": "Leichtes Geschirr des Läufers", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 2, "schutz": 3, "beweglichkeit": 8, "instinkt": 4, "hunderasse": "Windhund", "pose": "streckt sich im vollen Galopp auf einem Waldweg", "hintergrund": "alter Waldweg mit Wegweisern", "geschirr_beschreibung": "hauchdünnes Ledergeschirr mit winzigen Schnallen, kaum sichtbar unter dem Fell", "file": "06-leichtes-geschirr-des-laufers.md"}, {"nummer": 7, "name": "Kunstledergeschirr des Jägers", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 7, "schutz": 2, "beweglichkeit": 2, "instinkt": 6, "hunderasse": "Irischer Wolfshund", "pose": "steht stolz auf einem Waldweg und blickt in das Dickicht", "hintergrund": "alter Waldweg mit Wegweisern", "geschirr_beschreibung": "dunkelbraunes Kunstleder mit einem kleinen Köcherhalter und Jagdmesserriemen an der Seite", "file": "07-kunstledergeschirr-des-jagers.md"}, {"nummer": "08", "name": "Geflochtenes Geschirr des Hirten", "qualitaet": "Gewöhnlich", "qualitaetsfarbe": "weiß-silberner Akzent", "zugkraft": 3, "schutz": 6, "beweglichkeit": 3, "instinkt": 5, "hunderasse": "Border Collie", "pose": "steht aufrecht auf einer Anhöhe und überblickt eine Wiese", "hintergrund": "mittelalterliches Dorf am Waldrand", "geschirr_beschreibung": "geflochtenes braunes Leder mit Holzperlen und einfachen handgefertigten Schnallen", "file": "08-geflochtenes-geschirr-des-hirten.md"}, {"nummer": "09", "name": "Verstärktes Geschirr des Reisenden", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 8, "schutz": 5, "beweglichkeit": 4, "instinkt": 3, "hunderasse": "Berner Sennenhund", "pose": "läuft beharrlich auf einem langen Gebirgspfad, Satteltaschen vollgepackt", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "verstärktes Leder mit grün leuchtenden Runen, kleinen Satteltaschen und Messing-Schnallen", "file": "09-verstaerktes-geschirr-des-reisenden.md"}, {"nummer": 10, "name": "Gepolstertes Geschirr des Spähers", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 3, "schutz": 3, "beweglichkeit": 8, "instinkt": 6, "hunderasse": "Windhund", "pose": "späht um eine Mauerecke einer verlassenen Ruine", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "dunkelgrünes gepolstertes Leder mit Runen-Stichen und lautlosen Stoffunterlagen an den Schnallen", "file": "10-gepolstertes-geschirr-des-spaehers.md"}, {"nummer": 11, "name": "Genähtes Geschirr des Fährtenlesers", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 3, "schutz": 3, "beweglichkeit": 5, "instinkt": 9, "hunderasse": "Bluthund", "pose": "hält die Schnauze tief am Boden eines Waldweges und folgt einer unsichtbaren Spur", "hintergrund": "alter Waldweg mit Wegweisern", "geschirr_beschreibung": "fein genähtes helles Leder mit grünen Runen und einem Spürnasensymbol über dem Rücken", "file": "11-genaehtes-geschirr-des-faehrtenlesers.md"}, {"nummer": 12, "name": "Ölgegerbtes Geschirr des Grenzers", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 5, "schutz": 7, "beweglichkeit": 4, "instinkt": 4, "hunderasse": "Deutscher Schäferhund", "pose": "steht mit erhobenem Kopf an einer alten Grenzstein-Markierung im Nebel", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "ölgegerbtes dunkles Leder mit grünen Metallnieten und einem Grenzstein-Anhänger am Brustgurt", "file": "12-oelgegerbtes-geschirr-des-grenzers.md"}, {"nummer": 13, "name": "Gurtgeschirr des Packtiers", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 8, "schutz": 4, "beweglichkeit": 3, "instinkt": 5, "hunderasse": "Mastiff", "pose": "steht beladen mit Packtaschen auf einem Gebirgspfad und blickt stoisch nach vorn", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "breites Gurtgeschirr aus grün-gerubbeltem Leder mit vielen Taschen und Trageriemen", "file": "13-gurtgeschirr-des-packtiers.md"}, {"nummer": 14, "name": "Schnallengeschirr des Boten", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 3, "schutz": 3, "beweglichkeit": 10, "instinkt": 4, "hunderasse": "Windhund", "pose": "sprintet in vollem Tempo durch einen belebten Marktplatz", "hintergrund": "Marktplatz einer Fantasy-Stadt", "geschirr_beschreibung": "schlankes Leder mit grün leuchtenden Schnallen und einer fest verschlossenen Botentasche am Rücken", "file": "14-schnallengeschirr-des-boten.md"}, {"nummer": 15, "name": "Ringgeschirr des Kriegshundes", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 9, "schutz": 5, "beweglichkeit": 3, "instinkt": 3, "hunderasse": "Mastiff", "pose": "steht bedrohlich auf einem Burginnenhof und fletscht leicht die Zähne", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "schweres Leder mit grün schimmernden Stahlringen, Metallnieten und einer Kampfkettenöse", "file": "15-ringgeschirr-des-kriegshundes.md"}, {"nummer": 16, "name": "Doppellagiges Geschirr des Leibwächters", "qualitaet": "Selten", "qualitaetsfarbe": "smaragdgrüner Akzent", "zugkraft": 4, "schutz": 9, "beweglichkeit": 3, "instinkt": 4, "hunderasse": "Deutscher Schäferhund", "pose": "sitzt dicht neben einem Thronsessel und blickt unverwandt auf den Eingang", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "doppellagiges Leder mit grünen Schutzrunen, gepolsterten Schultern und Brustplatten aus Messing", "file": "16-doppellagiges-geschirr-des-leibwaechters.md"}, {"nummer": 17, "name": "Stahlbeschlagenes Geschirr des Ritters", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 8, "schutz": 9, "beweglichkeit": 3, "instinkt": 3, "hunderasse": "Irischer Wolfshund", "pose": "sitzt aufrecht und würdevoll vor einem Burgtor mit wallendem Banner im Hintergrund", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "blau schimmerndes Leder mit polierten Stahlplatten, feinen Ketten und eingraviertem Ritterwappen", "file": "17-stahlbeschlagenes-geschirr-des-ritters.md"}, {"nummer": 18, "name": "Gepanzertes Geschirr des Paladins", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 4, "schutz": 9, "beweglichkeit": 3, "instinkt": 7, "hunderasse": "Berner Sennenhund", "pose": "steht im Lichtkegel eines Sonnenuntergangs vor einer Kathedrale", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "blau schimmerndes Leder mit Heilssymbolen, Lichtrunen und feinen Silberketten am Brustgurt", "file": "18-gepanzertes-geschirr-des-paladins.md"}, {"nummer": 19, "name": "Beschlagenes Geschirr des Berittenen", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 7, "schutz": 4, "beweglichkeit": 9, "instinkt": 3, "hunderasse": "Windhund", "pose": "galoppiert mit federleichtem Schritt über einen Gebirgspfad", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "blau schimmerndes Leder mit Metallbeschlägen, Steigbügel-Anhängern und einem Reiter-Siegel", "file": "19-beschlagenes-geschirr-des-berittenen.md"}, {"nummer": 20, "name": "Verziertes Geschirr des Adligen", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 4, "schutz": 5, "beweglichkeit": 6, "instinkt": 8, "hunderasse": "Irischer Wolfshund", "pose": "steht elegant auf dem Marktplatz einer Fantasy-Stadt und beobachtet das Treiben", "hintergrund": "Marktplatz einer Fantasy-Stadt", "geschirr_beschreibung": "blau schimmerndes Leder mit Edelstein-Einlagen, einem Familienwappen und vergoldeten Zierschnallen", "file": "20-verziertes-geschirr-des-adligen.md"}, {"nummer": 21, "name": "Jagdgeschirr des Fallenstellers", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 4, "schutz": 3, "beweglichkeit": 7, "instinkt": 9, "hunderasse": "Dackel", "pose": "späht listig hinter einer Wurzel hervor und beobachtet etwas außerhalb des Bildes", "hintergrund": "alter Waldweg mit Wegweisern", "geschirr_beschreibung": "blau schimmerndes Leder mit kleinen Fangeisen-Anhängern, Fallen-Runen und einer Kartentasche", "file": "21-jagdgeschirr-des-fallenstellers.md"}, {"nummer": 22, "name": "Feldgeschirr des Kundschafters", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 3, "schutz": 4, "beweglichkeit": 10, "instinkt": 6, "hunderasse": "Windhund", "pose": "späht von einer Anhöhe über das Gelände in die Ferne", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "blau schimmerndes Leder mit Kartentasche, Kompasshalter und leisen Filz-Unterlagen an den Schnallen", "file": "22-feldgeschirr-des-kundschafters.md"}, {"nummer": 23, "name": "Marschgeschirr des Söldners", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 9, "schutz": 6, "beweglichkeit": 4, "instinkt": 4, "hunderasse": "Mastiff", "pose": "steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "blau schimmerndes Leder mit massiven Metallplatten, Münzanhängern und Kampfspuren", "file": "23-marschgeschirr-des-soeldners.md"}, {"nummer": 24, "name": "Kettengeflecht des Wachhundes", "qualitaet": "Episch", "qualitaetsfarbe": "blauer magischer Akzent", "zugkraft": 5, "schutz": 9, "beweglichkeit": 3, "instinkt": 6, "hunderasse": "Deutscher Schäferhund", "pose": "sitzt nachts im Fackellicht vor dem Burgtor und blickt unverwandt in die Dunkelheit", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "blau schimmerndes Kettengeflecht über festem Leder mit Stahlplatten und glühenden Blau-Runen", "file": "24-kettengeflecht-des-wachhundes.md"}, {"nummer": 25, "name": "Runengeschirr des Beschwörers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 4, "schutz": 6, "beweglichkeit": 6, "instinkt": 10, "hunderasse": "Irischer Wolfshund", "pose": "steht inmitten schwebender Runen-Symbole vor einer verfallenen Ruine im Morgenlicht", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "violett verziertes Prunkgeschirr mit leuchtenden Beschwörungs-Runen, Geister-Anhängern und Bronzeornamenten", "file": "25-runengeschirr-des-beschwoerers.md"}, {"nummer": 26, "name": "Plattenpanzer des Kriegers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 10, "schutz": 8, "beweglichkeit": 4, "instinkt": 4, "hunderasse": "Mastiff", "pose": "steht unerschütterlich im Mittelpunkt eines Schlachtfeldes, Burgmauern im Hintergrund", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "violett verziertes Stahlplattengeschirr mit Schlachtrunen, massiven Schulterplatten und Kriegsornamenten", "file": "26-plattenpanzer-des-kriegers.md"}, {"nummer": 27, "name": "Schattengeschirr des Schattenschnüfflers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 4, "schutz": 3, "beweglichkeit": 10, "instinkt": 9, "hunderasse": "Schwarzer Windhund", "pose": "gleitet lautlos durch den Schatten einer Ruinenwand, kaum sichtbar im Zwielicht", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "schwarzes Leder mit violetten Schattenrunen und Tarnbeschichtung, die Licht schluckt statt zu reflektieren", "file": "27-schattengeschirr-des-schattenschnuefflers.md"}, {"nummer": 28, "name": "Glanzgeschirr des Lichtbringers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 4, "schutz": 9, "beweglichkeit": 6, "instinkt": 7, "hunderasse": "Berner Sennenhund", "pose": "steht im strahlenden Lichtkegel eines Sonnenuntergangs auf einem Burginnenhof", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "violett schimmerndes Leder mit Licht-Runen, strahlenden Kristallanhängern und Silberfiligran-Ornamenten", "file": "28-glanzgeschirr-des-lichtbringers.md"}, {"nummer": 29, "name": "Drachengeschirr des Flammenläufers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 10, "schutz": 7, "beweglichkeit": 5, "instinkt": 4, "hunderasse": "Deutsche Dogge", "pose": "steht auf einem Gebirgspfad, umgeben von lodernden Flammen und Glutpartikeln", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "violett verziertes Drachenschuppengeschirr mit Feuerrunen, glühenden Nieten und Drachenkrallen-Schnallen", "file": "29-drachengeschirr-des-flammenlaeufers.md"}, {"nummer": 30, "name": "Frostgeschirr des Eiszahnläufers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 7, "schutz": 8, "beweglichkeit": 5, "instinkt": 6, "hunderasse": "Husky", "pose": "steht majestätisch auf einem schneebedeckten Gebirgspfad, Atem als Dampfwolke sichtbar", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "violett schimmerndes Eis-Leder mit Frost-Runen, Eiszahn-Anhängern und gefrorenen Kristallverzierungen", "file": "30-frostgeschirr-des-eiszahnlaeufers.md"}, {"nummer": 31, "name": "Sturmgeschirr des Windjägers", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 5, "schutz": 3, "beweglichkeit": 10, "instinkt": 8, "hunderasse": "Windhund", "pose": "rast über eine Steinbrücke, umgeben von Blitzen und peitschendem Sturmwind", "hintergrund": "Steinbrücke über einen Fluss", "geschirr_beschreibung": "violett schimmerndes Leder mit Blitz-Runen, Windwirbel-Ornamenten und Sturmkristall-Anhängern", "file": "31-sturmgeschirr-des-windjaeger.md"}, {"nummer": 32, "name": "Erzgeschirr des Bergwächters", "qualitaet": "Magisch", "qualitaetsfarbe": "violetter magischer Akzent", "zugkraft": 9, "schutz": 8, "beweglichkeit": 4, "instinkt": 5, "hunderasse": "Berner Sennenhund", "pose": "steht wie ein Fels auf einem Gebirgspfad, Bergmassiv im Rücken", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "violett verziertes Erzgeschirr mit Bergkristall-Einlagen, Erz-Runen und massiven Bronzebeschlägen", "file": "32-erzgeschirr-des-bergwaechters.md"}, {"nummer": 33, "name": "Schicksalsgeschirr des Sehers", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 5, "schutz": 7, "beweglichkeit": 8, "instinkt": 10, "hunderasse": "Tschechoslowakischer Wolfhund", "pose": "steht reglos vor einem flackernden Orakelfeuer und blickt in eine unsichtbare Ferne", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "goldenes Leder mit leuchtenden Sehrunen, Orakelkristallen an den Riemen und prophetischen Gravuren auf den Schnallen", "file": "33-schicksalsgeschirr-des-sehers.md"}, {"nummer": 34, "name": "Titanengeschirr des Urvaters", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 10, "schutz": 8, "beweglichkeit": 5, "instinkt": 7, "hunderasse": "Tibetischer Mastiff", "pose": "steht auf einem Berggipfel über den Wolken, unerschütterlich wie der Fels selbst", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "goldenes Erzgeschirr mit titanischen Metallplatten, Urrunen aus der Zeit vor der Zeit und massiven Kettenverzierungen", "file": "34-titanengeschirr-des-urvaters.md"}, {"nummer": 35, "name": "Heilsgeschirr des Götterboten", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 5, "schutz": 10, "beweglichkeit": 7, "instinkt": 8, "hunderasse": "Leonberger", "pose": "steht in einem Lichtkegel, der direkt vom Himmel herabfällt, Federn und Goldpartikel schweben um ihn", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "goldenes Leder mit göttlichen Schutzrunen, himmlischen Kristallanhängern und strahlenden Heilssymbolen", "file": "35-heilsgeschirr-des-goetterboten.md"}, {"nummer": 36, "name": "Geistergeschirr des Phantomläufers", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 4, "schutz": 6, "beweglichkeit": 10, "instinkt": 10, "hunderasse": "Azawakh", "pose": "ist halb in eine andere Dimension entrückt – Körper noch sichtbar, aber bereits verblassend", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "goldenes Geschirr das gleichzeitig materiell und geisterhaft wirkt, mit Dimensionsrunen die Raum und Zeit krümmen", "file": "36-geistergeschirr-des-phantomlaeufers.md"}, {"nummer": 37, "name": "Kronengeschirr des Hochkönigs", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 8, "schutz": 8, "beweglichkeit": 7, "instinkt": 7, "hunderasse": "Neapolitanischer Mastiff", "pose": "sitzt auf einem steinernen Thron im Burginnenhof, die Krone des Reiches im Blick", "hintergrund": "Burginnenhof bei Sonnenuntergang", "geschirr_beschreibung": "goldenes Kronengeschirr mit kaiserlichen Insignien, funkelnden Edelsteinen und fein gravierten Königsornamenten", "file": "37-kronengeschirr-des-hochkoenigs.md"}, {"nummer": 38, "name": "Kriegsgeschirr des Schlachtkaisers", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 10, "schutz": 9, "beweglichkeit": 5, "instinkt": 6, "hunderasse": "Kaukasischer Owtscharka", "pose": "steht triumphierend auf einem zerstörten Schlachtfeld, der Horizont brennt hinter ihm", "hintergrund": "verlassene Ruine im Morgenlicht", "geschirr_beschreibung": "goldenes Kriegsgeschirr mit massiven Schlachtplatten, Kriegsrunen aus hundert Feldzügen und kaiserlichen Wappenschilden", "file": "38-kriegsgeschirr-des-schlachtkaisers.md"}, {"nummer": 39, "name": "Sterngeschirr des Sternenwanderers", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 6, "schutz": 6, "beweglichkeit": 9, "instinkt": 9, "hunderasse": "Saarloos-Wolfhund", "pose": "läuft unter einem überwältigenden Sternenhimmel über einen einsamen Gebirgspfad", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "goldenes Sterngeschirr mit Konstellationsrunen, leuchtenden Sternkristallanhängern und einer Himmelskarte auf dem Rückenriemen", "file": "39-sterngeschirr-des-sternenwanderers.md"}, {"nummer": 40, "name": "Weltgeschirr des Weltenwanderers", "qualitaet": "Legendär", "qualitaetsfarbe": "gold-orangefarbener magischer Akzent", "zugkraft": 8, "schutz": 7, "beweglichkeit": 8, "instinkt": 7, "hunderasse": "Kangal", "pose": "steht auf einem Hügel über einer endlosen Landschaft und überblickt ruhig die ganze Welt", "hintergrund": "Gebirgspfad mit Nebel", "geschirr_beschreibung": "goldenes Weltgeschirr mit kosmischen Kartengravuren, einer Weltkugel als Brustanhänger und universellen Runen aller Völker", "file": "40-weltgeschirr-des-weltenwanderers.md"}];
+const statsByQuality = {"Gewöhnlich": {"zugkraft": {"min": 2, "max": 8, "avg": 4.125, "values": [5, 8, 2, 3, 3, 2, 7, 3]}, "schutz": {"min": 2, "max": 8, "avg": 4.125, "values": [4, 4, 3, 3, 8, 3, 2, 6]}, "beweglichkeit": {"min": 2, "max": 8, "avg": 4.25, "values": [4, 3, 3, 8, 3, 8, 2, 3]}, "instinkt": {"min": 2, "max": 9, "avg": 4.5, "values": [4, 2, 9, 3, 3, 4, 6, 5]}}, "Selten": {"zugkraft": {"min": 3, "max": 9, "avg": 5.375, "values": [8, 3, 3, 5, 8, 3, 9, 4]}, "schutz": {"min": 3, "max": 9, "avg": 4.875, "values": [5, 3, 3, 7, 4, 3, 5, 9]}, "beweglichkeit": {"min": 3, "max": 10, "avg": 5.0, "values": [4, 8, 5, 4, 3, 10, 3, 3]}, "instinkt": {"min": 3, "max": 9, "avg": 4.75, "values": [3, 6, 9, 4, 5, 4, 3, 4]}}, "Episch": {"zugkraft": {"min": 3, "max": 9, "avg": 5.5, "values": [8, 4, 7, 4, 4, 3, 9, 5]}, "schutz": {"min": 3, "max": 9, "avg": 6.125, "values": [9, 9, 4, 5, 3, 4, 6, 9]}, "beweglichkeit": {"min": 3, "max": 10, "avg": 5.625, "values": [3, 3, 9, 6, 7, 10, 4, 3]}, "instinkt": {"min": 3, "max": 9, "avg": 5.75, "values": [3, 7, 3, 8, 9, 6, 4, 6]}}, "Magisch": {"zugkraft": {"min": 4, "max": 10, "avg": 6.625, "values": [4, 10, 4, 4, 10, 7, 5, 9]}, "schutz": {"min": 3, "max": 9, "avg": 6.5, "values": [6, 8, 3, 9, 7, 8, 3, 8]}, "beweglichkeit": {"min": 4, "max": 10, "avg": 6.25, "values": [6, 4, 10, 6, 5, 5, 10, 4]}, "instinkt": {"min": 4, "max": 10, "avg": 6.625, "values": [10, 4, 9, 7, 4, 6, 8, 5]}}, "Legendär": {"zugkraft": {"min": 4, "max": 10, "avg": 7.0, "values": [5, 10, 5, 4, 8, 10, 6, 8]}, "schutz": {"min": 6, "max": 10, "avg": 7.625, "values": [7, 8, 10, 6, 8, 9, 6, 7]}, "beweglichkeit": {"min": 5, "max": 10, "avg": 7.375, "values": [8, 5, 7, 10, 7, 5, 9, 8]}, "instinkt": {"min": 6, "max": 10, "avg": 8.0, "values": [10, 7, 8, 10, 7, 6, 9, 7]}}};
+const QUALITY_ORDER = ["Gew\u00f6hnlich", "Selten", "Episch", "Magisch", "Legend\u00e4r"];
+const QUALITY_COLORS = {"Gew\u00f6hnlich": "#9ca3af", "Selten": "#3b82f6", "Episch": "#a855f7", "Magisch": "#f59e0b", "Legend\u00e4r": "#ef4444"};
+const QUALITY_TARGET = {"Gew\u00f6hnlich": 17, "Selten": 20, "Episch": 23, "Magisch": 26, "Legend\u00e4r": 30};
+const STATS = ["zugkraft", "schutz", "beweglichkeit", "instinkt"];
+const STAT_LABELS = {"zugkraft": "Zugkraft", "schutz": "Schutz", "beweglichkeit": "Beweglichkeit", "instinkt": "Instinkt"};
+
+// ── 1 · Table ────────────────────────────────────────────────────────────────
+const tbody = document.getElementById('cardTableBody');
+cards.forEach((c, i) => {
+  const total = c.zugkraft + c.schutz + c.beweglichkeit + c.instinkt;
+  const target = QUALITY_TARGET[c.qualitaet];
+  const ok = total === target;
+  const color = QUALITY_COLORS[c.qualitaet];
+  tbody.insertAdjacentHTML('beforeend', `
+    <tr>
+      <td>${String(i+1).padStart(2,'0')}</td>
+      <td>${c.name}</td>
+      <td><span class="badge" style="background:${color}">${c.qualitaet}</span></td>
+      <td class="num">${c.zugkraft}</td>
+      <td class="num">${c.schutz}</td>
+      <td class="num">${c.beweglichkeit}</td>
+      <td class="num">${c.instinkt}</td>
+      <td class="num ${ok?'ok':'err'}">${total}</td>
+      <td class="num" style="color:#64748b">${target}</td>
+    </tr>`);
+});
+
+// ── 2 · Avg grouped bar ──────────────────────────────────────────────────────
+const statColors = ['#3b82f6','#22c55e','#f59e0b','#ec4899'];
+const avgDatasets = STATS.map((stat, i) => ({
+  label: STAT_LABELS[stat],
+  data: QUALITY_ORDER.map(q => statsByQuality[q][stat].avg),
+  backgroundColor: statColors[i],
+  borderRadius: 4,
+}));
+new Chart(document.getElementById('avgChart'), {
+  type: 'bar',
+  data: { labels: QUALITY_ORDER, datasets: avgDatasets },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { color: '#cbd5e1' } } },
+    scales: {
+      x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+      y: { min: 0, max: 10, ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+    },
+  },
+});
+
+// ── 3 · Range charts (one per stat) ─────────────────────────────────────────
+STATS.forEach((stat, idx) => {
+  const canvasId = 'range' + stat.charAt(0).toUpperCase() + stat.slice(1);
+  const avgs = QUALITY_ORDER.map(q => statsByQuality[q][stat].avg);
+  const mins = QUALITY_ORDER.map(q => statsByQuality[q][stat].min);
+  const maxs = QUALITY_ORDER.map(q => statsByQuality[q][stat].max);
+
+  new Chart(document.getElementById(canvasId), {
+    type: 'bar',
+    data: {
+      labels: QUALITY_ORDER,
+      datasets: [
+        {
+          label: 'Max',
+          data: maxs,
+          backgroundColor: statColors[idx] + '55',
+          borderColor: statColors[idx],
+          borderWidth: 1,
+          borderRadius: 2,
+        },
+        {
+          label: 'Ø',
+          data: avgs,
+          backgroundColor: statColors[idx] + 'cc',
+          borderColor: statColors[idx],
+          borderWidth: 1,
+          borderRadius: 2,
+          type: 'bar',
+        },
+        {
+          label: 'Min',
+          data: mins,
+          backgroundColor: '#0f172a',
+          borderColor: statColors[idx] + '88',
+          borderWidth: 1,
+          borderRadius: 2,
+          type: 'bar',
+        },
+      ],
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        title: { display: true, text: STAT_LABELS[stat], color: '#e2e8f0', font: { size: 14 } },
+        legend: { labels: { color: '#94a3b8', boxWidth: 12 } },
+      },
+      scales: {
+        x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+        y: { min: 0, max: 10, ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+      },
+    },
+  });
+});
+
+// ── 4 · Total points per card ────────────────────────────────────────────────
+const totalLabels = cards.map(c => c.nummer ? String(c.nummer).padStart(2,'0') : '');
+const totalValues = cards.map(c => c.zugkraft + c.schutz + c.beweglichkeit + c.instinkt);
+const totalColors = cards.map(c => QUALITY_COLORS[c.qualitaet]);
+const totalTargets = cards.map(c => QUALITY_TARGET[c.qualitaet]);
+
+// Annotation lines for each quality target
+const annotationLines = Object.entries(QUALITY_TARGET).map(([q, t]) => ({
+  type: 'line',
+  yMin: t, yMax: t,
+  borderColor: QUALITY_COLORS[q] + '88',
+  borderWidth: 1,
+  borderDash: [4, 4],
+  label: { content: q + ' (' + t + ')', display: true, position: 'start', color: QUALITY_COLORS[q], font: { size: 10 } },
+}));
+
+new Chart(document.getElementById('totalChart'), {
+  type: 'bar',
+  data: {
+    labels: totalLabels,
+    datasets: [
+      {
+        label: 'Gesamtwert',
+        data: totalValues,
+        backgroundColor: totalColors,
+        borderRadius: 3,
+      },
+      {
+        label: 'Soll',
+        data: totalTargets,
+        type: 'line',
+        borderColor: '#ffffff33',
+        borderWidth: 1,
+        borderDash: [3, 3],
+        pointRadius: 0,
+        fill: false,
+        tension: 0,
+      },
+    ],
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: '#cbd5e1' } },
+      tooltip: {
+        callbacks: {
+          title: (items) => cards[items[0].dataIndex].name,
+          afterBody: (items) => {
+            const c = cards[items[0].dataIndex];
+            return `Qualität: ${c.qualitaet}\nSoll: ${QUALITY_TARGET[c.qualitaet]}`;
+          },
+        },
+      },
+    },
+    scales: {
+      x: { ticks: { color: '#94a3b8', maxRotation: 0 }, grid: { color: '#1e293b' } },
+      y: { min: 14, max: 33, ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+    },
+  },
+});
+</script>
+</body>
+</html>
