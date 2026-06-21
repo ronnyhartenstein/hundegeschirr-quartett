@@ -338,8 +338,8 @@ def main() -> None:
     parser.add_argument(
         "--quality",
         choices=["low", "medium", "high"],
-        default="medium",
-        help="Image quality passed to the OpenAI API (default: medium).",
+        default="low",
+        help="Image quality passed to the OpenAI API (default: low).",
     )
     parser.add_argument(
         "--recompress",
