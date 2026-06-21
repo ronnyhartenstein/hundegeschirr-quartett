@@ -6,7 +6,7 @@ zugkraft: 7
 schutz: 2
 beweglichkeit: 2
 instinkt: 4
-knurren: 6
+knurren: 8
 hunderasse: Corgi
 pose: sitzt aufrecht auf einem Burgtreppchen und hält eine versiegelte Schriftrolle stolz im Maul
 hintergrund: Burginnenhof bei Sonnenuntergang

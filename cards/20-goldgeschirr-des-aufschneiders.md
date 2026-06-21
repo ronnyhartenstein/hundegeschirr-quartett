@@ -6,7 +6,7 @@ zugkraft: 8
 schutz: 2
 beweglichkeit: 9
 instinkt: 5
-knurren: 3
+knurren: 5
 hunderasse: Afghaner Windhund
 pose: steht hochaufgerichtet auf dem Marktplatz, langes seidiges Fell im Wind wehend, Blick voller Selbstüberschätzung
 hintergrund: Marktplatz einer Fantasy-Stadt

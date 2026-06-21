@@ -6,7 +6,7 @@ zugkraft: 4
 schutz: 3
 beweglichkeit: 10
 instinkt: 9
-knurren: 4
+knurren: 6
 hunderasse: Nackthund
 pose: gleitet lautlos durch den Schatten einer Ruinenwand, nacktes Fell kaum sichtbar im Zwielicht
 hintergrund: verlassene Ruine im Morgenlicht

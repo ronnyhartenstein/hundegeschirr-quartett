@@ -6,7 +6,7 @@ zugkraft: 4
 schutz: 5
 beweglichkeit: 1
 instinkt: 9
-knurren: 5
+knurren: 7
 hunderasse: Basset Hound
 pose: liegt ausgestreckt auf einem Waldweg neben einer alten Spur auf dem Boden, Augen halb geschlossen
 hintergrund: alter Waldweg mit Wegweisern

@@ -6,7 +6,7 @@ zugkraft: 10
 schutz: 7
 beweglichkeit: 5
 instinkt: 1
-knurren: 7
+knurren: 9
 hunderasse: Chihuahua
 pose: steht trotzig auf einem Gebirgspfad, umgeben von lodernden Flammen und Glutpartikeln
 hintergrund: Gebirgspfad mit Nebel

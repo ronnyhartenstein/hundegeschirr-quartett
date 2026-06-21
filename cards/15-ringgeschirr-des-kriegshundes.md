@@ -6,7 +6,7 @@ zugkraft: 9
 schutz: 5
 beweglichkeit: 3
 instinkt: 1
-knurren: 6
+knurren: 8
 hunderasse: Bulldogge
 pose: steht breit und niedrig auf einem Burginnenhof, massiver Kiefer vorgestreckt
 hintergrund: Burginnenhof bei Sonnenuntergang

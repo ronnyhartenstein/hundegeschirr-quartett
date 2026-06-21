@@ -6,7 +6,7 @@ zugkraft: 10
 schutz: 8
 beweglichkeit: 4
 instinkt: 1
-knurren: 7
+knurren: 9
 hunderasse: Mops
 pose: steht unerschütterlich im Mittelpunkt eines Schlachtfeldes, winzig aber absolut unbeeindruckt
 hintergrund: Burginnenhof bei Sonnenuntergang

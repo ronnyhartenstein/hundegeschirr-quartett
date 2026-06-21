@@ -6,7 +6,7 @@ zugkraft: 8
 schutz: 4
 beweglichkeit: 3
 instinkt: 1
-knurren: 5
+knurren: 7
 hunderasse: Mastiff
 pose: steht breitbeinig und kraftvoll auf einem Hofplatz
 hintergrund: mittelalterliches Dorf am Waldrand

@@ -6,7 +6,7 @@ zugkraft: 5
 schutz: 7
 beweglichkeit: 4
 instinkt: 3
-knurren: 5
+knurren: 7
 hunderasse: Rottweiler
 pose: steht mit erhobenem Kopf an einer alten Grenzstein-Markierung im Nebel
 hintergrund: verlassene Ruine im Morgenlicht

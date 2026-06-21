@@ -6,7 +6,7 @@ zugkraft: 3
 schutz: 3
 beweglichkeit: 5
 instinkt: 9
-knurren: 4
+knurren: 6
 hunderasse: Bluthund
 pose: hält die Schnauze tief am Boden eines Waldweges und folgt einer unsichtbaren Spur
 hintergrund: alter Waldweg mit Wegweisern

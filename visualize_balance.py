@@ -10,7 +10,7 @@ CARDS_DIR = Path(__file__).parent / "cards"
 OUTPUT_FILE = Path(__file__).parent / "balance.html"
 
 QUALITY_ORDER = ["Gewöhnlich", "Selten", "Episch", "Magisch", "Legendär"]
-QUALITY_TARGET = {"Gewöhnlich": 21, "Selten": 24, "Episch": 27, "Magisch": 30, "Legendär": 34}
+QUALITY_TARGET = {"Gewöhnlich": 23, "Selten": 26, "Episch": 29, "Magisch": 32, "Legendär": 34}
 QUALITY_COLORS = {
     "Gewöhnlich": "#FFFFFF",
     "Selten": "#16a34a",

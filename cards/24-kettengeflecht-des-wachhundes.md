@@ -6,7 +6,7 @@ zugkraft: 5
 schutz: 9
 beweglichkeit: 3
 instinkt: 4
-knurren: 6
+knurren: 8
 hunderasse: Schnauzer
 pose: sitzt im Fackellicht vor dem Burgtor und blickt unverwandt in die Dunkelheit, markante Barthaare aufgestellt
 hintergrund: Burginnenhof bei Sonnenuntergang

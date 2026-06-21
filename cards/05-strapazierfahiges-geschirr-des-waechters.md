@@ -6,7 +6,7 @@ zugkraft: 3
 schutz: 8
 beweglichkeit: 3
 instinkt: 2
-knurren: 5
+knurren: 7
 hunderasse: Deutscher Schäferhund
 pose: sitzt wachsam vor einem Burgtor und blickt direkt in die Kamera
 hintergrund: Burginnenhof bei Sonnenuntergang

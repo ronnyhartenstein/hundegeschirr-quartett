@@ -6,7 +6,7 @@ zugkraft: 3
 schutz: 3
 beweglichkeit: 8
 instinkt: 5
-knurren: 2
+knurren: 4
 hunderasse: Windhund
 pose: läuft mit gestrecktem Körper über eine Steinbrücke
 hintergrund: Steinbrücke über einen Fluss

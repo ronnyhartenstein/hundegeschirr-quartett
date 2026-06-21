@@ -6,7 +6,7 @@ zugkraft: 3
 schutz: 3
 beweglichkeit: 8
 instinkt: 7
-knurren: 3
+knurren: 5
 hunderasse: Kelpie
 pose: späht um eine Mauerecke einer verlassenen Ruine, Ohren gespitzt, Körper angespannt
 hintergrund: verlassene Ruine im Morgenlicht

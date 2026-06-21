@@ -6,7 +6,7 @@ zugkraft: 4
 schutz: 9
 beweglichkeit: 3
 instinkt: 7
-knurren: 4
+knurren: 6
 hunderasse: Golden Retriever
 pose: steht im Lichtkegel eines Sonnenuntergangs vor einer Kathedrale, goldenes Fell leuchtend
 hintergrund: Burginnenhof bei Sonnenuntergang

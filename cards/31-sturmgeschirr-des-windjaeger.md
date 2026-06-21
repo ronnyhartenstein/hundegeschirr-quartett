@@ -6,7 +6,7 @@ zugkraft: 5
 schutz: 3
 beweglichkeit: 10
 instinkt: 9
-knurren: 3
+knurren: 5
 hunderasse: Beagle
 pose: rast mit vorgestreckter Nase über eine Steinbrücke, umgeben von Blitzen und peitschendem Sturmwind
 hintergrund: Steinbrücke über einen Fluss

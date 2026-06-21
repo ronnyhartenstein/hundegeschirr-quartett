@@ -6,7 +6,7 @@ zugkraft: 7
 schutz: 8
 beweglichkeit: 5
 instinkt: 5
-knurren: 5
+knurren: 7
 hunderasse: Husky
 pose: steht majestätisch auf einem schneebedeckten Gebirgspfad, Atem als Dampfwolke sichtbar
 hintergrund: Gebirgspfad mit Nebel

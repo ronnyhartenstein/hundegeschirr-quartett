@@ -6,7 +6,7 @@ zugkraft: 3
 schutz: 3
 beweglichkeit: 10
 instinkt: 6
-knurren: 2
+knurren: 4
 hunderasse: Borzoi
 pose: sprintet in elegantem Galopp durch einen belebten Marktplatz, Silhouette wie ein Pfeil
 hintergrund: Marktplatz einer Fantasy-Stadt

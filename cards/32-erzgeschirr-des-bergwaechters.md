@@ -6,7 +6,7 @@ zugkraft: 9
 schutz: 8
 beweglichkeit: 4
 instinkt: 3
-knurren: 6
+knurren: 8
 hunderasse: Wolfsspitz
 pose: steht wie ein Fels auf einem Gebirgspfad, dichtes wolfsgraues Fell im Wind wehend, Bergmassiv im Rücken
 hintergrund: Gebirgspfad mit Nebel

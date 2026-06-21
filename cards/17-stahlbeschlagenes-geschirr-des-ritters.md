@@ -6,7 +6,7 @@ zugkraft: 8
 schutz: 9
 beweglichkeit: 3
 instinkt: 1
-knurren: 6
+knurren: 8
 hunderasse: Deutsche Dogge
 pose: sitzt aufrecht und würdevoll vor einem Burgtor mit wallendem Banner im Hintergrund
 hintergrund: Burginnenhof bei Sonnenuntergang

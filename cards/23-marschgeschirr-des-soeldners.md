@@ -6,7 +6,7 @@ zugkraft: 9
 schutz: 6
 beweglichkeit: 4
 instinkt: 2
-knurren: 6
+knurren: 8
 hunderasse: Boxer
 pose: steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund, breiter Kiefer vorgeschoben
 hintergrund: verlassene Ruine im Morgenlicht

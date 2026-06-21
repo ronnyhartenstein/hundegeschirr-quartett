@@ -6,7 +6,7 @@ zugkraft: 8
 schutz: 5
 beweglichkeit: 4
 instinkt: 3
-knurren: 4
+knurren: 6
 hunderasse: Bernhardiner
 pose: läuft beharrlich auf einem langen Gebirgspfad, ein kleines Holzfässchen am Halsband
 hintergrund: Gebirgspfad mit Nebel

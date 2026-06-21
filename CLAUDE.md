@@ -53,10 +53,10 @@ Szenenspezifische Bildbeschreibung für gpt-image-2 (ergänzt das master_prompt.
 
 | Qualität   | Gesamtwert |
 |------------|------------|
-| Gewöhnlich | 21         |
-| Selten     | 24         |
-| Episch     | 27         |
-| Magisch    | 30         |
+| Gewöhnlich | 23         |
+| Selten     | 26         |
+| Episch     | 29         |
+| Magisch    | 32         |
 | Legendär   | 34         |
 
 Werte gehen von 1–10, höher ist besser. Jede Karte hat eine Stärke und Schwächen – auch gewöhnliche Karten können magische in einzelnen Werten schlagen.
@@ -100,7 +100,7 @@ Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelras
 - **Windhund** – Bote
 - **Deutscher Schäferhund** – Wächter
 - **Whippet** – Läufer
-- **Corgi** – Hofbote *(absurd: Knurren 6, Beweglichkeit 2)*
+- **Corgi** – Hofbote *(absurd: Knurren 8, Beweglichkeit 2)*
 - **Border Collie** – Hirte
 
 **Selten (8 Karten):**
@@ -139,5 +139,5 @@ Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelras
 - Jede Hunderasse erscheint genau einmal im Deck
 - Neue Karten: Dateiname `NN-slug-des-namens.md`, Nummer zweistellig
 - Gesamtwert der Spielwerte muss der Qualitätsstufe entsprechen (siehe Tabelle)
-- `karten.md` ist die kanonische Referenz für alle Karten – Änderungen dort auch in der Card-Datei nachführen
+- **`karten.md` ist die kanonische Referenz für alle Kartenwerte** – bei Fragen zu Stats immer dort zuerst nachschauen; Änderungen dort auch in der jeweiligen Card-Datei nachführen
 - Generierte Bilder (`output/`, `print/`) werden ins Repo eingecheckt

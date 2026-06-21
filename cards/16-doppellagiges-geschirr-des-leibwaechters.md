@@ -6,7 +6,7 @@ zugkraft: 4
 schutz: 9
 beweglichkeit: 3
 instinkt: 2
-knurren: 6
+knurren: 8
 hunderasse: Dobermann
 pose: sitzt dicht neben einem Thronsessel und blickt unverwandt auf den Eingang
 hintergrund: Burginnenhof bei Sonnenuntergang

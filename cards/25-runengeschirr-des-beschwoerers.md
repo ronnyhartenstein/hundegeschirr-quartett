@@ -6,7 +6,7 @@ zugkraft: 4
 schutz: 6
 beweglichkeit: 6
 instinkt: 10
-knurren: 4
+knurren: 6
 hunderasse: Pudel
 pose: steht inmitten schwebender Runen-Symbole vor einer verfallenen Ruine, Löckchen im blauen Licht glühend
 hintergrund: verlassene Ruine im Morgenlicht

@@ -6,7 +6,7 @@ zugkraft: 4
 schutz: 3
 beweglichkeit: 7
 instinkt: 8
-knurren: 5
+knurren: 7
 hunderasse: Jack Russell Terrier
 pose: späht listig hinter einer Wurzel hervor und beobachtet etwas außerhalb des Bildes, klein aber fokussiert
 hintergrund: alter Waldweg mit Wegweisern
