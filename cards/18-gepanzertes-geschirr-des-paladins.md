@@ -2,11 +2,11 @@
 nummer: 18
 name: Gepanzertes Geschirr des Paladins
 qualitaet: Episch
-zugkraft: 4
+zugkraft: 6
 schutz: 9
-beweglichkeit: 3
+beweglichkeit: 5
 instinkt: 7
-knurren: 6
+knurren: 2
 hunderasse: Golden Retriever
 pose: steht im Lichtkegel eines Sonnenuntergangs vor einer Kathedrale, goldenes Fell leuchtend
 hintergrund: Burginnenhof bei Sonnenuntergang

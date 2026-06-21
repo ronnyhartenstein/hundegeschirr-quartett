@@ -4,9 +4,9 @@ name: Gepolstertes Geschirr des Spähers
 qualitaet: Selten
 zugkraft: 3
 schutz: 3
-beweglichkeit: 8
-instinkt: 7
-knurren: 5
+beweglichkeit: 10
+instinkt: 8
+knurren: 2
 hunderasse: Kelpie
 pose: späht um eine Mauerecke einer verlassenen Ruine, Ohren gespitzt, Körper angespannt
 hintergrund: verlassene Ruine im Morgenlicht

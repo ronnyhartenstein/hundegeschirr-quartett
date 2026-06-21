@@ -5,8 +5,8 @@ qualitaet: Gewöhnlich
 zugkraft: 5
 schutz: 4
 beweglichkeit: 4
-instinkt: 5
-knurren: 5
+instinkt: 7
+knurren: 3
 hunderasse: Berner Sennenhund
 pose: steht ruhig auf einem Feldweg vor einem Bauerndorf
 hintergrund: mittelalterliches Dorf am Waldrand

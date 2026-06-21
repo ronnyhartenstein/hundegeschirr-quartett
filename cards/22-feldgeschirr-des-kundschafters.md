@@ -5,8 +5,8 @@ qualitaet: Episch
 zugkraft: 3
 schutz: 4
 beweglichkeit: 10
-instinkt: 7
-knurren: 5
+instinkt: 10
+knurren: 2
 hunderasse: Dalmatiner
 pose: späht von einer Anhöhe über das Gelände in die Ferne, schwarz-weiße Tupfen markant im Morgenlicht
 hintergrund: verlassene Ruine im Morgenlicht

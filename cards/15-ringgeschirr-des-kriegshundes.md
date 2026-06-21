@@ -2,11 +2,11 @@
 nummer: 15
 name: Ringgeschirr des Kriegshundes
 qualitaet: Selten
-zugkraft: 9
+zugkraft: 8
 schutz: 5
 beweglichkeit: 3
 instinkt: 1
-knurren: 8
+knurren: 9
 hunderasse: Bulldogge
 pose: steht breit und niedrig auf einem Burginnenhof, massiver Kiefer vorgestreckt
 hintergrund: Burginnenhof bei Sonnenuntergang

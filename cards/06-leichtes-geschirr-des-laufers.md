@@ -5,8 +5,8 @@ qualitaet: Gewöhnlich
 zugkraft: 2
 schutz: 3
 beweglichkeit: 8
-instinkt: 6
-knurren: 4
+instinkt: 9
+knurren: 1
 hunderasse: Whippet
 pose: streckt sich im vollen Galopp auf einem Waldweg, Pfoten kaum den Boden berührend
 hintergrund: alter Waldweg mit Wegweisern

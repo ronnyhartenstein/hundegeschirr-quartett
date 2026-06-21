@@ -2,11 +2,11 @@
 nummer: 02
 name: Robustes Geschirr des Knechts
 qualitaet: Gewöhnlich
-zugkraft: 8
+zugkraft: 6
 schutz: 4
 beweglichkeit: 3
 instinkt: 1
-knurren: 7
+knurren: 9
 hunderasse: Mastiff
 pose: steht breitbeinig und kraftvoll auf einem Hofplatz
 hintergrund: mittelalterliches Dorf am Waldrand

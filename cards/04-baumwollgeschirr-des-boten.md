@@ -5,8 +5,8 @@ qualitaet: Gewöhnlich
 zugkraft: 3
 schutz: 3
 beweglichkeit: 8
-instinkt: 5
-knurren: 4
+instinkt: 8
+knurren: 1
 hunderasse: Windhund
 pose: läuft mit gestrecktem Körper über eine Steinbrücke
 hintergrund: Steinbrücke über einen Fluss

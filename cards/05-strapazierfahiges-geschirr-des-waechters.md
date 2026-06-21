@@ -2,11 +2,11 @@
 nummer: 05
 name: Strapazierfähiges Geschirr des Wächters
 qualitaet: Gewöhnlich
-zugkraft: 3
+zugkraft: 2
 schutz: 8
-beweglichkeit: 3
+beweglichkeit: 2
 instinkt: 2
-knurren: 7
+knurren: 9
 hunderasse: Deutscher Schäferhund
 pose: sitzt wachsam vor einem Burgtor und blickt direkt in die Kamera
 hintergrund: Burginnenhof bei Sonnenuntergang

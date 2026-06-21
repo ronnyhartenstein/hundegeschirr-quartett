@@ -2,11 +2,11 @@
 nummer: 31
 name: Sturmgeschirr des Windjägers
 qualitaet: Magisch
-zugkraft: 5
+zugkraft: 8
 schutz: 3
 beweglichkeit: 10
 instinkt: 9
-knurren: 5
+knurren: 2
 hunderasse: Beagle
 pose: rast mit vorgestreckter Nase über eine Steinbrücke, umgeben von Blitzen und peitschendem Sturmwind
 hintergrund: Steinbrücke über einen Fluss

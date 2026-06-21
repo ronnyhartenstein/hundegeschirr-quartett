@@ -3,10 +3,10 @@ nummer: 16
 name: Doppellagiges Geschirr des Leibwächters
 qualitaet: Selten
 zugkraft: 4
-schutz: 9
+schutz: 8
 beweglichkeit: 3
 instinkt: 2
-knurren: 8
+knurren: 9
 hunderasse: Dobermann
 pose: sitzt dicht neben einem Thronsessel und blickt unverwandt auf den Eingang
 hintergrund: Burginnenhof bei Sonnenuntergang

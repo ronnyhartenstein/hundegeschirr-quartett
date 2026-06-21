@@ -2,11 +2,11 @@
 nummer: 23
 name: Marschgeschirr des Söldners
 qualitaet: Episch
-zugkraft: 9
+zugkraft: 8
 schutz: 6
 beweglichkeit: 4
 instinkt: 2
-knurren: 8
+knurren: 9
 hunderasse: Boxer
 pose: steht kampfbereit auf einem schlammigen Schlachtfeld mit Ruinen im Hintergrund, breiter Kiefer vorgeschoben
 hintergrund: verlassene Ruine im Morgenlicht

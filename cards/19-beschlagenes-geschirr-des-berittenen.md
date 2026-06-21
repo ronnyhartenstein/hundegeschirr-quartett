@@ -5,8 +5,8 @@ qualitaet: Episch
 zugkraft: 7
 schutz: 4
 beweglichkeit: 9
-instinkt: 4
-knurren: 5
+instinkt: 7
+knurren: 2
 hunderasse: Australian Shepherd
 pose: galoppiert mit federleichtem Schritt über einen Gebirgspfad, buntes Merle-Fell im Wind
 hintergrund: Gebirgspfad mit Nebel

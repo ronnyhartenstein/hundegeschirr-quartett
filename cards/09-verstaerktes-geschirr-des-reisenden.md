@@ -2,11 +2,11 @@
 nummer: 09
 name: Verstärktes Geschirr des Reisenden
 qualitaet: Selten
-zugkraft: 8
+zugkraft: 10
 schutz: 5
-beweglichkeit: 4
+beweglichkeit: 6
 instinkt: 3
-knurren: 6
+knurren: 2
 hunderasse: Bernhardiner
 pose: läuft beharrlich auf einem langen Gebirgspfad, ein kleines Holzfässchen am Halsband
 hintergrund: Gebirgspfad mit Nebel

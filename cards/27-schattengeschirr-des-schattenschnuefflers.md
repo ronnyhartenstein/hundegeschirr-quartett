@@ -2,11 +2,11 @@
 nummer: 27
 name: Schattengeschirr des Nachtschnüfflers
 qualitaet: Magisch
-zugkraft: 4
+zugkraft: 7
 schutz: 3
 beweglichkeit: 10
-instinkt: 9
-knurren: 6
+instinkt: 10
+knurren: 2
 hunderasse: Nackthund
 pose: gleitet lautlos durch den Schatten einer Ruinenwand, nacktes Fell kaum sichtbar im Zwielicht
 hintergrund: verlassene Ruine im Morgenlicht

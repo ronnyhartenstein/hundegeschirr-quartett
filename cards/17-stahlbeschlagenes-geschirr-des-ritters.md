@@ -2,11 +2,11 @@
 nummer: 17
 name: Stahlbeschlagenes Geschirr des Ritters
 qualitaet: Episch
-zugkraft: 8
+zugkraft: 7
 schutz: 9
 beweglichkeit: 3
 instinkt: 1
-knurren: 8
+knurren: 9
 hunderasse: Deutsche Dogge
 pose: sitzt aufrecht und würdevoll vor einem Burgtor mit wallendem Banner im Hintergrund
 hintergrund: Burginnenhof bei Sonnenuntergang

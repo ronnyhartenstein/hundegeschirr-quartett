@@ -36,53 +36,53 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Magisch auf Leg
 
 | # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt | Knurren |
 |---:|---|---|---|---:|---:|---:|---:|---:|
-| 01 | Gewöhnlich | Schlichtes Geschirr des Bauern | Berner Sennenhund | 5 | 4 | 4 | 5 | 5 |
-| 02 | Gewöhnlich | Robustes Geschirr des Knechts | Mastiff | 8 | 4 | 3 | 1 | 7 |
-| 03 | Gewöhnlich | Einfaches Leder des Fährtenhundes | Dackel | 2 | 3 | 3 | 8 | 7 |
-| 04 | Gewöhnlich | Baumwollgeschirr des Boten | Windhund | 3 | 3 | 8 | 5 | 4 |
-| 05 | Gewöhnlich | Strapazierfähiges Geschirr des Wächters | Deutscher Schäferhund | 3 | 8 | 3 | 2 | 7 |
-| 06 | Gewöhnlich | Leichtes Geschirr des Läufers | Whippet | 2 | 3 | 8 | 6 | 4 |
+| 01 | Gewöhnlich | Schlichtes Geschirr des Bauern | Berner Sennenhund | 5 | 4 | 4 | 7 | 3 |
+| 02 | Gewöhnlich | Robustes Geschirr des Knechts | Mastiff | 6 | 4 | 3 | 1 | 9 |
+| 03 | Gewöhnlich | Einfaches Leder des Fährtenhundes | Dackel | 4 | 3 | 3 | 10 | 3 |
+| 04 | Gewöhnlich | Baumwollgeschirr des Boten | Windhund | 3 | 3 | 8 | 8 | 1 |
+| 05 | Gewöhnlich | Strapazierfähiges Geschirr des Wächters | Deutscher Schäferhund | 2 | 8 | 2 | 2 | 9 |
+| 06 | Gewöhnlich | Leichtes Geschirr des Läufers | Whippet | 2 | 3 | 8 | 9 | 1 |
 | 07 | Gewöhnlich | Flickengeschirr des Hofboten | Corgi | 7 | 2 | 2 | 4 | 8 |
-| 08 | Gewöhnlich | Geflochtenes Geschirr des Hirten | Border Collie | 3 | 6 | 3 | 6 | 5 |
+| 08 | Gewöhnlich | Geflochtenes Geschirr des Hirten | Border Collie | 5 | 6 | 3 | 6 | 3 |
 
 ## Selten – 8 Karten
 
 | # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt | Knurren |
 |---:|---|---|---|---:|---:|---:|---:|---:|
-| 09 | Selten | Verstärktes Geschirr des Reisenden | Bernhardiner | 8 | 5 | 4 | 3 | 6 |
-| 10 | Selten | Gepolstertes Geschirr des Spähers | Kelpie | 3 | 3 | 8 | 7 | 5 |
-| 11 | Selten | Genähtes Geschirr des Fährtenlesers | Bluthund | 3 | 3 | 5 | 9 | 6 |
+| 09 | Selten | Verstärktes Geschirr des Reisenden | Bernhardiner | 10 | 5 | 6 | 3 | 2 |
+| 10 | Selten | Gepolstertes Geschirr des Spähers | Kelpie | 3 | 3 | 10 | 8 | 2 |
+| 11 | Selten | Genähtes Geschirr des Fährtenlesers | Bluthund | 3 | 3 | 8 | 10 | 2 |
 | 12 | Selten | Ölgegerbtes Geschirr des Grenzers | Rottweiler | 5 | 7 | 4 | 3 | 7 |
-| 13 | Selten | Schlappohr-Geschirr des Faulenzers | Basset Hound | 4 | 5 | 1 | 9 | 7 |
-| 14 | Selten | Schnallengeschirr des Boten | Borzoi | 3 | 3 | 10 | 6 | 4 |
-| 15 | Selten | Ringgeschirr des Kriegshundes | Bulldogge | 9 | 5 | 3 | 1 | 8 |
-| 16 | Selten | Doppellagiges Geschirr des Leibwächters | Dobermann | 4 | 9 | 3 | 2 | 8 |
+| 13 | Selten | Schlappohr-Geschirr des Faulenzers | Basset Hound | 4 | 7 | 1 | 9 | 5 |
+| 14 | Selten | Schnallengeschirr des Boten | Borzoi | 3 | 3 | 10 | 9 | 1 |
+| 15 | Selten | Ringgeschirr des Kriegshundes | Bulldogge | 8 | 5 | 3 | 1 | 9 |
+| 16 | Selten | Doppellagiges Geschirr des Leibwächters | Dobermann | 4 | 8 | 3 | 2 | 9 |
 
 ## Episch – 8 Karten
 
 | # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt | Knurren |
 |---:|---|---|---|---:|---:|---:|---:|---:|
-| 17 | Episch | Stahlbeschlagenes Geschirr des Ritters | Deutsche Dogge | 8 | 9 | 3 | 1 | 8 |
-| 18 | Episch | Gepanzertes Geschirr des Paladins | Golden Retriever | 4 | 9 | 3 | 7 | 6 |
-| 19 | Episch | Beschlagenes Geschirr des Berittenen | Australian Shepherd | 7 | 4 | 9 | 4 | 5 |
-| 20 | Episch | Goldgeschirr des Aufschneiders | Afghaner Windhund | 8 | 2 | 9 | 5 | 5 |
+| 17 | Episch | Stahlbeschlagenes Geschirr des Ritters | Deutsche Dogge | 7 | 9 | 3 | 1 | 9 |
+| 18 | Episch | Gepanzertes Geschirr des Paladins | Golden Retriever | 6 | 9 | 5 | 7 | 2 |
+| 19 | Episch | Beschlagenes Geschirr des Berittenen | Australian Shepherd | 7 | 4 | 9 | 7 | 2 |
+| 20 | Episch | Goldgeschirr des Aufschneiders | Afghaner Windhund | 8 | 2 | 9 | 8 | 2 |
 | 21 | Episch | Jagdgeschirr des Fallenstellers | Jack Russell Terrier | 4 | 3 | 7 | 8 | 7 |
-| 22 | Episch | Feldgeschirr des Kundschafters | Dalmatiner | 3 | 4 | 10 | 7 | 5 |
-| 23 | Episch | Marschgeschirr des Söldners | Boxer | 9 | 6 | 4 | 2 | 8 |
-| 24 | Episch | Kettengeflecht des Wachhundes | Schnauzer | 5 | 9 | 3 | 4 | 8 |
+| 22 | Episch | Feldgeschirr des Kundschafters | Dalmatiner | 3 | 4 | 10 | 10 | 2 |
+| 23 | Episch | Marschgeschirr des Söldners | Boxer | 8 | 6 | 4 | 2 | 9 |
+| 24 | Episch | Kettengeflecht des Wachhundes | Schnauzer | 5 | 9 | 3 | 3 | 9 |
 
 ## Magisch – 8 Karten
 
 | # | Qualität | Name | Hunderasse | Zugkraft | Schutz | Beweglichkeit | Instinkt | Knurren |
 |---:|---|---|---|---:|---:|---:|---:|---:|
-| 25 | Magisch | Runengeschirr des Beschwörers | Pudel | 4 | 6 | 6 | 10 | 6 |
+| 25 | Magisch | Runengeschirr des Beschwörers | Pudel | 4 | 6 | 8 | 10 | 4 |
 | 26 | Magisch | Plattenpanzer des Kriegers | Mops | 10 | 8 | 4 | 1 | 9 |
-| 27 | Magisch | Schattengeschirr des Nachtschnüfflers | Nackthund | 4 | 3 | 10 | 9 | 6 |
-| 28 | Magisch | Glanzgeschirr des Lichtbringers | Samojede | 4 | 9 | 6 | 7 | 6 |
+| 27 | Magisch | Schattengeschirr des Nachtschnüfflers | Nackthund | 7 | 3 | 10 | 10 | 2 |
+| 28 | Magisch | Glanzgeschirr des Lichtbringers | Samojede | 4 | 9 | 6 | 10 | 3 |
 | 29 | Magisch | Drachengeschirr des Flammenläufers | Chihuahua | 10 | 7 | 5 | 1 | 9 |
 | 30 | Magisch | Frostgeschirr des Eiszahnläufers | Husky | 7 | 8 | 5 | 5 | 7 |
-| 31 | Magisch | Sturmgeschirr des Windjägers | Beagle | 5 | 3 | 10 | 9 | 5 |
-| 32 | Magisch | Erzgeschirr des Bergwächters | Wolfsspitz | 9 | 8 | 4 | 3 | 8 |
+| 31 | Magisch | Sturmgeschirr des Windjägers | Beagle | 8 | 3 | 10 | 9 | 2 |
+| 32 | Magisch | Erzgeschirr des Bergwächters | Wolfsspitz | 9 | 8 | 4 | 2 | 9 |
 
 ## Legendär – 8 Karten
 

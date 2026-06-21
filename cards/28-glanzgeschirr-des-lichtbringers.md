@@ -5,8 +5,8 @@ qualitaet: Magisch
 zugkraft: 4
 schutz: 9
 beweglichkeit: 6
-instinkt: 7
-knurren: 6
+instinkt: 10
+knurren: 3
 hunderasse: Samojede
 pose: steht im strahlenden Lichtkegel eines Sonnenuntergangs auf einem Burginnenhof, weißes Fell golden leuchtend
 hintergrund: Burginnenhof bei Sonnenuntergang
