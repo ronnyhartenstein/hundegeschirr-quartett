@@ -91,7 +91,7 @@ Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelras
 - **Neapolitanischer Mastiff** – Hochkönig
 - **Kaukasischer Owtscharka** – Schlachtkaiser
 - **Saarloos-Wolfhund** – Sternenwanderer
-- **Kangal** – Weltenwanderer
+- **Komondor** – Gaukler *(absurd: B10/I10/K10 – höchstes Knurren im Spiel, aber Z2/S2)*
 
 **Gewöhnlich (8 Karten):**
 - **Berner Sennenhund** – Bauer
@@ -100,7 +100,7 @@ Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelras
 - **Windhund** – Bote
 - **Deutscher Schäferhund** – Wächter
 - **Whippet** – Läufer
-- **Irischer Wolfshund** – Jäger
+- **Corgi** – Hofbote *(absurd: Knurren 6, Beweglichkeit 2)*
 - **Border Collie** – Hirte
 
 **Selten (8 Karten):**
@@ -108,7 +108,7 @@ Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelras
 - **Kelpie** – Späher
 - **Bluthund** – Fährtenleser
 - **Rottweiler** – Grenzer
-- **Labrador** – Packtier
+- **Basset Hound** – Faulenzer *(absurd: Beweglichkeit 1 = Minimum im Spiel, Instinkt 9)*
 - **Borzoi** – Bote (Schnallengeschirr)
 - **Bulldogge** – Kriegshund
 - **Dobermann** – Leibwächter
@@ -117,24 +117,26 @@ Jede Rasse erscheint genau einmal. Legendäre Karten haben ihre eigene Einzelras
 - **Deutsche Dogge** – Ritter
 - **Golden Retriever** – Paladin
 - **Australian Shepherd** – Berittener
-- **Chow Chow** – Adliger
+- **Afghaner Windhund** – Aufschneider *(absurd: Schutz 2, kein Biss – läuft weg)*
 - **Jack Russell Terrier** – Fallensteller
 - **Dalmatiner** – Kundschafter
 - **Boxer** – Söldner
 - **Schnauzer** – Wachhund
 
 **Magisch (8 Karten):**
-- **Pudel** – Beschwörer
-- **Mops** – Krieger
+- **Pudel** – Beschwörer *(absurd: Zauberer-Pudel, Instinkt 10)*
+- **Mops** – Krieger *(absurd: Zugkraft 10)*
 - **Nackthund** – Nachtschnüffler
 - **Samojede** – Lichtbringer
-- **Chihuahua** – Flammenläufer
+- **Chihuahua** – Flammenläufer *(absurd: Zugkraft 10)*
 - **Husky** – Eiszahnläufer
 - **Beagle** – Windjäger
 - **Wolfsspitz** – Bergwächter
 
 ## Konventionen
 
+- **Kartenlimit: 40 Karten – absolutes Drucklimit, nicht überschreiten**
+- Jede Hunderasse erscheint genau einmal im Deck
 - Neue Karten: Dateiname `NN-slug-des-namens.md`, Nummer zweistellig
 - Gesamtwert der Spielwerte muss der Qualitätsstufe entsprechen (siehe Tabelle)
 - `karten.md` ist die kanonische Referenz für alle Karten – Änderungen dort auch in der Card-Datei nachführen

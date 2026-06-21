@@ -42,7 +42,7 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Magisch auf Leg
 | 04 | Gewöhnlich | Baumwollgeschirr des Boten | Windhund | 3 | 3 | 8 | 5 | 2 |
 | 05 | Gewöhnlich | Strapazierfähiges Geschirr des Wächters | Deutscher Schäferhund | 3 | 8 | 3 | 2 | 5 |
 | 06 | Gewöhnlich | Leichtes Geschirr des Läufers | Whippet | 2 | 3 | 8 | 6 | 2 |
-| 07 | Gewöhnlich | Kunstledergeschirr des Jägers | Irischer Wolfshund | 7 | 2 | 2 | 4 | 6 |
+| 07 | Gewöhnlich | Flickengeschirr des Hofboten | Corgi | 7 | 2 | 2 | 4 | 6 |
 | 08 | Gewöhnlich | Geflochtenes Geschirr des Hirten | Border Collie | 3 | 6 | 3 | 6 | 3 |
 
 ## Selten – 8 Karten
@@ -53,7 +53,7 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Magisch auf Leg
 | 10 | Selten | Gepolstertes Geschirr des Spähers | Kelpie | 3 | 3 | 8 | 7 | 3 |
 | 11 | Selten | Genähtes Geschirr des Fährtenlesers | Bluthund | 3 | 3 | 5 | 9 | 4 |
 | 12 | Selten | Ölgegerbtes Geschirr des Grenzers | Rottweiler | 5 | 7 | 4 | 3 | 5 |
-| 13 | Selten | Gurtgeschirr des Packtiers | Labrador | 8 | 4 | 3 | 4 | 5 |
+| 13 | Selten | Schlappohr-Geschirr des Faulenzers | Basset Hound | 4 | 5 | 1 | 9 | 5 |
 | 14 | Selten | Schnallengeschirr des Boten | Borzoi | 3 | 3 | 10 | 6 | 2 |
 | 15 | Selten | Ringgeschirr des Kriegshundes | Bulldogge | 9 | 5 | 3 | 1 | 6 |
 | 16 | Selten | Doppellagiges Geschirr des Leibwächters | Dobermann | 4 | 9 | 3 | 2 | 6 |
@@ -65,7 +65,7 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Magisch auf Leg
 | 17 | Episch | Stahlbeschlagenes Geschirr des Ritters | Deutsche Dogge | 8 | 9 | 3 | 1 | 6 |
 | 18 | Episch | Gepanzertes Geschirr des Paladins | Golden Retriever | 4 | 9 | 3 | 7 | 4 |
 | 19 | Episch | Beschlagenes Geschirr des Berittenen | Australian Shepherd | 7 | 4 | 9 | 4 | 3 |
-| 20 | Episch | Verziertes Geschirr des Adligen | Chow Chow | 4 | 5 | 6 | 7 | 5 |
+| 20 | Episch | Goldgeschirr des Aufschneiders | Afghaner Windhund | 8 | 2 | 9 | 5 | 3 |
 | 21 | Episch | Jagdgeschirr des Fallenstellers | Jack Russell Terrier | 4 | 3 | 7 | 8 | 5 |
 | 22 | Episch | Feldgeschirr des Kundschafters | Dalmatiner | 3 | 4 | 10 | 7 | 3 |
 | 23 | Episch | Marschgeschirr des Söldners | Boxer | 9 | 6 | 4 | 2 | 6 |
@@ -95,7 +95,7 @@ Wichtig: Auch legendäre Karten haben Schwächen. Der Sprung von Magisch auf Leg
 | 37 | Legendär | Kronengeschirr des Hochkönigs | Neapolitanischer Mastiff | 8 | 8 | 7 | 5 | 6 |
 | 38 | Legendär | Kriegsgeschirr des Schlachtkaisers | Kaukasischer Owtscharka | 10 | 9 | 5 | 1 | 9 |
 | 39 | Legendär | Sterngeschirr des Sternenwanderers | Saarloos-Wolfhund | 6 | 6 | 9 | 8 | 5 |
-| 40 | Legendär | Weltgeschirr des Weltenwanderers | Kangal | 8 | 7 | 8 | 6 | 5 |
+| 40 | Legendär | Narrenschellen-Geschirr des Gauklers | Komondor | 2 | 2 | 10 | 10 | 10 |
 
 ---
 

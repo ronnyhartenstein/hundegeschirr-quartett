@@ -1,22 +1,22 @@
 ---
 nummer: 13
-name: Gurtgeschirr des Packtiers
+name: Schlappohr-Geschirr des Faulenzers
 qualitaet: Selten
-zugkraft: 8
-schutz: 4
-beweglichkeit: 3
-instinkt: 4
+zugkraft: 4
+schutz: 5
+beweglichkeit: 1
+instinkt: 9
 knurren: 5
-hunderasse: Labrador
-pose: steht beladen mit Packtaschen auf einem Gebirgspfad und blickt freundlich-stoisch nach vorn
-hintergrund: Gebirgspfad mit Nebel
-geschirr_beschreibung: breites Gurtgeschirr aus dunkelgrünem Leder mit smaragdgrün schimmernden Runen, vielen Taschen und robusten Trageriemen
+hunderasse: Basset Hound
+pose: liegt ausgestreckt auf einem Waldweg neben einer alten Spur auf dem Boden, Augen halb geschlossen
+hintergrund: alter Waldweg mit Wegweisern
+geschirr_beschreibung: bequemes smaragdgrünes Weichgeschirr mit Schnüffel-Runen, einem Kissen-Anhänger und durchgewetztem Leder
 ---
 
 ## Flavourtext
 
-Was er trägt, trägt er bis ans Ende der Welt – und wedelt dabei mit dem Schwanz.
+Er schläft, bis er riecht. Dann schläft er weiter – aber er hat's gefunden.
 
 ## Bildprompt
 
-Ein Labrador steht beladen mit prallen Packtaschen auf einem nebeligen Gebirgspfad und blickt freundlich-stoisch nach vorn. Er trägt ein breites Gurtgeschirr aus dunkelgrünem Leder mit smaragdgrün schimmernden Runen, vielen Taschen und robusten Trageriemen. Smaragdgrüne Akzente. Dramatisches Bergpanorama, leichter Nebel.
+Ein Basset Hound liegt ausgestreckt auf einem alten Waldweg, die langen Ohren auf dem Boden, Augen halb geschlossen, eine Tierspur direkt vor seiner Nase. Er trägt ein bequemes smaragdgrünes Weichgeschirr mit Schnüffel-Runen, einem Kissen-Anhänger und durchgewetztem Leder. Smaragdgrüne Akzente. Stilles Waldlicht, gemütliche Trägheit, unaufhaltsame Nase.

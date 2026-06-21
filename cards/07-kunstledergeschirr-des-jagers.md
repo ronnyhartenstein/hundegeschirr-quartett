@@ -1,22 +1,22 @@
 ---
 nummer: 07
-name: Kunstledergeschirr des Jägers
+name: Flickengeschirr des Hofboten
 qualitaet: Gewöhnlich
 zugkraft: 7
 schutz: 2
 beweglichkeit: 2
 instinkt: 4
 knurren: 6
-hunderasse: Irischer Wolfshund
-pose: steht stolz auf einem Waldweg und blickt in das Dickicht
-hintergrund: alter Waldweg mit Wegweisern
-geschirr_beschreibung: dunkelbraunes Kunstleder mit einem kleinen Köcherhalter und Jagdmesserriemen an der Seite
+hunderasse: Corgi
+pose: sitzt aufrecht auf einem Burgtreppchen und hält eine versiegelte Schriftrolle stolz im Maul
+hintergrund: Burginnenhof bei Sonnenuntergang
+geschirr_beschreibung: geflicktes braunes Leder mit einem königlichen Schriftrollenhalter und kleinen Silberschnallen
 ---
 
 ## Flavourtext
 
-Aus dem Wald kommt er – und die Beute selten allein.
+Kurze Beine, großes Knurren – als Bote des Königs hat er Respekt verdient. Ob er ihn bekommt, ist eine andere Frage.
 
 ## Bildprompt
 
-Ein Irischer Wolfshund steht stolz auf einem alten Waldweg und blickt konzentriert ins dunkle Dickicht, verwitterte Wegweiser im Hintergrund. Er trägt dunkelbraunes Kunstledergeschirr mit einem kleinen Köcherhalter und Jagdmesserriemen an der Seite. Weiß-silberne Akzente. Stimmungsvolles Waldlicht, Anspannung vor der Jagd.
+Ein Corgi sitzt aufrecht auf einem Burgtreppchen und hält eine versiegelte Schriftrolle stolz im Maul, der Burginnenhof im Sonnenuntergangslicht hinter ihm. Er trägt geflicktes braunes Ledergeschirr mit einem königlichen Schriftrollenhalter und kleinen Silberschnallen. Weiß-silberne Akzente. Komische Würde, kurze Beine, selbstbewusster Blick trotz allem.
