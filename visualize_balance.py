@@ -12,11 +12,11 @@ OUTPUT_FILE = Path(__file__).parent / "balance.html"
 QUALITY_ORDER = ["Gewöhnlich", "Selten", "Episch", "Magisch", "Legendär"]
 QUALITY_TARGET = {"Gewöhnlich": 21, "Selten": 24, "Episch": 27, "Magisch": 30, "Legendär": 34}
 QUALITY_COLORS = {
-    "Gewöhnlich": "#9ca3af",
-    "Selten": "#3b82f6",
-    "Episch": "#a855f7",
-    "Magisch": "#f59e0b",
-    "Legendär": "#ef4444",
+    "Gewöhnlich": "#FFFFFF",
+    "Selten": "#16a34a",
+    "Episch": "#A335EE",
+    "Magisch": "#0070DD",
+    "Legendär": "#FF8000",
 }
 STATS = ["zugkraft", "schutz", "beweglichkeit", "instinkt", "knurren"]
 STAT_LABELS = {"zugkraft": "Zugkraft", "schutz": "Schutz", "beweglichkeit": "Beweglichkeit", "instinkt": "Instinkt", "knurren": "Knurren"}
@@ -114,6 +114,7 @@ def build_html(cards: list[dict], stats: dict) -> str:
           <th class="num">Schutz</th>
           <th class="num">Beweglichkeit</th>
           <th class="num">Instinkt</th>
+          <th class="num">Knurren</th>
           <th class="num">Gesamt</th>
           <th class="num">Soll</th>
         </tr>
@@ -134,6 +135,7 @@ def build_html(cards: list[dict], stats: dict) -> str:
   <div class="chart-wrap"><canvas id="rangeSchutz"></canvas></div>
   <div class="chart-wrap"><canvas id="rangeBeweglichkeit"></canvas></div>
   <div class="chart-wrap"><canvas id="rangeInstinkt"></canvas></div>
+  <div class="chart-wrap"><canvas id="rangeKnurren"></canvas></div>
 </div>
 
 <h2>4 · Gesamtpunkte aller Karten (Ist vs. Soll)</h2>
@@ -153,26 +155,28 @@ const STAT_LABELS = {stat_labels_json};
 // ── 1 · Table ────────────────────────────────────────────────────────────────
 const tbody = document.getElementById('cardTableBody');
 cards.forEach((c, i) => {{
-  const total = c.zugkraft + c.schutz + c.beweglichkeit + c.instinkt;
+  const total = c.zugkraft + c.schutz + c.beweglichkeit + c.instinkt + c.knurren;
   const target = QUALITY_TARGET[c.qualitaet];
   const ok = total === target;
   const color = QUALITY_COLORS[c.qualitaet];
+  const textColor = color === '#FFFFFF' ? '#0f172a' : '#fff';
   tbody.insertAdjacentHTML('beforeend', `
     <tr>
       <td>${{String(i+1).padStart(2,'0')}}</td>
       <td>${{c.name}}</td>
-      <td><span class="badge" style="background:${{color}}">${{c.qualitaet}}</span></td>
+      <td><span class="badge" style="background:${{color}};color:${{textColor}}">${{c.qualitaet}}</span></td>
       <td class="num">${{c.zugkraft}}</td>
       <td class="num">${{c.schutz}}</td>
       <td class="num">${{c.beweglichkeit}}</td>
       <td class="num">${{c.instinkt}}</td>
+      <td class="num">${{c.knurren}}</td>
       <td class="num ${{ok?'ok':'err'}}">${{total}}</td>
       <td class="num" style="color:#64748b">${{target}}</td>
     </tr>`);
 }});
 
 // ── 2 · Avg grouped bar ──────────────────────────────────────────────────────
-const statColors = ['#3b82f6','#22c55e','#f59e0b','#ec4899'];
+const statColors = ['#3b82f6','#22c55e','#f59e0b','#ec4899','#ef4444'];
 const avgDatasets = STATS.map((stat, i) => ({{
   label: STAT_LABELS[stat],
   data: QUALITY_ORDER.map(q => statsByQuality[q][stat].avg),
@@ -302,7 +306,7 @@ new Chart(document.getElementById('totalChart'), {{
     }},
     scales: {{
       x: {{ ticks: {{ color: '#94a3b8', maxRotation: 0 }}, grid: {{ color: '#1e293b' }} }},
-      y: {{ min: 14, max: 33, ticks: {{ color: '#94a3b8' }}, grid: {{ color: '#1e293b' }} }},
+      y: {{ min: 14, max: 38, ticks: {{ color: '#94a3b8' }}, grid: {{ color: '#1e293b' }} }},
     }},
   }},
 }});
@@ -322,7 +326,7 @@ def main():
     for q in QUALITY_ORDER:
         count = sum(1 for c in cards if c["qualitaet"] == q)
         wrong = [c for c in cards if c["qualitaet"] == q and
-                 c["zugkraft"] + c["schutz"] + c["beweglichkeit"] + c["instinkt"] != QUALITY_TARGET[q]]
+                 c["zugkraft"] + c["schutz"] + c["beweglichkeit"] + c["instinkt"] + c["knurren"] != QUALITY_TARGET[q]]
         status = f"✓" if not wrong else f"✗ {len(wrong)} falsch"
         print(f"  {q}: {count} Karten  [{status}]")
 
