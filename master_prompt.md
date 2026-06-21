@@ -38,7 +38,7 @@ Schutz: [SCHUTZ]
 Beweglichkeit: [BEWEGLICHKEIT]
 Instinkt: [INSTINKT]
 
-Links neben jeder Zeile ein kleines passendes Icon:
+Links neben jeder Zeile ein kleines passendes 3D Icon in Qualitätsfarbe:
 - Muskel für Zugkraft
 - Schild für Schutz
 - Blitz für Beweglichkeit
@@ -53,4 +53,4 @@ Designregeln:
 - Hund vollständig sichtbar, nicht angeschnitten
 - einheitlicher Stil für eine ganze Kartenspielserie
 
-Einheitlicher Serienlook: mittelalterliche Fantasy-Sammelkarte, realistischer Hund, edles Leder- und Metallgeschirr, dunkler ornamentaler Kartenrahmen, Pergament-Wertefeld, klare Kartentypografie, cineastische Beleuchtung, natürliche Fantasy-Landschaft, hochwertige digitale Malerei, keine modernen Elemente, keine Wasserzeichen, keine Logos.
+Einheitlicher Serienlook: mittelalterliche Fantasy-Sammelkarte, realistischer Hund, edles Leder- und Metallgeschirr, dunkler ornamentaler Kartenrahmen, Pergament-Wertefeld, [QUALITÄTSFARBE] Edelstein in Sechseck-Form unten mittig im Rahmen eingelassen, klare Kartentypografie, cineastische Beleuchtung, natürliche Fantasy-Landschaft, hochwertige digitale Malerei, keine modernen Elemente, keine Wasserzeichen, keine Logos.
