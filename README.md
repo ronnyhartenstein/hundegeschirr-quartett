@@ -21,8 +21,8 @@ Spieler wählen abwechselnd einen Wert – wer den höheren Wert hat, gewinnt be
 |---|---|---|
 | Gewöhnlich | 17 | Weiß/Silber |
 | Selten | 20 | Smaragdgrün |
-| Episch | 23 | Blau |
-| Magisch | 26 | Violett |
+| Episch | 23 | Violett |
+| Magisch | 26 | Blau |
 | Legendär | 30 | Orange/Gold |
 
 ## Voraussetzungen
@@ -54,6 +54,12 @@ python generate_cards.py --force
 # Bildqualität wählen (low/medium/high, Standard: medium)
 python generate_cards.py --quality high
 
+# Eine Karte pro Qualitätsstufe generieren (5 Karten, zum Testen)
+python generate_cards.py --sample
+
+# Mehrere Varianten pro Karte generieren
+python generate_cards.py --variants 3 cards/01-schlichtes-geschirr-des-bauern.md
+
 # Prompt anzeigen ohne API-Call
 python generate_cards.py --dry-run cards/01-schlichtes-geschirr-des-bauern.md
 ```
@@ -78,12 +84,16 @@ python generate_cards.py --recompress
 ## Dateistruktur
 
 ```
-cards/           # 40 Karten-Dateien als Markdown mit YAML-Frontmatter
-output/          # generierte WebP-Bilder (832×1424 px, ~300 DPI für 70×120 mm)
-print/           # druckfertige JPGs
-master_prompt.md # Image-Prompt-Template mit Platzhaltern
-karten.md        # Spieldesign, Balancing, vollständige Kartenliste
-generate_cards.py
+cards/                # 40 Karten-Dateien als Markdown mit YAML-Frontmatter
+output/               # generierte WebP-Bilder (832×1424 px, ~300 DPI für 70×120 mm)
+print/                # druckfertige JPGs
+back/                 # Kartenrücken-Varianten
+master_prompt.md      # Image-Prompt-Template mit Platzhaltern
+karten.md             # Spieldesign, Balancing, vollständige Kartenliste
+qualitaetsstufen.md   # Farben und Symbole je Qualitätsstufe
+rueckseite.md         # Kartenrücken-Prompt und Varianten
+generate_cards.py     # Bildgenerierungs-Script
+visualize_balance.py  # Balancing-Visualisierung → balance.html
 docker-compose.yml
 ```
 

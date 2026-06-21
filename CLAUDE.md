@@ -7,15 +7,18 @@ Ein mittelalterliches Fantasy-Trumpfquartett (Supertrumpf) mit Hundegeschirren a
 ## Dateistruktur
 
 ```
-cards/           # 40 Karten-Dateien (01–40), je eine .md pro Karte
-output/          # generierte WebP-Bilder (von generate_cards.py)
-print/           # druckfertige JPGs (via --print Flag)
-master_prompt.md # Image-Prompt-Template mit [PLACEHOLDER]-Tokens
-karten.md        # Spieldesign, Balancing, vollständige Kartenliste mit Hunderassen
-qualitaetsstufen.md  # Farben und Symbole je Qualitätsstufe
+cards/                    # 40 Karten-Dateien (01–40), je eine .md pro Karte
+output/                   # generierte WebP-Bilder (von generate_cards.py)
+print/                    # druckfertige JPGs (via --print Flag)
+back/                     # Kartenrücken-Varianten
+master_prompt.md          # Image-Prompt-Template mit [PLACEHOLDER]-Tokens
+karten.md                 # Spieldesign, Balancing, vollständige Kartenliste mit Hunderassen
+qualitaetsstufen.md       # Farben und Symbole je Qualitätsstufe
+rueckseite.md             # Kartenrücken-Prompt und Varianten
 platzhalter-beispiele.md  # Beispielwerte für die Prompt-Platzhalter
-generate_cards.py  # Bildgenerierungs-Script (OpenAI gpt-image-2)
-docker-compose.yml # Docker-Setup für generate_cards.py
+generate_cards.py         # Bildgenerierungs-Script (OpenAI gpt-image-2)
+visualize_balance.py      # Balancing-Visualisierung → balance.html
+docker-compose.yml        # Docker-Setup für generate_cards.py
 ```
 
 ## Karten-Dateiformat
@@ -27,11 +30,10 @@ Jede Karte in `cards/` hat YAML-Frontmatter + zwei Markdown-Abschnitte:
 nummer: 01
 name: Schlichtes Geschirr des Bauern
 qualitaet: Gewöhnlich          # Gewöhnlich | Selten | Episch | Magisch | Legendär
-qualitaetsfarbe: weiß-silberner Akzent
-zugkraft: 44
-schutz: 44
-beweglichkeit: 40
-instinkt: 42
+zugkraft: 5
+schutz: 4
+beweglichkeit: 4
+instinkt: 4
 hunderasse: Berner Sennenhund
 pose: steht ruhig auf einem Feldweg vor einem Bauerndorf
 hintergrund: mittelalterliches Dorf am Waldrand
@@ -68,7 +70,7 @@ Werte gehen von 1–10, höher ist besser. Jede Karte hat eine Stärke und Schw�
 | `[HUNDERASSE]`       | `hunderasse`           | —                           |
 | `[POSE]`             | `pose`                 | —                           |
 | `[GESCHIRR_BESCHREIBUNG]` | `geschirr_beschreibung` | —                      |
-| `[QUALITÄTSFARBE]`   | `qualitaetsfarbe`      | —                           |
+| `[QUALITÄTSFARBE]`   | `qualitaet`            | via `QUALITAETSFARBE_MAP` im Script |
 | `[HINTERGRUND]`      | `hintergrund`          | —                           |
 | `[ZUGKRAFT]`         | `zugkraft`             | —                           |
 | `[SCHUTZ]`           | `schutz`               | —                           |
